@@ -20,7 +20,8 @@
 <body class="font-['Inter',sans-serif] bg-gray-50 text-gray-900 min-h-screen flex flex-col">
 
     <!-- NAVIGATION HEADER                          -->
-    <header class="sticky top-0 z-50 px-4 sm:px-8 md:px-16 py-4 bg-[#111827]/90 backdrop-blur-md border-b border-white/10">
+    <header
+        class="sticky top-0 z-50 px-4 sm:px-8 md:px-16 py-4 bg-[#111827]/90 backdrop-blur-md border-b border-white/10">
         <nav class="max-w-7xl mx-auto flex items-center justify-between gap-4">
 
             <!-- Brand Logo & Title -->
@@ -79,25 +80,37 @@
                 </li>
             </ul>
 
-            <!-- Header Utility Actions -->
-            <div class="hidden sm:flex items-center gap-4 shrink-0">
+           
+                <!-- Search Input Field -->
                 <div class="hidden lg:block relative w-40 md:w-52 lg:w-64">
-                    <input type="text" placeholder="Search..."
-                        class="w-full px-4 py-2 pr-9 text-xs sm:text-sm text-gray-200 bg-[#161b22] rounded-full border border-gray-700 outline-none transition-all duration-300 placeholder:text-gray-500 focus:border-[#FFA500]">
-                    <span class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                        </svg>
-                    </span>
+
+                    <form id="searchForm">
+
+                        <input type="text" id="searchInput" placeholder="Search..." autocomplete="off"
+                            class="w-full px-4 py-2 pr-10 text-xs sm:text-sm text-gray-200 bg-[#161b22] rounded-full border border-gray-700/60 outline-none transition-all duration-300 placeholder:text-gray-500 focus:border-[#FFA500] focus:ring-1 focus:ring-[#FFA500]/40 focus:shadow-[0_0_12px_rgba(255,165,0,0.3)]">
+
+                        <!-- Search Button -->
+                        <button type="submit" id="searchBtn" aria-label="Search"
+                            class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#FFA500] transition-colors duration-200 cursor-pointer p-1">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+
+                        </button>
+
+                    </form>
+
                 </div>
 
                 <a href="clubs.html#contact-form"
                     class="inline-flex items-center gap-2 bg-linear-to-br from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white font-semibold text-[15px] px-5 py-2 rounded-full shadow-md transition-all duration-300 hover:scale-105 active:scale-95">
                     Join Now &rarr;
                 </a>
-            </div>
+          
         </nav>
     </header>
 
@@ -761,7 +774,9 @@
             </p>
         </div>
     </footer>
+<script src="./js/main.js">
 
+</script>
 </body>
 
 </html>
