@@ -4,7 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse all Student Clubs, from sports and music to cooking and yoga, and find your campus community.">
+    <meta name="keywords" content="clubs page, student clubs, campus clubs, university activities, sports club, music club, cooking club, yoga club">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Student Clubs | Explore Campus Clubs">
+    <meta property="og:description" content="Explore student clubs, activities, and communities that match your interests and lifestyle.">
+    <meta property="og:image" content="https://student-clubs-silk.vercel.app/image/website-logo.jpg">
+    <meta property="og:url" content="https://student-clubs-silk.vercel.app/clubs.html">
+    <meta property="og:site_name" content="Student Clubs">
+    <meta name="twitter:card" content="summary_large_image">
     <title>Clubs page</title>
+    <link rel="canonical" href="https://student-clubs-silk.vercel.app/clubs.html">
     <link rel="stylesheet" href="./output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,7 +106,7 @@
             </div>
             <!-- Primary Call-To-Action -->
             <a href="clubs.html#contact-form"
-                class="inline-flex items-center gap-2 bg-linear-to-br from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white font-semibold text-[15px] px-5 py-2 rounded-full shadow-[0_0_15px_rgba(255,165,0,0.3)] transition-all duration-300 hover:scale-105 active:scale-95">
+                class="hidden sm:inline-flex items-center gap-2 bg-linear-to-br from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white font-semibold text-[15px] px-5 py-2 rounded-full shadow-[0_0_15px_rgba(255,165,0,0.3)] transition-all duration-300 hover:scale-105 active:scale-95">
                 Join Now &rarr;
             </a>
         </nav>
@@ -103,12 +114,10 @@
 
     <!-- Banner Section -->
     <section
-        class="relative w-full h-72 sm:h-80 bg-[url('./image/banner-home-page.jpg')] bg-cover bg-center overflow-hidden flex items-center">
+        class="relative w-full min-h-125 sm:h-80 bg-[url('./image/banner-clubs-page.png')] bg-cover bg-center overflow-hidden flex items-center">
         <div class="absolute inset-0 bg-black/50"></div>
         <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-16 w-full text-left">
-            <p class="text-[#FFA500] font-bold text-sm sm:text-base tracking-widest uppercase">
-                JOIN <span class="text-white">•</span> LEARN <span class="text-white">•</span> GROW
-            </p>
+
             <h1
                 class="font-['Poppins',sans-serif] text-3xl sm:text-4xl md:text-5xl font-extrabold text-white flex items-center gap-3 leading-tight mt-2">
                 Team <span class="text-[#4C4DFF]">Clubs</span>
@@ -125,15 +134,22 @@
             <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-gray-900">
                 Featured Clubs
             </h2>
-            <div class="mt-4 max-w-xs">
-                <select
-                    class="w-full h-10 px-3 text-xs border border-gray-300 text-gray-700 bg-white rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-[#4C4DFF] focus:border-transparent transition-all">
-                    <option value="all">All Clubs</option>
-                    <option value="sports">Sports</option>
-                    <option value="cooking">Cook & Dessert</option>
-                    <option value="music">Music</option>
-                    <option value="yoga">Yoga</option>
+            <!-- Added "relative" here so the absolute icon stays inside this wrapper -->
+            <div class="relative mt-4 max-w-xs">
+                <select id="clubFilter"
+                    class="w-full p-3 pr-10 text-xs border border-gray-300 text-gray-700 bg-white rounded-sm shadow-sm appearance-none focus:outline-none focus:ring-1 focus:ring-[#4C4DFF]">
+                    <option value="All">All Clubs</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Cook & Desert">Cook & Dessert</option>
+                    <option value="Music">Music</option>
+                    <option value="Yoga">Yoga</option>
                 </select>
+                <!-- Drop down Icon -->
+                <div class="pointer-events-none absolute inset-y-0 right-4 flex items-center text-gray-700">
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
             </div>
         </div>
 
@@ -142,7 +158,8 @@
             <div class="lg:col-span-2 space-y-8">
 
                 <!-- Sports Club -->
-                <div class="bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
+                <div data-category="Sports"
+                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
                     <div class="relative">
                         <img src="./image/Volleyball.png" alt="Sports Club"
                             class="w-full h-56 sm:h-64 object-cover rounded-xl">
@@ -181,15 +198,13 @@
                                 <p class="text-sm text-gray-600">Social Meetups & Community Events</p>
                             </div>
                         </div>
-                        <a href="#contact-form"
-                            class="inline-flex items-center justify-center px-6 h-9 rounded-full bg-[#4C4DFF] text-white text-xs font-semibold hover:bg-[#3B3CCF] transition duration-200 focus:outline-none focus:ring-2 focus:ring-[#4C4DFF]/50">
-                            Join Us
-                        </a>
+
                     </div>
                 </div>
 
                 <!-- Cooking Club -->
-                <div class="bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
+                <div data-category="Cook & Desert"
+                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
                     <div class="relative">
                         <img src="./image/Co.png" alt="Cooking Club"
                             class="w-full h-56 sm:h-64 object-cover rounded-xl">
@@ -224,15 +239,13 @@
                                 <p class="text-xs text-gray-600">Inventory Management & Stock Checks</p>
                             </div>
                         </div>
-                        <a href="#contact-form"
-                            class="inline-flex items-center justify-center px-6 h-9 rounded-full bg-[#4C4DFF] text-white text-xs font-semibold hover:bg-[#3B3CCF] transition duration-200 focus:outline-none focus:ring-2 focus:ring-[#4C4DFF]/50">
-                            Join Us
-                        </a>
+
                     </div>
                 </div>
 
                 <!-- Music Club -->
-                <div class="bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
+                <div data-category="Music"
+                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
                     <div class="relative">
                         <img src="./image/mushow.png" alt="Music Club"
                             class="w-full h-56 sm:h-64 object-cover rounded-xl">
@@ -266,15 +279,13 @@
                                 <p class="text-xs text-gray-600">Live Campus Event Performances</p>
                             </div>
                         </div>
-                        <a href="#contact-form"
-                            class="inline-flex items-center justify-center px-6 h-9 rounded-full bg-[#4C4DFF] text-white text-xs font-semibold hover:bg-[#3B3CCF] transition duration-200 focus:outline-none focus:ring-2 focus:ring-[#4C4DFF]/50">
-                            Join Us
-                        </a>
+
                     </div>
                 </div>
 
                 <!-- Yoga Club -->
-                <div class="bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
+                <div data-category="Yoga"
+                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
                     <div class="relative">
                         <img src="./image/Yo.png" alt="Yoga Club" class="w-full h-56 sm:h-64 object-cover rounded-xl">
                         <div class="absolute -bottom-5 left-5">
@@ -306,17 +317,14 @@
                                 <p class="text-xs text-gray-600">Health Talks & Group Discussions</p>
                             </div>
                         </div>
-                        <a href="#contact-form"
-                            class="inline-flex items-center justify-center px-6 h-9 rounded-full bg-[#4C4DFF] text-white text-xs font-semibold hover:bg-[#3B3CCF] transition duration-200 focus:outline-none focus:ring-2 focus:ring-[#4C4DFF]/50">
-                            Join Us
-                        </a>
+
                     </div>
                 </div>
 
             </div>
 
             <!-- Join Club Sidebar Form -->
-            <aside class="lg:col-span-1">
+            <aside class="lg:col-span-1 ">
                 <form id="contact-form" class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm sticky top-24">
                     <h2 class="text-xl font-bold text-[#1E293B]">Join Club</h2>
                     <p class="text-xs text-gray-500 mt-1 mb-5">Have a question or want to sign up? Reach out below.</p>
@@ -337,28 +345,45 @@
                     </div>
 
                     <!-- Club Dropdown -->
-                    <div class="mb-4">
+                    <div class="mb-4 relative">
                         <label for="user-club" class="block text-xs font-semibold text-gray-700 mb-1">Club*</label>
+                        <!-- Added appearance-none to hide default browser dropdown arrow and pr-10 for padding -->
                         <select id="user-club" name="club" required
-                            class="w-full h-9 px-3 text-xs border border-gray-300 rounded-md bg-white text-gray-700 outline-none transition-all focus:border-[#4C4DFF] focus:ring-2 focus:ring-[#4C4DFF]/20">
+                            class="w-full h-9 px-3 pr-10 text-xs border border-gray-300 rounded-md bg-white text-gray-700 outline-none appearance-none transition-all focus:border-[#4C4DFF] focus:ring-2 focus:ring-[#4C4DFF]/20">
                             <option value="" disabled selected>Select Club</option>
                             <option value="Music">Music</option>
                             <option value="Sport">Sport</option>
                             <option value="Yoga">Yoga</option>
                             <option value="Cooking">Cooking</option>
                         </select>
+                        <!-- Added top-5 or top-[22px] to account for the <label> height above the input -->
+                        <div
+                            class="pointer-events-none absolute right-3 top-5.5 bottom-0 flex items-center text-gray-500">
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
                     </div>
 
                     <!-- Year Dropdown -->
-                    <div class="mb-4">
+                    <div class="mb-4 relative">
                         <label for="user-year" class="block text-xs font-semibold text-gray-700 mb-1">Year*</label>
                         <select id="user-year" name="year" required
-                            class="w-full h-9 px-3 text-xs border border-gray-300 rounded-md bg-white text-gray-700 outline-none transition-all focus:border-[#4C4DFF] focus:ring-2 focus:ring-[#4C4DFF]/20">
+                            class="w-full h-9 px-3 pr-10 text-xs border border-gray-300 rounded-md bg-white text-gray-700 outline-none appearance-none transition-all focus:border-[#4C4DFF] focus:ring-2 focus:ring-[#4C4DFF]/20">
                             <option value="" disabled selected>Select your year</option>
                             <option value="Year 1">Year 1</option>
                             <option value="Year 2">Year 2</option>
                             <option value="Year 3">Year 3</option>
                         </select>
+                        
+                        <div
+                            class="pointer-events-none absolute right-3 top-5.5 bottom-0 flex items-center text-gray-500">
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
                     </div>
 
                     <div class="mb-5">
@@ -371,7 +396,7 @@
                     </div>
 
                     <button type="submit" id="submit-btn"
-                        class="w-full h-9 rounded-full bg-[#4C4DFF] text-white text-xs font-semibold hover:bg-[#3B3CCF] transition duration-200 focus:outline-none focus:ring-2 focus:ring-[#4C4DFF]/50">
+                        class="mb-2 w-full h-9 rounded-full bg-[#4C4DFF] text-white text-xs font-semibold hover:bg-[#3B3CCF] transition duration-200 focus:outline-none focus:ring-2 focus:ring-[#4C4DFF]/50">
                         Submit
                     </button>
                 </form>
