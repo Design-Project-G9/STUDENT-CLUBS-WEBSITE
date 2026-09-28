@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browse all Student Clubs, from sports and music to cooking and yoga, and find your campus community.">
-    <meta name="keywords" content="clubs page, student clubs, campus clubs, university activities, sports club, music club, cooking club, yoga club">
+    <meta name="description"
+        content="Browse all Student Clubs, from sports and music to cooking and yoga, and find your campus community.">
+    <meta name="keywords"
+        content="clubs page, student clubs, campus clubs, university activities, sports club, music club, cooking club, yoga club">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Student Clubs | Explore Campus Clubs">
-    <meta property="og:description" content="Explore student clubs, activities, and communities that match your interests and lifestyle.">
+    <meta property="og:description"
+        content="Explore student clubs, activities, and communities that match your interests and lifestyle.">
     <meta property="og:image" content="https://student-clubs-silk.vercel.app/image/website-logo.jpg">
     <meta property="og:url" content="https://student-clubs-silk.vercel.app/clubs.html">
     <meta property="og:site_name" content="Student Clubs">
@@ -22,6 +25,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- Icon -->
+    <link rel="icon" type="image/jpeg" href="./image/website-logo-icon.png">
 </head>
 
 <body class="font-['Inter',sans-serif] bg-gray-50 text-gray-900 antialiased">
@@ -31,7 +36,8 @@
             <a href="index.html" class="flex items-center gap-3 group shrink-0">
                 <div
                     class="w-10 h-10 rounded-full bg-linear-to-br from-[#FFA500] to-indigo-500 p-0.5 transition-transform duration-300 group-hover:scale-105 flex items-center justify-center">
-                    <img class="w-9 h-9 rounded-full object-cover" src="./image/Logo.png" alt="Student Club Logo">
+                    <img class="w-9 h-9 rounded-full object-cover" src="./image/website-logo.jpg"
+                        alt="Student Club Logo">
                 </div>
                 <h3 class="font-bold text-xl sm:text-2xl text-white tracking-wide">
                     Student <span class="text-blue-500">Clubs</span>
@@ -158,13 +164,13 @@
             <div class="lg:col-span-2 space-y-8">
 
                 <!-- Sports Club -->
-                <div data-category="Sports"
+                <div id="sport-club" data-category="Sports"
                     class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
                     <div class="relative">
                         <img src="./image/Volleyball.png" alt="Sports Club"
                             class="w-full h-56 sm:h-64 object-cover rounded-xl">
                         <div class="absolute -bottom-5 left-5">
-                            <img src="./image/losport.png" alt="Sport Logo"
+                            <img src="./image/sport-logo.png" alt="Sport Logo"
                                 class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
                         </div>
                     </div>
@@ -203,13 +209,14 @@
                 </div>
 
                 <!-- Cooking Club -->
-                <div data-category="Cook & Desert"
+                <div id="cooking"
+                 data-category="Cook & Desert"
                     class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
                     <div class="relative">
-                        <img src="./image/Co.png" alt="Cooking Club"
+                        <img src="./image/cooking-event.jpg" alt="Cooking Club"
                             class="w-full h-56 sm:h-64 object-cover rounded-xl">
                         <div class="absolute -bottom-5 left-5">
-                            <img src="./image/Chef.png" alt="Chef Logo"
+                            <img src="./image/cooking-logo.png" alt="Chef Logo"
                                 class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
                         </div>
                     </div>
@@ -244,13 +251,15 @@
                 </div>
 
                 <!-- Music Club -->
-                <div data-category="Music"
+
+                <div id="music"
+                data-category="Music"
                     class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
                     <div class="relative">
                         <img src="./image/mushow.png" alt="Music Club"
                             class="w-full h-56 sm:h-64 object-cover rounded-xl">
                         <div class="absolute -bottom-5 left-5">
-                            <img src="./image/Mus.png" alt="Music Logo"
+                            <img src="./image/music-logo.png" alt="Music Logo"
                                 class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
                         </div>
                     </div>
@@ -284,12 +293,14 @@
                 </div>
 
                 <!-- Yoga Club -->
-                <div data-category="Yoga"
+                <div id="yoga"
+                  data-category="Yoga"
                     class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
                     <div class="relative">
-                        <img src="./image/Yo.png" alt="Yoga Club" class="w-full h-56 sm:h-64 object-cover rounded-xl">
+                        <img src="./image/yoga-event.jpg" alt="Yoga Club"
+                            class="w-full h-56 sm:h-64 object-cover rounded-xl">
                         <div class="absolute -bottom-5 left-5">
-                            <img src="./image/ga.png" alt="Yoga Logo"
+                            <img src="./image/yoga-logo.png" alt="Yoga Logo"
                                 class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
                         </div>
                     </div>
@@ -376,7 +387,7 @@
                             <option value="Year 2">Year 2</option>
                             <option value="Year 3">Year 3</option>
                         </select>
-                        
+
                         <div
                             class="pointer-events-none absolute right-3 top-5.5 bottom-0 flex items-center text-gray-500">
                             <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -410,7 +421,8 @@
             <div class="flex items-center gap-3">
                 <div
                     class="w-11 h-11 rounded-full bg-linear-to-br from-[#FFA500] to-indigo-500 p-0.5 flex items-center justify-center">
-                    <img class="w-10 h-10 rounded-full object-cover" src="./image/Logo.png" alt="Student Club Logo">
+                    <img class="w-10 h-10 rounded-full object-cover" src="./image/website-logo.jpg"
+                        alt="Student Club Logo">
                 </div>
                 <h3 class="font-bold text-xl sm:text-2xl text-white">
                     Student <span class="text-[#4C4DFF]">Clubs</span>

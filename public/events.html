@@ -26,6 +26,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+         <!-- Icon -->
+<link rel="icon" type="image/jpeg" href="./image/website-logo-icon.png">
 </head>
 
 <body class="font-['Inter',sans-serif] bg-gray-50 text-gray-900 min-h-screen flex flex-col">
@@ -130,13 +132,11 @@
 
         <!-- EVENTS HERO BANNER SECTION -->
         <section
-            class="relative min-h-125 bg-[url('./image/banner-home-page.jpg')] bg-cover bg-center px-6 sm:px-12 md:px-16 py-16 flex flex-col justify-center overflow-hidden">
+            class="relative min-h-125 bg-[url('./image/banner-events-page.jpg')] bg-cover bg-center px-6 sm:px-12 md:px-16 py-16 flex flex-col justify-center overflow-hidden">
             <div class="absolute inset-0 bg-linear-to-r from-black/80 via-black/60 to-black/40 z-0"></div>
 
             <div class="relative z-10 max-w-2xl space-y-3">
-                <p class="text-[#FFA500] font-bold text-sm sm:text-base tracking-widest uppercase">
-                    JOIN <span class="text-white">•</span> LEARN <span class="text-white">•</span> GROW
-                </p>
+                
                 <h1
                     class="font-['Poppins',sans-serif] font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-wide drop-shadow-md leading-tight">
                     School <span class="text-[#4C4DFF]">Events</span>
@@ -179,7 +179,8 @@
             <div class="grid grid-cols-1 gap-8">
 
                 <!-- Event Card 1: Sport Club Showcase -->
-                <article data-category="Sports"
+                <article id="sport"
+                 data-category="Sports"
                     class="event-card bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300">
                     <div>
                         <img class="w-full h-80 sm:h-96 object-cover rounded-xl mb-6" src="./image/volleyball.jpg"
@@ -331,7 +332,7 @@
                 </article>
 
                 <!-- Event Card 2: Cooking Club Showcase -->
-                <article data-category="Cooking"
+                <article id="cooking" data-category="Cooking"
                     class="event-card bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300">
                     <div>
                         <img class="w-full h-80 sm:h-96 object-cover rounded-xl mb-6" src="./image/cooking-event.jpg"
@@ -471,7 +472,7 @@
                 </article>
 
                 <!-- Event Card 3: Music Club Showcase -->
-                <article data-category="Music"
+                <article id="music" data-category="Music"
                     class="event-card bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300">
                     <div>
                         <img class="w-full h-80 sm:h-96 object-cover rounded-xl mb-6" src="./image/music-banner.jpg"
@@ -599,7 +600,7 @@
                 </article>
 
                 <!-- Event Card 4: Yoga Club Showcase -->
-                <article data-category="Yoga"
+                <article id="yoga" data-category="Yoga"
                     class="event-card bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300">
                     <div>
                         <img class="w-full h-80 sm:h-96 object-cover rounded-xl mb-6" src="./image/yoga-event.jpg"
