@@ -25,11 +25,15 @@ function initClubJoinForm() {
         };
 
         try {
-            await fetch(CLUB_JOIN_SCRIPT_URL, {
+            const response = await fetch(CLUB_JOIN_SCRIPT_URL, {
                 method: "POST",
                 body: JSON.stringify(formData),
                 headers: { "Content-Type": "text/plain;charset=utf-8" }
             });
+
+            if (!response.ok) {
+                throw new Error(`Request failed with status ${response.status}`);
+            }
 
             alert("Submitted successfully!");
             form.reset();
@@ -79,6 +83,10 @@ function initAboutContactForm() {
                 body: JSON.stringify(formData),
                 headers: { "Content-Type": "text/plain;charset=utf-8" }
             });
+
+            if (!response.ok) {
+                throw new Error(`Request failed with status ${response.status}`);
+            }
 
             const result = await response.json();
             if (result.result === "success") {
@@ -338,6 +346,53 @@ function initSearchSystem() {
     });
 }
 
-initClubJoinForm();
-initAboutContactForm();
-initSearchSystem();
+function initClubFilter() {
+    const clubFilter = document.getElementById("clubFilter");
+    if (!clubFilter) return;
+
+    clubFilter.addEventListener("change", function () {
+        const selectedCategory = this.value;
+        const clubCards = document.querySelectorAll(".club-card");
+
+        clubCards.forEach((card) => {
+            const category = card.dataset.category || "";
+            const shouldShow = selectedCategory === "All" || category === selectedCategory;
+            card.classList.toggle("hidden", !shouldShow);
+        });
+    });
+}
+
+function initEventFilters() {
+    const buttons = document.querySelectorAll(".filter-btn");
+    if (!buttons.length) return;
+
+    const cards = document.querySelectorAll(".event-card");
+
+    buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+            buttons.forEach((btn) => {
+                btn.classList.remove("bg-[#4C4DFF]", "text-white", "shadow-md");
+                btn.classList.add("bg-white", "text-gray-700", "border", "border-gray-300");
+            });
+
+            this.classList.remove("bg-white", "text-gray-700", "border", "border-gray-300");
+            this.classList.add("bg-[#4C4DFF]", "text-white", "shadow-md");
+
+            const selectedCategory = this.getAttribute("data-category");
+
+            cards.forEach((card) => {
+                const cardCategory = card.getAttribute("data-category");
+                const shouldShow = selectedCategory === "All" || cardCategory === selectedCategory;
+                card.style.display = shouldShow ? "block" : "none";
+            });
+        });
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    initClubJoinForm();
+    initAboutContactForm();
+    initSearchSystem();
+    initClubFilter();
+    initEventFilters();
+});

@@ -277,8 +277,17 @@
   .top-1\/2 {
     top: calc(1 / 2 * 100%);
   }
+  .top-5 {
+    top: calc(var(--spacing) * 5);
+  }
+  .top-5\.5 {
+    top: calc(var(--spacing) * 5.5);
+  }
   .top-24 {
     top: calc(var(--spacing) * 24);
+  }
+  .top-\[22px\] {
+    top: 22px;
   }
   .top-full {
     top: 100%;
@@ -291,6 +300,12 @@
   }
   .right-3 {
     right: calc(var(--spacing) * 3);
+  }
+  .right-4 {
+    right: calc(var(--spacing) * 4);
+  }
+  .right-6 {
+    right: calc(var(--spacing) * 6);
   }
   .-bottom-5 {
     bottom: calc(var(--spacing) * -5);
@@ -448,20 +463,26 @@
   .h-80 {
     height: calc(var(--spacing) * 80);
   }
+  .h-\[90vh\] {
+    height: 90vh;
+  }
+  .h-\[125px\] {
+    height: 125px;
+  }
   .h-full {
     height: 100%;
   }
   .max-h-48 {
     max-height: calc(var(--spacing) * 48);
   }
-  .max-h-96 {
-    max-height: calc(var(--spacing) * 96);
-  }
   .min-h-75 {
     min-height: calc(var(--spacing) * 75);
   }
   .min-h-125 {
     min-height: calc(var(--spacing) * 125);
+  }
+  .min-h-\[90vh\] {
+    min-height: 90vh;
   }
   .min-h-screen {
     min-height: 100vh;
@@ -528,6 +549,9 @@
   }
   .max-w-7xl {
     max-width: var(--container-7xl);
+  }
+  .max-w-full {
+    max-width: 100%;
   }
   .max-w-lg {
     max-width: var(--container-lg);
@@ -607,6 +631,9 @@
   }
   .items-center {
     align-items: center;
+  }
+  .justify-around {
+    justify-content: space-around;
   }
   .justify-between {
     justify-content: space-between;
@@ -939,6 +966,12 @@
     }
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[url\(\'\.\/image\/banner-clubs-page\.jpg\'\)\] {
+    background-image: url('./image/banner-clubs-page.jpg');
+  }
+  .bg-\[url\(\'\.\/image\/banner-clubs-page\.png\'\)\] {
+    background-image: url('./image/banner-clubs-page.png');
+  }
   .bg-\[url\(\'\.\/image\/banner-home-page\.jpg\'\)\] {
     background-image: url('./image/banner-home-page.jpg');
   }
@@ -1124,11 +1157,14 @@
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
   }
-  .pr-9 {
-    padding-right: calc(var(--spacing) * 9);
+  .pr-6 {
+    padding-right: calc(var(--spacing) * 6);
   }
   .pr-10 {
     padding-right: calc(var(--spacing) * 10);
+  }
+  .pr-12 {
+    padding-right: calc(var(--spacing) * 12);
   }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
@@ -1256,9 +1292,6 @@
   .text-\[\#FFA500\] {
     color: #FFA500;
   }
-  .text-\[sm\] {
-    color: sm;
-  }
   .text-blue-400 {
     color: var(--color-blue-400);
   }
@@ -1294,9 +1327,6 @@
   }
   .text-gray-900 {
     color: var(--color-gray-900);
-  }
-  .text-indigo-500 {
-    color: var(--color-indigo-500);
   }
   .text-indigo-600 {
     color: var(--color-indigo-600);
@@ -1465,9 +1495,6 @@
     .hover\:bg-indigo-700:hover {
       background-color: var(--color-indigo-700);
     }
-    .hover\:bg-orange-50:hover {
-      background-color: var(--color-orange-50);
-    }
     .hover\:bg-orange-600:hover {
       background-color: var(--color-orange-600);
     }
@@ -1550,9 +1577,6 @@
   .focus\:ring-\[\#FFA500\]\/40:focus {
     --tw-ring-color: color-mix(in oklab, #FFA500 40%, transparent);
   }
-  .focus\:ring-orange-400:focus {
-    --tw-ring-color: var(--color-orange-400);
-  }
   .focus\:ring-purple-200:focus {
     --tw-ring-color: var(--color-purple-200);
   }
@@ -1578,6 +1602,9 @@
     }
     .sm\:hidden {
       display: none;
+    }
+    .sm\:inline-flex {
+      display: inline-flex;
     }
     .sm\:h-64 {
       height: calc(var(--spacing) * 64);

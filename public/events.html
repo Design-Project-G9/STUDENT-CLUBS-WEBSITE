@@ -4,7 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore upcoming student events, campus activities, and club performances at Student Clubs.">
+    <meta name="keywords" content="school events, student events, campus activities, club events, volleyball event, music night, yoga event">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Student Clubs | Campus Events & Activities">
+    <meta property="og:description" content="See what’s happening on campus and join the latest student events and club activities.">
+    <meta property="og:image" content="https://student-clubs-silk.vercel.app/image/website-logo.jpg">
+    <meta property="og:url" content="https://student-clubs-silk.vercel.app/events.html">
+    <meta property="og:site_name" content="Student Clubs">
+    <meta name="twitter:card" content="summary_large_image">
     <title>School Events - Student Clubs</title>
+    <link rel="canonical" href="https://student-clubs-silk.vercel.app/events.html">
 
     <!-- Tailwind CSS Output -->
     <link href="./output.css" rel="stylesheet">
@@ -107,7 +118,7 @@
                 </div>
 
                 <a href="clubs.html#contact-form"
-                    class="inline-flex items-center gap-2 bg-linear-to-br from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white font-semibold text-[15px] px-5 py-2 rounded-full shadow-md transition-all duration-300 hover:scale-105 active:scale-95">
+                    class="hidden sm:inline-flex items-center gap-2 bg-linear-to-br from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white font-semibold text-[15px] px-5 py-2 rounded-full shadow-md transition-all duration-300 hover:scale-105 active:scale-95">
                     Join Now &rarr;
                 </a>
           
@@ -119,7 +130,7 @@
 
         <!-- EVENTS HERO BANNER SECTION -->
         <section
-            class="relative min-h-75 bg-[url('./image/banner-home-page.jpg')] bg-cover bg-center px-6 sm:px-12 md:px-16 py-16 flex flex-col justify-center overflow-hidden">
+            class="relative min-h-125 bg-[url('./image/banner-home-page.jpg')] bg-cover bg-center px-6 sm:px-12 md:px-16 py-16 flex flex-col justify-center overflow-hidden">
             <div class="absolute inset-0 bg-linear-to-r from-black/80 via-black/60 to-black/40 z-0"></div>
 
             <div class="relative z-10 max-w-2xl space-y-3">
@@ -142,24 +153,24 @@
 
             <!-- Category Filter Tabs -->
             <div class="flex items-center gap-3 overflow-x-auto pb-2 border-b border-gray-200">
-                <button
-                    class="px-6 py-2 text-xs sm:text-sm font-semibold text-white bg-[#4C4DFF] rounded-full shadow-md shrink-0">
+                <button data-category="All"
+                    class="filter-btn px-6 py-2 text-xs sm:text-sm font-semibold text-white bg-[#4C4DFF] rounded-full shadow-md shrink-0">
                     All
                 </button>
-                <button
-                    class="px-6 py-2 text-xs sm:text-sm font-semibold text-gray-700 hover:text-[#4C4DFF] hover:bg-indigo-50 border border-gray-300 rounded-full transition shrink-0 bg-white">
+                <button data-category="Sports"
+                    class=" filter-btn px-6 py-2 text-xs sm:text-sm font-semibold text-gray-700 hover:text-[#4C4DFF] hover:bg-indigo-50 border border-gray-300 rounded-full transition shrink-0 bg-white">
                     Sports
                 </button>
-                <button
-                    class="px-6 py-2 text-xs sm:text-sm font-semibold text-gray-700 hover:text-[#4C4DFF] hover:bg-indigo-50 border border-gray-300 rounded-full transition shrink-0 bg-white">
+                <button data-category="Cooking"
+                    class=" filter-btn px-6 py-2 text-xs sm:text-sm font-semibold text-gray-700 hover:text-[#4C4DFF] hover:bg-indigo-50 border border-gray-300 rounded-full transition shrink-0 bg-white">
                     Cooking
                 </button>
-                <button
-                    class="px-6 py-2 text-xs sm:text-sm font-semibold text-gray-700 hover:text-[#4C4DFF] hover:bg-indigo-50 border border-gray-300 rounded-full transition shrink-0 bg-white">
+                <button data-category="Music"
+                    class=" filter-btn px-6 py-2 text-xs sm:text-sm font-semibold text-gray-700 hover:text-[#4C4DFF] hover:bg-indigo-50 border border-gray-300 rounded-full transition shrink-0 bg-white">
                     Music
                 </button>
-                <button
-                    class="px-6 py-2 text-xs sm:text-sm font-semibold text-gray-700 hover:text-[#4C4DFF] hover:bg-indigo-50 border border-gray-300 rounded-full transition shrink-0 bg-white">
+                <button data-category="Yoga"
+                    class="filter-btn px-6 py-2 text-xs sm:text-sm font-semibold text-gray-700 hover:text-[#4C4DFF] hover:bg-indigo-50 border border-gray-300 rounded-full transition shrink-0 bg-white">
                     Yoga
                 </button>
             </div>
@@ -168,8 +179,8 @@
             <div class="grid grid-cols-1 gap-8">
 
                 <!-- Event Card 1: Sport Club Showcase -->
-                <article
-                    class="bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300">
+                <article data-category="Sports"
+                    class="event-card bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300">
                     <div>
                         <img class="w-full h-80 sm:h-96 object-cover rounded-xl mb-6" src="./image/volleyball.jpg"
                             alt="Campus Sports & Fitness Showcase">
@@ -320,8 +331,8 @@
                 </article>
 
                 <!-- Event Card 2: Cooking Club Showcase -->
-                <article
-                    class="bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300">
+                <article data-category="Cooking"
+                    class="event-card bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300">
                     <div>
                         <img class="w-full h-80 sm:h-96 object-cover rounded-xl mb-6" src="./image/cooking-event.jpg"
                             alt="Cooking Club Showcase">
@@ -460,8 +471,8 @@
                 </article>
 
                 <!-- Event Card 3: Music Club Showcase -->
-                <article
-                    class="bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300">
+                <article data-category="Music"
+                    class="event-card bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300">
                     <div>
                         <img class="w-full h-80 sm:h-96 object-cover rounded-xl mb-6" src="./image/music-banner.jpg"
                             alt="Music Jam Night">
@@ -588,8 +599,8 @@
                 </article>
 
                 <!-- Event Card 4: Yoga Club Showcase -->
-                <article
-                    class="bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300">
+                <article data-category="Yoga"
+                    class="event-card bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300">
                     <div>
                         <img class="w-full h-80 sm:h-96 object-cover rounded-xl mb-6" src="./image/yoga-event.jpg"
                             alt="Morning Yoga & Mindfulness">
