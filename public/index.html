@@ -4,23 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Discover student clubs and campus events at Student Clubs. Explore sports, music, cooking, yoga, and more campus activities for students.">
-    <meta name="keywords"
-        content="student clubs, university clubs, campus activities, student events, sports club, music club, cooking club, yoga club">
-    <meta name="robots" content="index, follow">
+    <meta name="author" content="Student Clubs">
+    <meta name="theme-color" content="#111827">
+    <meta name="description" content="Find the best student clubs, campus activities, and university events at Student Clubs. Explore sports, music, cooking, yoga, and more communities for students.">
+    <meta name="keywords" content="student clubs, campus clubs, university clubs, student activities, campus events, sports club, music club, cooking club, yoga club">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Student Clubs | Discover Campus Activities & Events">
-    <meta property="og:description"
-        content="Join student clubs, discover campus events, and find the right community for your university life.">
+    <meta property="og:title" content="Student Clubs | Campus Clubs, Events & Student Activities">
+    <meta property="og:description" content="Discover student clubs, university events, and campus communities that match your interests and lifestyle.">
     <meta property="og:image" content="https://student-clubs-silk.vercel.app/image/website-logo.jpg">
     <meta property="og:url" content="https://student-clubs-silk.vercel.app/">
     <meta property="og:site_name" content="Student Clubs">
+    <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Student Clubs | Discover Campus Activities & Events">
-    <meta name="twitter:description" content="Discover student clubs and campus events in one place.">
+    <meta name="twitter:title" content="Student Clubs | Campus Clubs, Events & Student Activities">
+    <meta name="twitter:description" content="Find the right student club and campus event for your university experience.">
     <link rel="canonical" href="https://student-clubs-silk.vercel.app/">
-    <title>Student Clubs - Discover & Join Campus Clubs</title>
+    <title>Student Clubs | Campus Clubs, Events & Student Activities</title>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Student Clubs",
+          "url": "https://student-clubs-silk.vercel.app/",
+          "logo": "https://student-clubs-silk.vercel.app/image/website-logo.jpg",
+          "description": "Student Clubs helps university students discover campus clubs, events, and student activities that build community and confidence.",
+          "areaServed": "University campus",
+          "sameAs": [
+            "https://student-clubs-silk.vercel.app/"
+          ]
+        }
+    </script>
 
     <!-- Tailwind CSS Output -->
     <link href="./output.css" rel="stylesheet">
@@ -34,6 +48,28 @@
     <!-- Icon -->
     <link rel="icon" type="image/jpeg" href="./image/website-logo-icon.png">
 
+    <style>
+        .typing-inline {
+            display: inline-flex;
+            align-items: center;
+            min-height: 1.2em;
+        }
+
+        .typing-cursor {
+            display: inline-block;
+            width: 2px;
+            height: 1em;
+            background-color: #ffffff;
+            margin-left: 4px;
+            animation: typing-blink 0.8s step-end infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes typing-blink {
+            0%, 50% { opacity: 1; }
+            50.01%, 100% { opacity: 0; }
+        }
+    </style>
 
 </head>
 
@@ -158,7 +194,9 @@
                 <h1
                     class="font-['Poppins',sans-serif] font-bold text-3xl sm:text-4xl md:text-5xl text-white leading-tight">
                     Discover Your<br>
-                    <span class="text-[#4C4DFF]">Student Club</span>
+                    <span class="typing-inline text-[#4C4DFF]">
+                        <span id="typed-text"></span><span class="typing-cursor" aria-hidden="true"></span>
+                    </span>
                 </h1>
 
                 <p class="text-gray-300 text-base sm:text-lg max-w-lg leading-relaxed">
@@ -542,6 +580,41 @@
     </footer>
     <script src="./js/main.js">
 
+    </script>
+    <script>
+        const phrases = ["Student Club", "Community", "Campus Life", "Events"];
+        const typedText = document.getElementById("typed-text");
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeLoop() {
+            const currentPhrase = phrases[phraseIndex];
+
+            if (!isDeleting) {
+                charIndex++;
+                typedText.textContent = currentPhrase.slice(0, charIndex);
+
+                if (charIndex === currentPhrase.length) {
+                    isDeleting = true;
+                    setTimeout(typeLoop, 1200);
+                    return;
+                }
+            } else {
+                charIndex--;
+                typedText.textContent = currentPhrase.slice(0, charIndex);
+
+                if (charIndex === 0) {
+                    isDeleting = false;
+                    phraseIndex = (phraseIndex + 1) % phrases.length;
+                }
+            }
+
+            const speed = isDeleting ? 60 : 110;
+            setTimeout(typeLoop, speed);
+        }
+
+        typeLoop();
     </script>
 </body>
 
