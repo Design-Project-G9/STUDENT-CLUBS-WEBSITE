@@ -1,264 +1,364 @@
-﻿const CLUB_JOIN_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzpoAXmJA8kzGxAWUg_CYDL_YMqR9ujNJR5xs7iWmWvIMKniUsnGIst7Omu1VNSJ6d7Tw/exec";
-const ABOUT_CONTACT_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxe22Q0SEuQoLBh8pnhQegOxmkym8kZ-aitsy6XArC0j_n5noVdtEfR8rVyKJ5O0YMClw/exec";
+﻿const CLUB_JOIN_SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbzpoAXmJA8kzGxAWUg_CYDL_YMqR9ujNJR5xs7iWmWvIMKniUsnGIst7Omu1VNSJ6d7Tw/exec";
+const ABOUT_CONTACT_SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbxe22Q0SEuQoLBh8pnhQegOxmkym8kZ-aitsy6XArC0j_n5noVdtEfR8rVyKJ5O0YMClw/exec";
 
 function initClubJoinForm() {
-    const form = document.getElementById("contact-form");
-    if (!form) return;
+  const form = document.getElementById("contact-form");
+  if (!form) return;
 
-    form.addEventListener("submit", async (event) => {
-        event.preventDefault();
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
 
-        const clubVal = document.getElementById("user-club")?.value || "";
-        const yearVal = document.getElementById("user-year")?.value || "";
+    const clubVal = document.getElementById("user-club")?.value || "";
+    const yearVal = document.getElementById("user-year")?.value || "";
 
-        if (!clubVal || !yearVal) {
-            alert("Please select both a Club and a Year.");
-            return;
-        }
+    if (!clubVal || !yearVal) {
+      alert("Please select both a Club and a Year.");
+      return;
+    }
 
-        const formData = {
-            name: document.getElementById("user-name")?.value || "",
-            email: document.getElementById("user-email")?.value || "",
-            club: clubVal,
-            year: yearVal,
-            message: document.getElementById("user-message")?.value || ""
-        };
+    const formData = {
+      name: document.getElementById("user-name")?.value || "",
+      email: document.getElementById("user-email")?.value || "",
+      club: clubVal,
+      year: yearVal,
+      message: document.getElementById("user-message")?.value || "",
+    };
 
-        try {
-            const response = await fetch(CLUB_JOIN_SCRIPT_URL, {
-                method: "POST",
-                body: JSON.stringify(formData),
-                headers: { "Content-Type": "text/plain;charset=utf-8" }
-            });
+    try {
+      const response = await fetch(CLUB_JOIN_SCRIPT_URL, {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+      });
 
-            if (!response.ok) {
-                throw new Error(`Request failed with status ${response.status}`);
-            }
+      if (!response.ok) {
+        throw new Error(`Request failed with status ${response.status}`);
+      }
 
-            alert("Submitted successfully!");
-            form.reset();
-        } catch (error) {
-            console.error("Club join form error:", error);
-            alert("An error occurred while submitting.");
-        }
-    });
+      alert("Submitted successfully!");
+      form.reset();
+    } catch (error) {
+      console.error("Club join form error:", error);
+      alert("An error occurred while submitting.");
+    }
+  });
 }
 
 function initAboutContactForm() {
-    const form = document.getElementById("about-contact-form");
-    if (!form) return;
+  const form = document.getElementById("about-contact-form");
+  if (!form) return;
 
-    const submitBtn = document.getElementById("about-submit-btn");
+  const submitBtn = document.getElementById("about-submit-btn");
 
-    form.addEventListener("submit", async (event) => {
-        event.preventDefault();
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
 
-        const nameVal = document.getElementById("name")?.value.trim() || "";
-        const emailVal = document.getElementById("email")?.value.trim() || "";
-        const yearVal = document.getElementById("subject")?.value || "";
-        const clubVal = document.getElementById("club")?.value || "";
-        const messageVal = document.getElementById("message")?.value.trim() || "";
+    const nameVal = document.getElementById("name")?.value.trim() || "";
+    const emailVal = document.getElementById("email")?.value.trim() || "";
+    const yearVal = document.getElementById("subject")?.value || "";
+    const clubVal = document.getElementById("club")?.value || "";
+    const messageVal = document.getElementById("message")?.value.trim() || "";
 
-        if (!yearVal || !clubVal) {
-            alert("Please select both a Year and a Club.");
-            return;
-        }
+    if (!yearVal || !clubVal) {
+      alert("Please select both a Year and a Club.");
+      return;
+    }
 
-        if (submitBtn) {
-            submitBtn.disabled = true;
-            submitBtn.textContent = "Submitting...";
-        }
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Submitting...";
+    }
 
-        const formData = {
-            name: nameVal,
-            email: emailVal,
-            club: clubVal,
-            year: yearVal,
-            message: messageVal
-        };
+    const formData = {
+      name: nameVal,
+      email: emailVal,
+      club: clubVal,
+      year: yearVal,
+      message: messageVal,
+    };
 
-        try {
-            const response = await fetch(ABOUT_CONTACT_SCRIPT_URL, {
-                method: "POST",
-                body: JSON.stringify(formData),
-                headers: { "Content-Type": "text/plain;charset=utf-8" }
-            });
+    try {
+      const response = await fetch(ABOUT_CONTACT_SCRIPT_URL, {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+      });
 
-            if (!response.ok) {
-                throw new Error(`Request failed with status ${response.status}`);
-            }
+      if (!response.ok) {
+        throw new Error(`Request failed with status ${response.status}`);
+      }
 
-            const result = await response.json();
-            if (result.result === "success") {
-                alert("Submitted successfully!");
-                form.reset();
-            } else {
-                alert("Error submitting form: " + (result.error || "Unknown error"));
-            }
-        } catch (error) {
-            console.error("About contact form error:", error);
-            alert("Submission failed. Please try again.");
-        } finally {
-            if (submitBtn) {
-                submitBtn.disabled = false;
-                submitBtn.textContent = "Submit";
-            }
-        }
-    });
+      const result = await response.json();
+      if (result.result === "success") {
+        alert("Submitted successfully!");
+        form.reset();
+      } else {
+        alert("Error submitting form: " + (result.error || "Unknown error"));
+      }
+    } catch (error) {
+      console.error("About contact form error:", error);
+      alert("Submission failed. Please try again.");
+    } finally {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Submit";
+      }
+    }
+  });
 }
 
 function initSearchSystem() {
-    const searchData = [
-        {
-            type: "club",
-            name: "Sport Club",
-            category: "Sports",
-            description: "A club for students who enjoy sports, teamwork, and physical activities.",
-            activities: "Volleyball, Football, Basketball, Friendly Matches",
-            page: "clubs.html"
-        },
-        {
-            type: "club",
-            name: "Cooking Club",
-            category: "Cook & Dessert",
-            description: "Learn cooking skills and discover new recipes with other students.",
-            activities: "Cooking, Baking, Dessert, Food Sharing",
-            page: "clubs.html"
-        },
-        {
-            type: "club",
-            name: "Music Club",
-            category: "Music",
-            description: "A place for students who love music, singing, and playing instruments.",
-            activities: "Singing, Guitar, Piano, Music Show",
-            page: "clubs.html"
-        },
-        {
-            type: "club",
-            name: "Yoga Club",
-            category: "Yoga",
-            description: "Improve your health, flexibility, and relaxation through yoga.",
-            activities: "Yoga, Meditation, Stretching, Fitness",
-            page: "clubs.html"
-        },
-        {
-            type: "event",
-            name: "Volleyball Friendly Match",
-            category: "Sports",
-            description: "Join students for a friendly volleyball match.",
-            activities: "Volleyball, Teamwork, Competition",
-            date: "October 15",
-            page: "events.html"
-        },
-        {
-            type: "event",
-            name: "Savor the Taste",
-            category: "Cook & Dessert",
-            description: "Enjoy delicious food and cooking activities with students.",
-            activities: "Cooking, Food, Dessert",
-            date: "October 20",
-            page: "events.html"
-        },
-        {
-            type: "event",
-            name: "Stay Active",
-            category: "Yoga",
-            description: "Join a fun activity to stay healthy and active.",
-            activities: "Fitness, Yoga, Exercise",
-            date: "October 25",
-            page: "events.html"
-        },
-        {
-            type: "event",
-            name: "Student Music Night",
-            category: "Music",
-            description: "Enjoy live music and student performances.",
-            activities: "Music, Singing, Performance",
-            date: "November 5",
-            page: "events.html"
-        }
-    ];
+  const searchData = [
+    {
+      type: "club",
+      name: "Sports Club",
+      category: "Sports",
+      description:
+        "Weekly games, team sports, fitness activities, and friendly matches.",
+      page: "clubs.html",
+      id: "sport-club",
+    },
+    {
+      type: "club",
+      name: "Cooking",
+      category: "Cook & Dessert",
+      description: "Cooking lessons, international food, and shared meals.",
+      page: "clubs.html",
+      id: "cooking",
+    },
+    {
+      type: "club",
+      name: "Music Club",
+      category: "Music",
+      description: "Instruments, music genres, and live student performances.",
+      page: "clubs.html",
+      id: "music",
+    },
+    {
+      type: "club",
+      name: "Yoga Club",
+      category: "Yoga",
+      description: "Stretching, mindfulness, meditation, and relaxation.",
+      page: "clubs.html",
+      id: "yoga",
+    },
+    {
+      type: "club",
+      name: "Design Club",
+      category: "Design",
+      description:
+        "UI/UX design, graphic creation, branding, and digital artwork.",
+      page: "clubs.html",
+      id: "design-club",
+    },
+    {
+      type: "club",
+      name: "Promoting Integrity & Dignity Club",
+      category: "Community",
+      description: "Ethical values, human dignity, and moral principles.",
+      page: "clubs.html",
+      id: "integrity-club",
+    },
+    {
+      type: "club",
+      name: "Film Club",
+      category: "Arts",
+      description:
+        "Movie screenings, film analysis, video editing, and short films.",
+      page: "clubs.html",
+      id: "film-club",
+    },
+    {
+      type: "club",
+      name: "Photography Club",
+      category: "Arts",
+      description: "Camera techniques, photo editing, and campus photowalks.",
+      page: "clubs.html",
+      id: "photography-club",
+    },
+    {
+      type: "club",
+      name: "Student Association Club",
+      category: "Leadership",
+      description:
+        "Represent students, organize campus events, and develop leadership.",
+      page: "clubs.html",
+      id: "student-association-club",
+    },
+    {
+      type: "club",
+      name: "IT Awareness Club",
+      category: "Technology",
+      description:
+        "Digital literacy, cybersecurity awareness, and technology trends.",
+      page: "clubs.html",
+      id: "it-awareness-club",
+    },
+    {
+      type: "club",
+      name: "Robotics Club",
+      category: "Technology",
+      description: "Robots, microcontrollers, programming, and automation.",
+      page: "clubs.html",
+      id: "robotics-club",
+    },
+    {
+      type: "club",
+      name: "Library Club",
+      category: "Education",
+      description:
+        "Reading, book reviews, study circles, and learning resources.",
+      page: "clubs.html",
+      id: "library-club",
+    },
+    {
+      type: "club",
+      name: "Aerobic Club",
+      category: "Sports",
+      description: "Cardio workouts, music fitness, and group exercise.",
+      page: "clubs.html",
+      id: "aerobic-club",
+    },
+    {
+      type: "club",
+      name: "Public Speaking Club",
+      category: "Education",
+      description: "Communication, speech delivery, confidence, and debate.",
+      page: "clubs.html",
+      id: "public-speaking-club",
+    },
+    {
+      type: "club",
+      name: "Web Club",
+      category: "Technology",
+      description:
+        "Frontend and backend web development and collaborative projects.",
+      page: "clubs.html",
+      id: "web-club",
+    },
+    {
+      type: "club",
+      name: "Gender Awareness Club",
+      category: "Community",
+      description: "Gender equality, inclusivity, and respectful dialogue.",
+      page: "clubs.html",
+      id: "gender-awareness-club",
+    },
+    {
+      type: "event",
+      name: "Campus Sports & Fitness Showcase",
+      category: "Sports",
+      description:
+        "Sports showcase with team games, fitness activities, and tournaments.",
+      page: "events.html",
+      id: "sport",
+    },
+    {
+      type: "event",
+      name: "Culinary Masterclass & Taste Workshop",
+      category: "Cooking",
+      description: "A hands-on cooking masterclass and taste workshop.",
+      page: "events.html",
+      id: "cooking",
+    },
+    {
+      type: "event",
+      name: "Acoustic Jam Night & Open Mic",
+      category: "Music",
+      description: "Live acoustic performances and an open mic for students.",
+      page: "events.html",
+      id: "music",
+    },
+    {
+      type: "event",
+      name: "Morning Sunrise Yoga & Mindfulness Flow",
+      category: "Yoga",
+      description:
+        "A sunrise yoga session focused on flexibility and wellbeing.",
+      page: "events.html",
+      id: "yoga",
+    },
+  ];
 
-    const searchForm = document.getElementById("searchForm");
-    const searchInput = document.getElementById("searchInput");
+  const searchForm = document.getElementById("searchForm");
+  const searchInput = document.getElementById("searchInput");
 
-    if (!searchForm || !searchInput) return;
+  if (!searchForm || !searchInput) return;
 
-    const searchWrapper = searchInput.parentElement || searchInput.closest("div");
-    if (!searchWrapper) return;
+  const searchWrapper = searchInput.parentElement || searchInput.closest("div");
+  if (!searchWrapper) return;
 
-    const resultsBox = document.createElement("div");
-    resultsBox.id = "searchResults";
-    resultsBox.className = [
-        "absolute",
-        "top-full",
-        "left-0",
-        "right-0",
-        "mt-2",
-        "bg-gray-100",
-        "rounded-sm",
-        "shadow-lg",
-        "border",
-        "border-gray-200",
-        "z-50",
-        "hidden",
-        "max-h-48",
-        "overflow-y-auto"
-    ].join(" ");
-    resultsBox.setAttribute("role", "listbox");
-    resultsBox.setAttribute("aria-live", "polite");
+  const resultsBox = document.createElement("div");
+  resultsBox.id = "searchResults";
+  resultsBox.className = [
+    "absolute",
+    "top-full",
+    "left-0",
+    "right-0",
+    "mt-2",
+    "bg-gray-100",
+    "rounded-sm",
+    "shadow-lg",
+    "border",
+    "border-gray-200",
+    "z-50",
+    "hidden",
+    "max-h-48",
+    "overflow-y-auto",
+  ].join(" ");
+  resultsBox.setAttribute("role", "listbox");
+  resultsBox.setAttribute("aria-live", "polite");
 
-    searchWrapper.classList.add("relative");
-    searchWrapper.appendChild(resultsBox);
+  searchWrapper.classList.add("relative");
+  searchWrapper.appendChild(resultsBox);
 
-    function normalizeText(value) {
-        return String(value ?? "")
-            .toLowerCase()
-            .trim()
-            .replace(/\s+/g, " ");
-    }
+  function normalizeText(value) {
+    return String(value ?? "")
+      .toLowerCase()
+      .trim()
+      .replace(/\s+/g, " ");
+  }
 
-    function escapeHtml(value) {
-        return String(value)
-            .replace(/&/g, "&amp;")
-            .replace(/</g, "&lt;")
-            .replace(/>/g, "&gt;")
-            .replace(/\"/g, "&quot;")
-            .replace(/'/g, "&#039;");
-    }
+  function escapeHtml(value) {
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/\"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
 
-    function escapeRegExp(value) {
-        return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    }
+  function escapeRegExp(value) {
+    return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
 
-    function highlightMatch(text, keyword) {
-        const safeText = escapeHtml(text);
-        if (!keyword) return safeText;
+  function highlightMatch(text, keyword) {
+    const safeText = escapeHtml(text);
+    if (!keyword) return safeText;
 
-        const pattern = new RegExp(`(${escapeRegExp(keyword)})`, "gi");
-        return safeText.replace(pattern, '<mark class="bg-indigo-100 text-indigo-700 rounded px-0.5">$1</mark>');
-    }
+    const pattern = new RegExp(`(${escapeRegExp(keyword)})`, "gi");
+    return safeText.replace(
+      pattern,
+      '<mark class="bg-indigo-100 text-indigo-700 rounded px-0.5">$1</mark>',
+    );
+  }
 
-    function getSearchableText(item) {
-        return [
-            item.name,
-            item.category,
-            item.description,
-            item.activities,
-            item.date || ""
-        ].join(" ").toLowerCase();
-    }
+  function getSearchableText(item) {
+    return [item.name, item.category, item.description].join(" ").toLowerCase();
+  }
 
-    function hideResults() {
-        resultsBox.innerHTML = "";
-        resultsBox.classList.add("hidden");
-    }
+  function hideResults() {
+    resultsBox.innerHTML = "";
+    resultsBox.classList.add("hidden");
+  }
 
-    function renderResults(results, keyword) {
-        resultsBox.innerHTML = "";
+  function renderResults(results, keyword) {
+    resultsBox.innerHTML = "";
 
-        if (results.length === 0) {
-            resultsBox.innerHTML = `
+    if (results.length === 0) {
+      resultsBox.innerHTML = `
                 <div class="p-4 text-center flex flex-col items-center justify-center">
                     
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
@@ -273,126 +373,154 @@ function initSearchSystem() {
                     </p>
                 </div>
             `;
-            resultsBox.classList.remove("hidden");
-            return;
-        }
+      resultsBox.classList.remove("hidden");
+      return;
+    }
 
-        const header = document.createElement("div");
-        header.className = "px-3 py-2 bg-gray-50 border-b border-gray-100";
-        header.innerHTML = `
+    const header = document.createElement("div");
+    header.className = "px-3 py-2 bg-gray-50 border-b border-gray-100";
+    header.innerHTML = `
             <div class="flex items-center justify-between">
                 <span class="text-[10px] font-bold text-gray-500 uppercase tracking-wide">Search Results</span>
                 <span class="text-[10px] text-gray-400">${results.length}</span>
             </div>
         `;
-        resultsBox.appendChild(header);
+    resultsBox.appendChild(header);
 
-        results.forEach((item) => {
-            const link = document.createElement("a");
-            link.href = item.page;
-            link.className = "flex items-center justify-between gap-3 px-3 py-2.5 hover:bg-indigo-50 transition border-b border-gray-100 last:border-b-0";
+    results.forEach((item) => {
+      const link = document.createElement("a");
+      link.href = `${item.page}#${item.id}`;
+      link.className =
+        "flex items-center justify-between gap-3 px-3 py-2.5 hover:bg-indigo-50 transition border-b border-gray-100 last:border-b-0";
 
-            link.innerHTML = `
+      link.innerHTML = `
                 <div class="flex items-center gap-2 min-w-0">
                     <span class="text-sm font-semibold text-gray-800 truncate">${highlightMatch(item.name, keyword)}</span>
+                    <span class="shrink-0 text-[10px] uppercase text-gray-500">${item.type}</span>
                 </div>
                 <span class="text-gray-400 text-lg leading-none">→</span>
             `;
 
-            resultsBox.appendChild(link);
-        });
+      link.addEventListener("click", () => {
+        if (!window.location.pathname.endsWith(item.page)) return;
 
-        resultsBox.classList.remove("hidden");
+        if (item.type === "club") {
+          const clubFilter = document.getElementById("clubFilter");
+          if (clubFilter) {
+            clubFilter.value = "All";
+            clubFilter.dispatchEvent(new Event("change"));
+          }
+        } else {
+          document.querySelector('.filter-btn[data-category="All"]')?.click();
+        }
+      });
+
+      resultsBox.appendChild(link);
+    });
+
+    resultsBox.classList.remove("hidden");
+  }
+
+  function performSearch(keyword) {
+    const normalizedKeyword = normalizeText(keyword);
+
+    if (!normalizedKeyword) {
+      hideResults();
+      return;
     }
 
-    function performSearch(keyword) {
-        const normalizedKeyword = normalizeText(keyword);
+    const results = searchData.filter((item) =>
+      getSearchableText(item).includes(normalizedKeyword),
+    );
+    renderResults(results, normalizedKeyword);
+  }
 
-        if (!normalizedKeyword) {
-            hideResults();
-            return;
-        }
+  searchInput.addEventListener("input", (event) => {
+    performSearch(event.target.value);
+  });
 
-        const results = searchData.filter((item) => getSearchableText(item).includes(normalizedKeyword));
-        renderResults(results, normalizedKeyword);
+  searchForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    performSearch(searchInput.value);
+  });
+
+  searchInput.addEventListener("focus", () => {
+    if (searchInput.value.trim()) {
+      performSearch(searchInput.value);
     }
+  });
 
-    searchInput.addEventListener("input", (event) => {
-        performSearch(event.target.value);
-    });
+  searchInput.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      hideResults();
+      searchInput.blur();
+    }
+  });
 
-    searchForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-        performSearch(searchInput.value);
-    });
-
-    searchInput.addEventListener("focus", () => {
-        if (searchInput.value.trim()) {
-            performSearch(searchInput.value);
-        }
-    });
-
-    searchInput.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
-            hideResults();
-            searchInput.blur();
-        }
-    });
-
-    document.addEventListener("click", (event) => {
-        if (!searchWrapper.contains(event.target)) {
-            hideResults();
-        }
-    });
+  document.addEventListener("click", (event) => {
+    if (!searchWrapper.contains(event.target)) {
+      hideResults();
+    }
+  });
 }
 
 function initClubFilter() {
-    const clubFilter = document.getElementById("clubFilter");
-    if (!clubFilter) return;
+  const clubFilter = document.getElementById("clubFilter");
+  if (!clubFilter) return;
 
-    clubFilter.addEventListener("change", function () {
-        const selectedCategory = this.value;
-        const clubCards = document.querySelectorAll(".club-card");
+  clubFilter.addEventListener("change", function () {
+    const selectedClubId = this.value;
+    const clubCards = document.querySelectorAll(".club-card");
 
-        clubCards.forEach((card) => {
-            const category = card.dataset.category || "";
-            const shouldShow = selectedCategory === "All" || category === selectedCategory;
-            card.classList.toggle("hidden", !shouldShow);
-        });
+    clubCards.forEach((card) => {
+      const shouldShow = selectedClubId === "All" || card.id === selectedClubId;
+      card.classList.toggle("hidden", !shouldShow);
     });
+  });
 }
 
 function initEventFilters() {
-    const buttons = document.querySelectorAll(".filter-btn");
-    if (!buttons.length) return;
+  const buttons = document.querySelectorAll(".filter-btn");
+  if (!buttons.length) return;
 
-    const cards = document.querySelectorAll(".event-card");
+  const cards = document.querySelectorAll(".event-card");
 
-    buttons.forEach((button) => {
-        button.addEventListener("click", function () {
-            buttons.forEach((btn) => {
-                btn.classList.remove("bg-[#4C4DFF]", "text-white", "shadow-md");
-                btn.classList.add("bg-white", "text-gray-700", "border", "border-gray-300");
-            });
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      buttons.forEach((btn) => {
+        btn.classList.remove("bg-[#4C4DFF]", "text-white", "shadow-md");
+        btn.classList.add(
+          "bg-white",
+          "text-gray-700",
+          "border",
+          "border-gray-300",
+        );
+      });
 
-            this.classList.remove("bg-white", "text-gray-700", "border", "border-gray-300");
-            this.classList.add("bg-[#4C4DFF]", "text-white", "shadow-md");
+      this.classList.remove(
+        "bg-white",
+        "text-gray-700",
+        "border",
+        "border-gray-300",
+      );
+      this.classList.add("bg-[#4C4DFF]", "text-white", "shadow-md");
 
-            const selectedCategory = this.getAttribute("data-category");
+      const selectedCategory = this.getAttribute("data-category");
 
-            cards.forEach((card) => {
-                const cardCategory = card.getAttribute("data-category");
-                const shouldShow = selectedCategory === "All" || cardCategory === selectedCategory;
-                card.style.display = shouldShow ? "block" : "none";
-            });
-        });
+      cards.forEach((card) => {
+        const cardCategory = card.getAttribute("data-category");
+        const shouldShow =
+          selectedCategory === "All" || cardCategory === selectedCategory;
+        card.style.display = shouldShow ? "block" : "none";
+      });
     });
+  });
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    initClubJoinForm();
-    initAboutContactForm();
-    initSearchSystem();
-    initClubFilter();
-    initEventFilters();
+  initClubJoinForm();
+  initAboutContactForm();
+  initSearchSystem();
+  initClubFilter();
+  initEventFilters();
 });

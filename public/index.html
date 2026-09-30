@@ -1,621 +1,894 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Student Clubs">
-    <meta name="theme-color" content="#111827">
-    <meta name="description" content="Find the best student clubs, campus activities, and university events at Student Clubs. Explore sports, music, cooking, yoga, and more communities for students.">
-    <meta name="keywords" content="student clubs, campus clubs, university clubs, student activities, campus events, sports club, music club, cooking club, yoga club">
-    <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Student Clubs | Campus Clubs, Events & Student Activities">
-    <meta property="og:description" content="Discover student clubs, university events, and campus communities that match your interests and lifestyle.">
-    <meta property="og:image" content="https://student-clubs-silk.vercel.app/image/website-logo.jpg">
-    <meta property="og:url" content="https://student-clubs-silk.vercel.app/">
-    <meta property="og:site_name" content="Student Clubs">
-    <meta property="og:locale" content="en_US">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Student Clubs | Campus Clubs, Events & Student Activities">
-    <meta name="twitter:description" content="Find the right student club and campus event for your university experience.">
-    <link rel="canonical" href="https://student-clubs-silk.vercel.app/">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Student Clubs" />
+    <meta name="theme-color" content="#111827" />
+    <meta
+      name="description"
+      content="Find the best student clubs, campus activities, and university events at Student Clubs. Explore sports, music, cooking, yoga, and more communities for students."
+    />
+    <meta
+      name="keywords"
+      content="student clubs, campus clubs, university clubs, student activities, campus events, sports club, music club, cooking club, yoga club"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Student Clubs | Campus Clubs, Events & Student Activities"
+    />
+    <meta
+      property="og:description"
+      content="Discover student clubs, university events, and campus communities that match your interests and lifestyle."
+    />
+    <meta
+      property="og:image"
+      content="https://student-clubs-silk.vercel.app/image/website-logo.jpg"
+    />
+    <meta property="og:url" content="https://student-clubs-silk.vercel.app/" />
+    <meta property="og:site_name" content="Student Clubs" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Student Clubs | Campus Clubs, Events & Student Activities"
+    />
+    <meta
+      name="twitter:description"
+      content="Find the right student club and campus event for your university experience."
+    />
+    <link rel="canonical" href="https://student-clubs-silk.vercel.app/" />
     <title>Student Clubs | Campus Clubs, Events & Student Activities</title>
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "Student Clubs",
-          "url": "https://student-clubs-silk.vercel.app/",
-          "logo": "https://student-clubs-silk.vercel.app/image/website-logo.jpg",
-          "description": "Student Clubs helps university students discover campus clubs, events, and student activities that build community and confidence.",
-          "areaServed": "University campus",
-          "sameAs": [
-            "https://student-clubs-silk.vercel.app/"
-          ]
-        }
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Student Clubs",
+        "url": "https://student-clubs-silk.vercel.app/",
+        "logo": "https://student-clubs-silk.vercel.app/image/website-logo.jpg",
+        "description": "Student Clubs helps university students discover campus clubs, events, and student activities that build community and confidence.",
+        "areaServed": "University campus",
+        "sameAs": ["https://student-clubs-silk.vercel.app/"]
+      }
     </script>
 
     <!-- Tailwind CSS Output -->
-    <link href="./output.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet" />
 
     <!-- Google Typography Fonts (Inter & Poppins) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Icon -->
-    <link rel="icon" type="image/jpeg" href="./image/website-logo-icon.png">
+    <link rel="icon" type="image/jpeg" href="./image/website-logo-icon.png" />
 
     <style>
-        .typing-inline {
-            display: inline-flex;
-            align-items: center;
-            min-height: 1.2em;
-        }
+      .typing-inline {
+        display: inline-flex;
+        align-items: center;
+        min-height: 1.2em;
+      }
 
-        .typing-cursor {
-            display: inline-block;
-            width: 2px;
-            height: 1em;
-            background-color: #ffffff;
-            margin-left: 4px;
-            animation: typing-blink 0.8s step-end infinite;
-            vertical-align: middle;
-        }
+      .typing-cursor {
+        display: inline-block;
+        width: 2px;
+        height: 1em;
+        background-color: #ffffff;
+        margin-left: 4px;
+        animation: typing-blink 0.8s step-end infinite;
+        vertical-align: middle;
+      }
 
-        @keyframes typing-blink {
-            0%, 50% { opacity: 1; }
-            50.01%, 100% { opacity: 0; }
+      @keyframes typing-blink {
+        0%,
+        50% {
+          opacity: 1;
         }
+        50.01%,
+        100% {
+          opacity: 0;
+        }
+      }
     </style>
+  </head>
 
-</head>
-
-<body class="font-['Inter',sans-serif] bg-gray-50 text-gray-900 min-h-screen flex flex-col">
-
-
+  <body
+    class="font-['Inter',sans-serif] bg-gray-50 text-gray-900 min-h-screen flex flex-col"
+  >
     <!-- NAVIGATION HEADER                          -->
 
     <header
-        class="sticky top-0 z-50 px-4 sm:px-8 md:px-16 py-4 bg-[#111827]/90 backdrop-blur-md border-b border-white/10">
-        <nav class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      class="sticky top-0 z-50 px-4 sm:px-8 md:px-8 lg:px-16 py-4 bg-[#111827]/90 backdrop-blur-md border-b border-white/10"
+    >
+      <nav class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+        <!-- Brand Logo & Title -->
+        <a href="index.html" class="flex items-center gap-3 group shrink-0">
+          <div
+            class="w-10 h-10 rounded-full bg-linear-to-br from-[#FFA500] to-indigo-500 p-0.5 transition-transform duration-300 group-hover:scale-105 flex items-center justify-center"
+          >
+            <img
+              class="w-9 h-9 rounded-full object-cover"
+              src="./image/website-logo.jpg"
+              alt="Student Club Logo"
+            />
+          </div>
+          <h3 class="font-bold text-xl sm:text-2xl text-white tracking-wide">
+            Student <span class="text-blue-500">Clubs</span>
+          </h3>
+        </a>
 
-            <!-- Brand Logo & Title -->
-            <a href="index.html" class="flex items-center gap-3 group shrink-0">
-                <div
-                    class="w-10 h-10 rounded-full bg-linear-to-br from-[#FFA500] to-indigo-500 p-0.5 transition-transform duration-300 group-hover:scale-105 flex items-center justify-center">
-                    <img class="w-9 h-9 rounded-full object-cover" src="./image/website-logo.jpg"
-                        alt="Student Club Logo">
-                </div>
-                <h3 class="font-bold text-xl sm:text-2xl text-white tracking-wide">
-                    Student <span class="text-blue-500">Clubs</span>
-                </h3>
-            </a>
+        <!-- Mobile Navigation Toggle (Hamburger Menu) -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+        <label
+          for="menu-toggle"
+          class="md:hidden cursor-pointer text-gray-300 hover:text-white p-2"
+          aria-label="Toggle Navigation Menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </label>
 
-            <!-- Mobile Navigation Toggle (Hamburger Menu) -->
-            <input type="checkbox" id="menu-toggle" class="peer hidden">
-            <label for="menu-toggle" class="sm:hidden cursor-pointer text-gray-300 hover:text-white p-2"
-                aria-label="Toggle Navigation Menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
-            </label>
+        <!-- Navigation Links -->
+        <ul
+          class="peer-checked:flex hidden flex-col md:flex md:flex-row gap-2 md:gap-6 lg:gap-8 items-center absolute md:relative top-full left-0 w-full md:w-auto bg-[#111827] md:bg-transparent p-6 md:p-0 border-b border-white/10 md:border-none shadow-2xl md:shadow-none transition-all duration-300 z-50"
+        >
+          <!-- Home Link (Active Page Indicator) -->
+          <li class="relative group py-2">
+            <a
+              href="index.html"
+              class="text-white font-medium text-[16px] transition-colors duration-300"
+              >Home</a
+            >
+            <span
+              class="absolute bottom-0 left-0 w-full h-0.5 bg-[#FFA500] rounded-full shadow-[0_0_8px_#FFA500]"
+            ></span>
+          </li>
 
-            <!-- Navigation Links -->
-            <ul
-                class="peer-checked:flex hidden flex-col sm:flex sm:flex-row gap-2 sm:gap-6 lg:gap-8 items-center absolute sm:relative top-full left-0 w-full sm:w-auto bg-[#111827] sm:bg-transparent p-6 sm:p-0 border-b border-white/10 sm:border-none shadow-2xl sm:shadow-none transition-all duration-300 z-50">
-                <!-- Home Link (Active Page Indicator) -->
-                <li class="relative group py-2">
-                    <a href="index.html"
-                        class="text-white font-medium text-[16px] transition-colors duration-300">Home</a>
-                    <span
-                        class="absolute bottom-0 left-0 w-full h-0.5 bg-[#FFA500] rounded-full shadow-[0_0_8px_#FFA500]"></span>
-                </li>
+          <!-- Clubs Link -->
+          <li class="relative group py-2">
+            <a
+              href="clubs.html"
+              class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300"
+              >Clubs</a
+            >
+            <span
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"
+            ></span>
+          </li>
 
-                <!-- Clubs Link -->
-                <li class="relative group py-2">
-                    <a href="clubs.html"
-                        class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300">Clubs</a>
-                    <span
-                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"></span>
-                </li>
+          <!-- Events Link -->
+          <li class="relative group py-2">
+            <a
+              href="events.html"
+              class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300"
+              >Events</a
+            >
+            <span
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"
+            ></span>
+          </li>
 
-                <!-- Events Link -->
-                <li class="relative group py-2">
-                    <a href="events.html"
-                        class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300">Events</a>
-                    <span
-                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"></span>
-                </li>
+          <!-- About Link -->
+          <li class="relative group py-2">
+            <a
+              href="about.html"
+              class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300"
+              >About</a
+            >
+            <span
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"
+            ></span>
+          </li>
+        </ul>
 
-                <!-- About Link -->
-                <li class="relative group py-2">
-                    <a href="about.html"
-                        class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300">About</a>
-                    <span
-                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"></span>
-                </li>
-            </ul>
+        <!-- Search Input Field -->
+        <div class="hidden lg:block relative w-40 md:w-52 lg:w-64">
+          <form id="searchForm">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search..."
+              autocomplete="off"
+              class="w-full px-4 py-2 pr-10 text-xs sm:text-sm text-gray-200 bg-[#161b22] rounded-full border border-gray-700/60 outline-none transition-all duration-300 placeholder:text-gray-500 focus:border-[#FFA500] focus:ring-1 focus:ring-[#FFA500]/40 focus:shadow-[0_0_12px_rgba(255,165,0,0.3)]"
+            />
 
-            <!-- Search Input Field -->
-            <div class="hidden lg:block relative w-40 md:w-52 lg:w-64">
-
-                <form id="searchForm">
-
-                    <input type="text" id="searchInput" placeholder="Search..." autocomplete="off"
-                        class="w-full px-4 py-2 pr-10 text-xs sm:text-sm text-gray-200 bg-[#161b22] rounded-full border border-gray-700/60 outline-none transition-all duration-300 placeholder:text-gray-500 focus:border-[#FFA500] focus:ring-1 focus:ring-[#FFA500]/40 focus:shadow-[0_0_12px_rgba(255,165,0,0.3)]">
-
-                    <!-- Search Button -->
-                    <button type="submit" id="searchBtn" aria-label="Search"
-                        class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#FFA500] transition-colors duration-200 cursor-pointer p-1">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                        </svg>
-
-                    </button>
-
-                </form>
-
-            </div>
-            <!-- Primary Call-To-Action -->
-            <a href="clubs.html#contact-form"
-                class="hidden sm:inline-flex items-center gap-2 bg-linear-to-br from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white font-semibold text-[15px] px-5 py-2 rounded-full shadow-[0_0_15px_rgba(255,165,0,0.3)] transition-all duration-300 hover:scale-105 active:scale-95">
-                Join Now &rarr;
-            </a>
-
-        </nav>
+            <!-- Search Button -->
+            <button
+              type="submit"
+              id="searchBtn"
+              aria-label="Search"
+              class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#FFA500] transition-colors duration-200 cursor-pointer p-1"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <!-- Primary Call-To-Action -->
+        <a
+          href="clubs.html#contact-form"
+          class="hidden md:inline-flex items-center gap-2 bg-linear-to-br from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white font-semibold text-[15px] px-5 py-2 rounded-full shadow-[0_0_15px_rgba(255,165,0,0.3)] transition-all duration-300 hover:scale-105 active:scale-95"
+        >
+          Join Now &rarr;
+        </a>
+      </nav>
     </header>
-
 
     <!-- MAIN CONTENT AREA                          -->
 
     <main class="grow">
+      <!-- HERO SECTION -->
+      <section
+        class="relative min-h-125 bg-[url('./image/banner-home-page.jpg')] bg-cover bg-center px-4 sm:px-8 md:px-8 lg:px-16 py-8 sm:py-12 flex flex-col justify-center text-white overflow-hidden"
+      >
+        <!-- Background Dark Overlay -->
+        <div class="absolute inset-0 bg-black/45 z-0"></div>
 
-        <!-- HERO SECTION -->
-        <section
-            class="relative min-h-125 bg-[url('./image/banner-home-page.jpg')] bg-cover bg-center px-6 sm:px-12 md:px-16 py-8 sm:py-12 flex flex-col justify-center text-white overflow-hidden">
-            <!-- Background Dark Overlay -->
-            <div class="absolute inset-0 bg-black/45 z-0"></div>
-
-            <!-- Hero Banner Content -->
-            <div class="relative z-10 max-w-2xl space-y-2">
-                <p class="text-[#FFA500] font-bold text-sm sm:text-base tracking-widest uppercase">
-                    JOIN <span class="text-white">•</span> LEARN <span class="text-white">•</span> GROW
-                </p>
-
-                <h1
-                    class="font-['Poppins',sans-serif] font-bold text-3xl sm:text-4xl md:text-5xl text-white leading-tight">
-                    Discover Your<br>
-                    <span class="typing-inline text-[#4C4DFF]">
-                        <span id="typed-text"></span><span class="typing-cursor" aria-hidden="true"></span>
-                    </span>
-                </h1>
-
-                <p class="text-gray-300 text-base sm:text-lg max-w-lg leading-relaxed">
-                    Find clubs, activities, and events on campus.
-                </p>
-
-                <!-- Hero Action Buttons -->
-                <div class="flex flex-wrap gap-4 pt-4">
-                    <a href="clubs.html"
-                        class="inline-block bg-[#FFA500] hover:bg-orange-600 text-white font-bold px-8 py-3 rounded-full transition-all duration-300 shadow-lg hover:scale-105 active:scale-95">
-                        Explore Clubs
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- FEATURED CLUBS SECTION -->
-        <section class="max-w-7xl mx-auto py-16 px-3 sm:px-8 md:px-16">
-            <div class="flex justify-between items-center mb-6">
-                <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-gray-900">Featured Clubs</h2>
-                <a href="clubs.html" class="text-[#4C4DFF] font-medium text-sm hover:underline">View All Clubs
-                    &rarr;</a>
-            </div>
-            <!-- Grid Container (4 Columns Layout) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-
-                <!-- Featured Club Card 1: Sport Club -->
-                <article
-                    class="bg-white rounded-2xl border border-[#4C4DFF]/20 p-2 flex flex-col justify-between shadow-sm hover:shadow-lg transition-all duration-300">
-                    <div class="relative mb-8">
-                        <img class="w-full h-40 object-cover object-center rounded-xl" src="./image/volleyball.jpg"
-                            alt="Sport Club Banner">
-                        <div class="absolute -bottom-6 left-6 p-1 bg-white rounded-full shadow-md">
-                            <img class="w-12 h-12 rounded-full object-cover" src="./image/sport-logo.png"
-                                alt="Sport Club Logo">
-                        </div>
-                    </div>
-                    <div class="space-y-2 px-2">
-                        <h3 class="text-xl font-bold text-[#4C4DFF]">Sport Club</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">
-                            Stay active, build teamwork skills, and participate in fun campus sports activities.
-                        </p>
-                    </div>
-                    <div class="mt-6 pt-2 text-center">
-                        <a href="clubs.html#sport-club"
-                            class="mb-4 block items-center justify-center gap-1 w-full py-2.5 px-4 text-[#4C4DFF] font-semibold text-sm border border-[#4C4DFF]/40 rounded-full hover:bg-[#4C4DFF] hover:text-white transition-all duration-300">
-                            View Details &rarr;
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Featured Club Card 2: Cooking Club -->
-                <article
-                    class="bg-white rounded-2xl border border-[#4C4DFF]/20 p-2 flex flex-col justify-between shadow-sm hover:shadow-lg transition-all duration-300">
-                    <div class="relative mb-8">
-                        <img class="w-full h-40 object-cover object-center rounded-xl" src="./image/cooking-event.jpg"
-                            alt="Cooking Club Banner">
-                        <div class="absolute -bottom-6 left-6 p-1 bg-white rounded-full shadow-md">
-                            <img class="w-12 h-12 rounded-full object-cover" src="./image/cooking-logo.png"
-                                alt="Cooking Club Logo">
-                        </div>
-                    </div>
-                    <div class="space-y-2 px-2">
-                        <h3 class="text-xl font-bold text-[#4C4DFF]">Cooking Club</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">
-                            Explore recipes, cook together, and enjoy great food.
-                        </p>
-                    </div>
-                    <div class="mt-6 pt-2 text-center">
-                        <a href="clubs.html#cooking"
-                            class="mb-4 block items-center justify-center gap-1 w-full py-2.5 px-4 text-[#4C4DFF] font-semibold text-sm border border-[#4C4DFF]/40 rounded-full hover:bg-[#4C4DFF] hover:text-white transition-all duration-300">
-                            View Details &rarr;
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Featured Club Card 3: Music Club -->
-                <article
-                    class="bg-white rounded-2xl border border-[#4C4DFF]/20 p-2 flex flex-col justify-between shadow-sm hover:shadow-lg transition-all duration-300">
-                    <div class="relative mb-8">
-                        <img class="w-full h-40 object-cover object-center rounded-xl" src="./image/music-banner.jpg"
-                            alt="Music Club Banner">
-                        <div class="absolute -bottom-6 left-6 p-1 bg-white rounded-full shadow-md">
-                            <img class="w-12 h-12 rounded-full object-cover" src="./image/music-logo.png"
-                                alt="Music Club Logo">
-                        </div>
-                    </div>
-                    <div class="space-y-2 px-2">
-                        <h3 class="text-xl font-bold text-[#4C4DFF]">Music Club</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">
-                            Perform live, collaborate on jams, and connect with fellow musicians across all genres.
-                        </p>
-                    </div>
-                    <div class="mt-6 pt-2 text-center">
-                        <a href="clubs.html#music"
-                            class="mb-4 block items-center justify-center gap-1 w-full py-2.5 px-4 text-[#4C4DFF] font-semibold text-sm border border-[#4C4DFF]/40 rounded-full hover:bg-[#4C4DFF] hover:text-white transition-all duration-300">
-                            View Details &rarr;
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Featured Club Card 4: Yoga Club -->
-                <article
-                    class="bg-white rounded-2xl border border-[#4C4DFF]/20 p-2 flex flex-col justify-between shadow-sm hover:shadow-lg transition-all duration-300">
-                    <div class="relative mb-8">
-                        <img class="w-full h-40 object-cover object-center rounded-xl" src="./image/yoga-event.jpg"
-                            alt="Yoga Club Banner">
-                        <div class="absolute -bottom-6 left-6 p-1 bg-white rounded-full shadow-md">
-                            <img class="w-12 h-12 rounded-full object-cover" src="./image/yoga-logo.png"
-                                alt="Yoga Club Logo">
-                        </div>
-                    </div>
-                    <div class="space-y-2 px-2">
-                        <h3 class="text-xl font-bold text-[#4C4DFF]">Yoga Club</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed">
-                            Find balance, improve flexibility, and practice mindfulness through relaxing sessions for
-                            all skill levels.
-                        </p>
-                    </div>
-                    <div class="mt-6 pt-2 text-center">
-                        <a href="clubs.html#yoga"
-                            class="mb-4 block items-center justify-center gap-1 w-full py-2.5 px-4 text-[#4C4DFF] font-semibold text-sm border border-[#4C4DFF]/40 rounded-full hover:bg-[#4C4DFF] hover:text-white transition-all duration-300">
-                            View Details &rarr;
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- UPCOMING EVENTS SECTION -->
-        <section class="max-w-7xl mx-auto py-12 px-3 sm:px-8 md:px-16">
-            <!-- Section Header with Heading and External Link -->
-            <div class="flex justify-between items-center mb-6">
-                <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-gray-900">Upcoming Events
-                </h2>
-                <a href="events.html" class="text-[#4C4DFF] font-medium text-sm hover:underline">View All Events
-                    &rarr;</a>
-            </div>
-
-            <!-- Events Grid (3 Columns Layout) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-                <!-- Event Card 1: Volleyball Friendly Match -->
-                <article
-                    class="bg-white rounded-2xl border border-gray-200/80 p-3.5 flex gap-4 shadow-xs hover:shadow-md transition-all duration-300">
-                    <img class="w-32 h-40 object-cover rounded-xl shrink-0" src="./image/volleyball.jpg"
-                        alt="Volleyball Match">
-
-                    <div class="flex flex-col justify-between grow min-w-0">
-                        <div class="space-y-1.5">
-                            <!-- Category Badges -->
-                            <div class="flex items-center gap-2 flex-wrap">
-                                <span
-                                    class="text-[11px] font-semibold text-[#FFA500] bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200/60">Oct
-                                    15</span>
-                                <span
-                                    class="text-[11px] font-semibold text-[#4C4DFF] bg-indigo-50 px-2.5 py-0.5 rounded-full border border-indigo-200/60">Sport
-                                    Club</span>
-                            </div>
-
-                            <h3 class="text-sm font-bold text-gray-900 truncate">Volleyball Friendly Match</h3>
-                            <p class="text-xs text-gray-500 leading-snug line-clamp-2">Stay Health, make friends, be
-                                healthier.</p>
-
-                            <!-- Event Metadata (Time & Location Icons) -->
-                            <div class="pt-1.5 text-[11px] text-gray-500 space-y-1">
-                                <p class="flex items-center gap-1.5">
-                                    <svg class="w-3.5 h-3.5 text-blue-400 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10" />
-                                        <polyline points="12 6 12 12 16 14" />
-                                    </svg>
-                                    <span>4:00 PM - 6:00 PM</span>
-                                </p>
-                                <p class="flex items-center gap-1.5">
-                                    <svg class="w-3.5 h-3.5 text-blue-400 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    </svg>
-                                    <span class="truncate">Campus Sports Center</span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="mt-3">
-                            <a href="events.html#sport"
-                                class="inline-flex items-center justify-center gap-1 w-full py-1.5 px-3 text-[#4C4DFF] font-semibold text-xs border border-[#4C4DFF]/40 rounded-full hover:bg-[#4C4DFF] hover:text-white transition-all duration-200">
-                                View Details &rarr;
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Event Card 2: Cooking Workshop -->
-                <article
-                    class="bg-white rounded-2xl border border-gray-200/80 p-3.5 flex gap-4 shadow-xs hover:shadow-md transition-all duration-300">
-                    <img class="w-32 h-40 object-cover rounded-xl shrink-0" src="./image/cooking-event.jpg"
-                        alt="Pasta Workshop">
-
-                    <div class="flex flex-col justify-between grow min-w-0">
-                        <div class="space-y-1.5">
-                            <div class="flex items-center gap-2 flex-wrap">
-                                <span
-                                    class="text-[11px] font-semibold text-[#FFA500] bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200/60">Oct
-                                    20</span>
-                                <span
-                                    class="text-[11px] font-semibold text-[#4C4DFF] bg-indigo-50 px-2.5 py-0.5 rounded-full border border-indigo-200/60">Cooking
-                                    Club</span>
-                            </div>
-
-                            <h3 class="text-sm font-bold text-gray-900 truncate">Savor the Taste</h3>
-                            <p class="text-xs text-gray-500 leading-snug line-clamp-2">Explore recipes, cook together,
-                                and enjoy great food.</p>
-
-                            <div class="pt-1.5 text-[11px] text-gray-500 space-y-1">
-                                <p class="flex items-center gap-1.5">
-                                    <svg class="w-3.5 h-3.5 text-blue-400 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10" />
-                                        <polyline points="12 6 12 12 16 14" />
-                                    </svg>
-                                    <span>2:00 PM - 4:00 PM</span>
-                                </p>
-                                <p class="flex items-center gap-1.5">
-                                    <svg class="w-3.5 h-3.5 text-blue-400 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    </svg>
-                                    <span class="truncate">Student Activity Kitchen</span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="mt-3">
-                            <a href="events.html#cooking"
-                                class="inline-flex items-center justify-center gap-1 w-full py-1.5 px-3 text-[#4C4DFF] font-semibold text-xs border border-[#4C4DFF]/40 rounded-full hover:bg-[#4C4DFF] hover:text-white transition-all duration-200">
-                                View Details &rarr;
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Event Card 3: Yoga Session -->
-                <article
-                    class="bg-white rounded-2xl border border-gray-200/80 p-3.5 flex gap-4 shadow-xs hover:shadow-md transition-all duration-300">
-                    <img class="w-32 h-40 object-cover rounded-xl shrink-0" src="./image/yoga-event.jpg"
-                        alt="Yoga Session">
-
-                    <div class="flex flex-col justify-between grow min-w-0">
-                        <div class="space-y-1.5">
-                            <div class="flex items-center gap-2 flex-wrap">
-                                <span
-                                    class="text-[11px] font-semibold text-[#FFA500] bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200/60">Oct
-                                    25</span>
-                                <span
-                                    class="text-[11px] font-semibold text-[#4C4DFF] bg-indigo-50 px-2.5 py-0.5 rounded-full border border-indigo-200/60">Yoga
-                                    Club</span>
-                            </div>
-
-                            <h3 class="text-sm font-bold text-gray-900 truncate">Stay Active</h3>
-                            <p class="text-xs text-gray-500 leading-snug line-clamp-2">Stay Health, make friends, be
-                                healthier.</p>
-
-                            <div class="pt-1.5 text-[11px] text-gray-500 space-y-1">
-                                <p class="flex items-center gap-1.5">
-                                    <svg class="w-3.5 h-3.5 text-blue-400 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10" />
-                                        <polyline points="12 6 12 12 16 14" />
-                                    </svg>
-                                    <span>7:30 AM - 8:30 AM</span>
-                                </p>
-                                <p class="flex items-center gap-1.5">
-                                    <svg class="w-3.5 h-3.5 text-blue-400 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    </svg>
-                                    <span class="truncate">Central Lawn</span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="mt-3">
-                            <a href="events.html#yoga"
-                                class="inline-flex items-center justify-center gap-1 w-full py-1.5 px-3 text-[#4C4DFF] font-semibold text-xs border border-[#4C4DFF]/40 rounded-full hover:bg-[#4C4DFF] hover:text-white transition-all duration-200">
-                                View Details &rarr;
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- MISSION STATEMENT SECTION -->
-        <section class="max-w-4xl mx-auto py-16 px-6 text-center space-y-6">
-            <h2 class="font-['Poppins',sans-serif] text-3xl font-bold text-gray-900">Our Mission</h2>
-            <p class="text-gray-600 text-lg leading-relaxed">
-                To build a connected campus community by making every club easy to discover and every event easy to
-                join,
-                so that no student misses out simply because information was hard to find.
+        <!-- Hero Banner Content -->
+        <div class="relative z-10 w-full max-w-7xl mx-auto">
+          <div class="max-w-2xl space-y-2">
+            <p
+              class="text-[#FFA500] font-bold text-sm sm:text-base tracking-widest uppercase"
+            >
+              JOIN <span class="text-white">•</span> LEARN
+              <span class="text-white">•</span> GROW
             </p>
-            <a href="about.html"
-                class="inline-block text-[#4C4DFF] font-semibold border-b-2 border-[#4C4DFF] hover:text-indigo-800 hover:border-indigo-800 transition">
-                Read Our Story
-            </a>
-        </section>
 
+            <h1
+              class="font-['Poppins',sans-serif] font-bold text-3xl sm:text-4xl md:text-5xl text-white leading-tight"
+            >
+              Discover Your<br />
+              <span class="typing-inline text-[#4C4DFF]">
+                <span id="typed-text"></span
+                ><span class="typing-cursor" aria-hidden="true"></span>
+              </span>
+            </h1>
+
+            <p
+              class="text-gray-300 text-base sm:text-lg max-w-lg leading-relaxed"
+            >
+              Find clubs, activities, and events on campus.
+            </p>
+
+            <!-- Hero Action Buttons -->
+            <div class="flex flex-wrap gap-4 pt-4">
+              <a
+                href="clubs.html"
+                class="inline-block bg-[#FFA500] hover:bg-orange-600 text-white font-bold px-8 py-3 rounded-full transition-all duration-300 shadow-lg hover:scale-105 active:scale-95"
+              >
+                Explore Clubs
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED CLUBS SECTION -->
+      <section class="px-4 sm:px-8 md:px-8 lg:px-16 py-16">
+        <div class="max-w-7xl mx-auto">
+          <div class="flex justify-between items-center mb-6">
+            <h2
+              class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-gray-900"
+            >
+              Featured Clubs
+            </h2>
+            <a
+              href="clubs.html"
+              class="text-[#4C4DFF] font-medium text-sm hover:underline"
+              >View All Clubs &rarr;</a
+            >
+          </div>
+          <!-- Grid Container (4 Columns Layout) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Featured Club Card 1: Sport Club -->
+            <article
+              class="bg-white rounded-2xl border border-[#4C4DFF]/20 p-2 flex flex-col justify-between shadow-sm hover:shadow-lg transition-all duration-300"
+            >
+              <div class="relative mb-8">
+                <img
+                  class="w-full h-40 object-cover object-center rounded-xl"
+                  src="./image/volleyball.jpg"
+                  alt="Sport Club Banner"
+                />
+                <div
+                  class="absolute -bottom-6 left-6 p-1 bg-white rounded-full shadow-md"
+                >
+                  <img
+                    class="w-12 h-12 rounded-full object-cover"
+                    src="./image/sport-logo.png"
+                    alt="Sport Club Logo"
+                  />
+                </div>
+              </div>
+              <div class="space-y-2 px-2">
+                <h3 class="text-xl font-bold text-[#4C4DFF]">Sport Club</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                  Stay active, build teamwork skills, and participate in fun
+                  campus sports activities.
+                </p>
+              </div>
+              <div class="mt-6 pt-2 text-center">
+                <a
+                  href="clubs.html#sport-club"
+                  class="mb-4 block items-center justify-center gap-1 w-full py-2.5 px-4 text-[#4C4DFF] font-semibold text-sm border border-[#4C4DFF]/40 rounded-full hover:bg-[#4C4DFF] hover:text-white transition-all duration-300"
+                >
+                  View Details &rarr;
+                </a>
+              </div>
+            </article>
+
+            <!-- Featured Club Card 2: Cooking Club -->
+            <article
+              class="bg-white rounded-2xl border border-[#4C4DFF]/20 p-2 flex flex-col justify-between shadow-sm hover:shadow-lg transition-all duration-300"
+            >
+              <div class="relative mb-8">
+                <img
+                  class="w-full h-40 object-cover object-center rounded-xl"
+                  src="./image/cooking-event.jpg"
+                  alt="Cooking Club Banner"
+                />
+                <div
+                  class="absolute -bottom-6 left-6 p-1 bg-white rounded-full shadow-md"
+                >
+                  <img
+                    class="w-12 h-12 rounded-full object-cover"
+                    src="./image/cooking-logo.png"
+                    alt="Cooking Club Logo"
+                  />
+                </div>
+              </div>
+              <div class="space-y-2 px-2">
+                <h3 class="text-xl font-bold text-[#4C4DFF]">Cooking Club</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                  Explore recipes, cook together, and enjoy great food.
+                </p>
+              </div>
+              <div class="mt-6 pt-2 text-center">
+                <a
+                  href="clubs.html#cooking"
+                  class="mb-4 block items-center justify-center gap-1 w-full py-2.5 px-4 text-[#4C4DFF] font-semibold text-sm border border-[#4C4DFF]/40 rounded-full hover:bg-[#4C4DFF] hover:text-white transition-all duration-300"
+                >
+                  View Details &rarr;
+                </a>
+              </div>
+            </article>
+
+            <!-- Featured Club Card 3: Music Club -->
+            <article
+              class="bg-white rounded-2xl border border-[#4C4DFF]/20 p-2 flex flex-col justify-between shadow-sm hover:shadow-lg transition-all duration-300"
+            >
+              <div class="relative mb-8">
+                <img
+                  class="w-full h-40 object-cover object-center rounded-xl"
+                  src="./image/music-banner.jpg"
+                  alt="Music Club Banner"
+                />
+                <div
+                  class="absolute -bottom-6 left-6 p-1 bg-white rounded-full shadow-md"
+                >
+                  <img
+                    class="w-12 h-12 rounded-full object-cover"
+                    src="./image/music-logo.png"
+                    alt="Music Club Logo"
+                  />
+                </div>
+              </div>
+              <div class="space-y-2 px-2">
+                <h3 class="text-xl font-bold text-[#4C4DFF]">Music Club</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                  Perform live, collaborate on jams, and connect with fellow
+                  musicians across all genres.
+                </p>
+              </div>
+              <div class="mt-6 pt-2 text-center">
+                <a
+                  href="clubs.html#music"
+                  class="mb-4 block items-center justify-center gap-1 w-full py-2.5 px-4 text-[#4C4DFF] font-semibold text-sm border border-[#4C4DFF]/40 rounded-full hover:bg-[#4C4DFF] hover:text-white transition-all duration-300"
+                >
+                  View Details &rarr;
+                </a>
+              </div>
+            </article>
+
+            <!-- Featured Club Card 4: Yoga Club -->
+            <article
+              class="bg-white rounded-2xl border border-[#4C4DFF]/20 p-2 flex flex-col justify-between shadow-sm hover:shadow-lg transition-all duration-300"
+            >
+              <div class="relative mb-8">
+                <img
+                  class="w-full h-40 object-cover object-center rounded-xl"
+                  src="./image/yoga-event.jpg"
+                  alt="Yoga Club Banner"
+                />
+                <div
+                  class="absolute -bottom-6 left-6 p-1 bg-white rounded-full shadow-md"
+                >
+                  <img
+                    class="w-12 h-12 rounded-full object-cover"
+                    src="./image/yoga-logo.png"
+                    alt="Yoga Club Logo"
+                  />
+                </div>
+              </div>
+              <div class="space-y-2 px-2">
+                <h3 class="text-xl font-bold text-[#4C4DFF]">Yoga Club</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                  Find balance, improve flexibility, and practice mindfulness
+                  through relaxing sessions for all skill levels.
+                </p>
+              </div>
+              <div class="mt-6 pt-2 text-center">
+                <a
+                  href="clubs.html#yoga"
+                  class="mb-4 block items-center justify-center gap-1 w-full py-2.5 px-4 text-[#4C4DFF] font-semibold text-sm border border-[#4C4DFF]/40 rounded-full hover:bg-[#4C4DFF] hover:text-white transition-all duration-300"
+                >
+                  View Details &rarr;
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- UPCOMING EVENTS SECTION -->
+      <section class="px-4 sm:px-8 md:px-8 lg:px-16 py-12">
+        <div class="max-w-7xl mx-auto">
+          <!-- Section Header with Heading and External Link -->
+          <div class="flex justify-between items-center mb-6">
+            <h2
+              class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-gray-900"
+            >
+              Upcoming Events
+            </h2>
+            <a
+              href="events.html"
+              class="text-[#4C4DFF] font-medium text-sm hover:underline"
+              >View All Events &rarr;</a
+            >
+          </div>
+
+          <!-- Events Grid (3 Columns Layout) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Event Card 1: Volleyball Friendly Match -->
+            <article
+              class="bg-white rounded-2xl border border-gray-200/80 p-3.5 flex gap-4 shadow-xs hover:shadow-md transition-all duration-300"
+            >
+              <img
+                class="w-32 h-40 object-cover rounded-xl shrink-0"
+                src="./image/volleyball.jpg"
+                alt="Volleyball Match"
+              />
+
+              <div class="flex flex-col justify-between grow min-w-0">
+                <div class="space-y-1.5">
+                  <!-- Category Badges -->
+                  <div class="flex items-center gap-2 flex-wrap">
+                    <span
+                      class="text-[11px] font-semibold text-[#FFA500] bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200/60"
+                      >Oct 15</span
+                    >
+                    <span
+                      class="text-[11px] font-semibold text-[#4C4DFF] bg-indigo-50 px-2.5 py-0.5 rounded-full border border-indigo-200/60"
+                      >Sport Club</span
+                    >
+                  </div>
+
+                  <h3 class="text-sm font-bold text-gray-900 truncate">
+                    Volleyball Friendly Match
+                  </h3>
+                  <p class="text-xs text-gray-500 leading-snug line-clamp-2">
+                    Stay Health, make friends, be healthier.
+                  </p>
+
+                  <!-- Event Metadata (Time & Location Icons) -->
+                  <div class="pt-1.5 text-[11px] text-gray-500 space-y-1">
+                    <p class="flex items-center gap-1.5">
+                      <svg
+                        class="w-3.5 h-3.5 text-blue-400 shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                      </svg>
+                      <span>4:00 PM - 6:00 PM</span>
+                    </p>
+                    <p class="flex items-center gap-1.5">
+                      <svg
+                        class="w-3.5 h-3.5 text-blue-400 shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                        />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                      </svg>
+                      <span class="truncate">Campus Sports Center</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="mt-3">
+                  <a
+                    href="events.html#sport"
+                    class="inline-flex items-center justify-center gap-1 w-full py-1.5 px-3 text-[#4C4DFF] font-semibold text-xs border border-[#4C4DFF]/40 rounded-full hover:bg-[#4C4DFF] hover:text-white transition-all duration-200"
+                  >
+                    View Details &rarr;
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Event Card 2: Cooking Workshop -->
+            <article
+              class="bg-white rounded-2xl border border-gray-200/80 p-3.5 flex gap-4 shadow-xs hover:shadow-md transition-all duration-300"
+            >
+              <img
+                class="w-32 h-40 object-cover rounded-xl shrink-0"
+                src="./image/cooking-event.jpg"
+                alt="Pasta Workshop"
+              />
+
+              <div class="flex flex-col justify-between grow min-w-0">
+                <div class="space-y-1.5">
+                  <div class="flex items-center gap-2 flex-wrap">
+                    <span
+                      class="text-[11px] font-semibold text-[#FFA500] bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200/60"
+                      >Oct 20</span
+                    >
+                    <span
+                      class="text-[11px] font-semibold text-[#4C4DFF] bg-indigo-50 px-2.5 py-0.5 rounded-full border border-indigo-200/60"
+                      >Cooking Club</span
+                    >
+                  </div>
+
+                  <h3 class="text-sm font-bold text-gray-900 truncate">
+                    Savor the Taste
+                  </h3>
+                  <p class="text-xs text-gray-500 leading-snug line-clamp-2">
+                    Explore recipes, cook together, and enjoy great food.
+                  </p>
+
+                  <div class="pt-1.5 text-[11px] text-gray-500 space-y-1">
+                    <p class="flex items-center gap-1.5">
+                      <svg
+                        class="w-3.5 h-3.5 text-blue-400 shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                      </svg>
+                      <span>2:00 PM - 4:00 PM</span>
+                    </p>
+                    <p class="flex items-center gap-1.5">
+                      <svg
+                        class="w-3.5 h-3.5 text-blue-400 shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                        />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                      </svg>
+                      <span class="truncate">Student Activity Kitchen</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="mt-3">
+                  <a
+                    href="events.html#cooking"
+                    class="inline-flex items-center justify-center gap-1 w-full py-1.5 px-3 text-[#4C4DFF] font-semibold text-xs border border-[#4C4DFF]/40 rounded-full hover:bg-[#4C4DFF] hover:text-white transition-all duration-200"
+                  >
+                    View Details &rarr;
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Event Card 3: Yoga Session -->
+            <article
+              class="bg-white rounded-2xl border border-gray-200/80 p-3.5 flex gap-4 shadow-xs hover:shadow-md transition-all duration-300"
+            >
+              <img
+                class="w-32 h-40 object-cover rounded-xl shrink-0"
+                src="./image/yoga-event.jpg"
+                alt="Yoga Session"
+              />
+
+              <div class="flex flex-col justify-between grow min-w-0">
+                <div class="space-y-1.5">
+                  <div class="flex items-center gap-2 flex-wrap">
+                    <span
+                      class="text-[11px] font-semibold text-[#FFA500] bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200/60"
+                      >Oct 25</span
+                    >
+                    <span
+                      class="text-[11px] font-semibold text-[#4C4DFF] bg-indigo-50 px-2.5 py-0.5 rounded-full border border-indigo-200/60"
+                      >Yoga Club</span
+                    >
+                  </div>
+
+                  <h3 class="text-sm font-bold text-gray-900 truncate">
+                    Stay Active
+                  </h3>
+                  <p class="text-xs text-gray-500 leading-snug line-clamp-2">
+                    Stay Health, make friends, be healthier.
+                  </p>
+
+                  <div class="pt-1.5 text-[11px] text-gray-500 space-y-1">
+                    <p class="flex items-center gap-1.5">
+                      <svg
+                        class="w-3.5 h-3.5 text-blue-400 shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                      </svg>
+                      <span>7:30 AM - 8:30 AM</span>
+                    </p>
+                    <p class="flex items-center gap-1.5">
+                      <svg
+                        class="w-3.5 h-3.5 text-blue-400 shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                        />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                      </svg>
+                      <span class="truncate">Central Lawn</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="mt-3">
+                  <a
+                    href="events.html#yoga"
+                    class="inline-flex items-center justify-center gap-1 w-full py-1.5 px-3 text-[#4C4DFF] font-semibold text-xs border border-[#4C4DFF]/40 rounded-full hover:bg-[#4C4DFF] hover:text-white transition-all duration-200"
+                  >
+                    View Details &rarr;
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- MISSION STATEMENT SECTION -->
+      <section class="max-w-4xl mx-auto py-16 px-6 text-center space-y-6">
+        <h2
+          class="font-['Poppins',sans-serif] text-3xl font-bold text-gray-900"
+        >
+          Our Mission
+        </h2>
+        <p class="text-gray-600 text-lg leading-relaxed">
+          To build a connected campus community by making every club easy to
+          discover and every event easy to join, so that no student misses out
+          simply because information was hard to find.
+        </p>
+        <a
+          href="about.html"
+          class="inline-block text-[#4C4DFF] font-semibold border-b-2 border-[#4C4DFF] hover:text-indigo-800 hover:border-indigo-800 transition"
+        >
+          Read Our Story
+        </a>
+      </section>
     </main>
-
 
     <!-- FOOTER                                     -->
 
-    <footer class="bg-[#111827] text-white py-12 px-6 md:px-16 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto flex flex-row md:flex-row items-center justify-between gap-8">
-
-            <!-- Footer Logo / Brand Info -->
-            <div class="flex items-center gap-3">
-                <div
-                    class="w-11 h-11 rounded-full bg-linear-to-br from-[#FFA500] to-indigo-500 p-0.5 transition-transform duration-300 group-hover:scale-105 flex items-center justify-center">
-                    <img class="w-10 h-10 rounded-full object-cover" src="./image/website-logo.jpg"
-                        alt="Student Club Logo">
-                </div>
-                <h3 class="font-bold text-xl sm:text-2xl text-white">
-                    Student <span class="text-[#4C4DFF]">Clubs</span>
-                </h3>
-            </div>
-
-            <!-- Footer Navigation Links -->
-            <ul class="hidden sm:flex flex-wrap justify-center items-center gap-4 text-sm text-gray-300">
-                <li><a href="index.html" class="hover:text-[#FFA500] transition">Home</a></li>
-                <li><a href="clubs.html" class="hover:text-[#FFA500] transition">Clubs</a></li>
-                <li><a href="events.html" class="hover:text-[#FFA500] transition">Events</a></li>
-                <li><a href="about.html" class="hover:text-[#FFA500] transition">About</a></li>
-            </ul>
-
-            <!-- Footer Social Networks -->
-            <div class="flex items-center gap-4 text-gray-400">
-                <!-- Facebook Icon -->
-                <a href="#" class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full" aria-label="Facebook">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
-                    </svg>
-                </a>
-
-                <!-- Instagram Icon -->
-                <a href="#" class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full" aria-label="Instagram">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                    </svg>
-                </a>
-
-                <!-- Telegram / Twitter Icon -->
-                <a href="#" class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full" aria-label="Telegram">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.195 1.006.128.832.941z" />
-                    </svg>
-                </a>
-            </div>
+    <footer
+      class="bg-[#111827] text-white py-12 px-4 sm:px-8 md:px-8 lg:px-16 border-t border-gray-800"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8"
+      >
+        <!-- Footer Logo / Brand Info -->
+        <div class="flex items-center gap-3">
+          <div
+            class="w-11 h-11 rounded-full bg-linear-to-br from-[#FFA500] to-indigo-500 p-0.5 transition-transform duration-300 group-hover:scale-105 flex items-center justify-center"
+          >
+            <img
+              class="w-10 h-10 rounded-full object-cover"
+              src="./image/website-logo.jpg"
+              alt="Student Club Logo"
+            />
+          </div>
+          <h3 class="font-bold text-xl sm:text-2xl text-white">
+            Student <span class="text-[#4C4DFF]">Clubs</span>
+          </h3>
         </div>
 
-        <!-- Footer Copyright & Legal Divider -->
-        <div class="flex mt-8 pt-6 border-t border-gray-800 text-xs text-gray-500">
-            <p class="flex-1">&copy; 2026 Student Club Website. All rights reserved.</p>
-            <p class="flex-1 text-end">
-                <a href="#" class="hover:underline">Privacy Policy</a> | <a href="#" class="hover:underline">Terms of
-                    Service</a>
-            </p>
+        <!-- Footer Navigation Links -->
+        <ul
+          class="flex flex-wrap justify-center items-center gap-6 text-sm text-gray-300"
+        >
+          <li>
+            <a
+              href="index.html"
+              class="text-white hover:text-[#FFA500] transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="clubs.html" class="hover:text-[#FFA500] transition"
+              >Clubs</a
+            >
+          </li>
+          <li>
+            <a href="events.html" class="hover:text-[#FFA500] transition"
+              >Events</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="hover:text-[#FFA500] transition"
+              >About</a
+            >
+          </li>
+        </ul>
+
+        <!-- Footer Social Networks -->
+        <div class="flex items-center gap-4 text-gray-400">
+          <!-- Facebook Icon -->
+          <a
+            href="#"
+            class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full"
+            aria-label="Facebook"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+              />
+            </svg>
+          </a>
+
+          <!-- Instagram Icon -->
+          <a
+            href="#"
+            class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full"
+            aria-label="Instagram"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+              />
+            </svg>
+          </a>
+
+          <!-- Telegram / Twitter Icon -->
+          <a
+            href="#"
+            class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full"
+            aria-label="Telegram"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.195 1.006.128.832.941z"
+              />
+            </svg>
+          </a>
         </div>
+      </div>
+
+      <!-- Footer Copyright & Legal Divider -->
+      <div
+        class="flex flex-col sm:flex-row mt-8 pt-6 border-t border-gray-800 text-xs text-gray-500 justify-between items-center gap-2"
+      >
+        <p>&copy; 2026 Student Club Website. All rights reserved.</p>
+        <p>
+          <a href="#" class="hover:underline">Privacy Policy</a> |
+          <a href="#" class="hover:underline">Terms of Service</a>
+        </p>
+      </div>
     </footer>
-    <script src="./js/main.js">
-
-    </script>
+    <script src="./js/main.js"></script>
     <script>
-        const phrases = ["Student Club", "Community", "Campus Life", "Events"];
-        const typedText = document.getElementById("typed-text");
-        let phraseIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
+      const phrases = ["Student Club", "Community", "Campus Life", "Events"];
+      const typedText = document.getElementById("typed-text");
+      let phraseIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
 
-        function typeLoop() {
-            const currentPhrase = phrases[phraseIndex];
+      function typeLoop() {
+        const currentPhrase = phrases[phraseIndex];
 
-            if (!isDeleting) {
-                charIndex++;
-                typedText.textContent = currentPhrase.slice(0, charIndex);
+        if (!isDeleting) {
+          charIndex++;
+          typedText.textContent = currentPhrase.slice(0, charIndex);
 
-                if (charIndex === currentPhrase.length) {
-                    isDeleting = true;
-                    setTimeout(typeLoop, 1200);
-                    return;
-                }
-            } else {
-                charIndex--;
-                typedText.textContent = currentPhrase.slice(0, charIndex);
+          if (charIndex === currentPhrase.length) {
+            isDeleting = true;
+            setTimeout(typeLoop, 1200);
+            return;
+          }
+        } else {
+          charIndex--;
+          typedText.textContent = currentPhrase.slice(0, charIndex);
 
-                if (charIndex === 0) {
-                    isDeleting = false;
-                    phraseIndex = (phraseIndex + 1) % phrases.length;
-                }
-            }
-
-            const speed = isDeleting ? 60 : 110;
-            setTimeout(typeLoop, speed);
+          if (charIndex === 0) {
+            isDeleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+          }
         }
 
-        typeLoop();
-    </script>
-</body>
+        const speed = isDeleting ? 60 : 110;
+        setTimeout(typeLoop, speed);
+      }
 
+      typeLoop();
+    </script>
+  </body>
 </html>

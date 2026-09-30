@@ -1,1013 +1,1749 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Student Clubs">
-    <meta name="theme-color" content="#111827">
-    <meta name="description"
-        content="Explore student clubs at university, including sports, music, cooking, yoga, and other campus activities that help you connect and grow.">
-    <meta name="keywords"
-        content="student clubs, university clubs, campus clubs, sports club, music club, cooking club, yoga club, student activities">
-    <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Student Clubs | Explore Campus Clubs, Sports & Activities">
-    <meta property="og:description"
-        content="Discover student clubs, campus communities, and activities that match your interests and help you build your university experience.">
-    <meta property="og:image" content="https://student-clubs-silk.vercel.app/image/website-logo.jpg">
-    <meta property="og:url" content="https://student-clubs-silk.vercel.app/clubs.html">
-    <meta property="og:site_name" content="Student Clubs">
-    <meta property="og:locale" content="en_US">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Student Clubs | Explore Campus Clubs, Sports & Activities">
-    <meta name="twitter:description"
-        content="Find your campus community through sports, music, cooking, yoga, and other student clubs.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Student Clubs" />
+    <meta name="theme-color" content="#111827" />
+    <meta
+      name="description"
+      content="Explore student clubs at university, including sports, music, cooking, yoga, and other campus activities that help you connect and grow."
+    />
+    <meta
+      name="keywords"
+      content="student clubs, university clubs, campus clubs, sports club, music club, cooking club, yoga club, student activities"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Student Clubs | Explore Campus Clubs, Sports & Activities"
+    />
+    <meta
+      property="og:description"
+      content="Discover student clubs, campus communities, and activities that match your interests and help you build your university experience."
+    />
+    <meta
+      property="og:image"
+      content="https://student-clubs-silk.vercel.app/image/website-logo.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://student-clubs-silk.vercel.app/clubs.html"
+    />
+    <meta property="og:site_name" content="Student Clubs" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Student Clubs | Explore Campus Clubs, Sports & Activities"
+    />
+    <meta
+      name="twitter:description"
+      content="Find your campus community through sports, music, cooking, yoga, and other student clubs."
+    />
     <title>Student Clubs | Explore Campus Clubs, Sports & Activities</title>
-    <link rel="canonical" href="https://student-clubs-silk.vercel.app/clubs.html">
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "CollectionPage",
-          "name": "Student Clubs",
-          "url": "https://student-clubs-silk.vercel.app/clubs.html",
-          "description": "Browse student clubs and campus communities for sports, music, cooking, yoga, and other student activities.",
-          "publisher": {
-            "@type": "Organization",
-            "name": "Student Clubs",
-            "logo": "https://student-clubs-silk.vercel.app/image/website-logo.jpg"
-          }
-        }
-    </script>
-    <link rel="stylesheet" href="./output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+      rel="canonical"
+      href="https://student-clubs-silk.vercel.app/clubs.html"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Student Clubs",
+        "url": "https://student-clubs-silk.vercel.app/clubs.html",
+        "description": "Browse student clubs and campus communities for sports, music, cooking, yoga, and other student activities.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Student Clubs",
+          "logo": "https://student-clubs-silk.vercel.app/image/website-logo.jpg"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Icon -->
-    <link rel="icon" type="image/jpeg" href="./image/website-logo-icon.png">
-</head>
+    <link rel="icon" type="image/jpeg" href="./image/website-logo-icon.png" />
+  </head>
 
-<body class="font-['Inter',sans-serif] bg-gray-50 text-gray-900 antialiased">
+  <body class="font-['Inter',sans-serif] bg-gray-50 text-gray-900 antialiased">
     <header
-        class="sticky top-0 z-50 px-4 sm:px-8 md:px-16 py-4 bg-[#111827]/90 backdrop-blur-md border-b border-white/10">
-        <nav class="max-w-7xl mx-auto flex items-center justify-between gap-4">
-            <a href="index.html" class="flex items-center gap-3 group shrink-0">
-                <div
-                    class="w-10 h-10 rounded-full bg-linear-to-br from-[#FFA500] to-indigo-500 p-0.5 transition-transform duration-300 group-hover:scale-105 flex items-center justify-center">
-                    <img class="w-9 h-9 rounded-full object-cover" src="./image/website-logo.jpg"
-                        alt="Student Club Logo">
-                </div>
-                <h3 class="font-bold text-xl sm:text-2xl text-white tracking-wide">
-                    Student <span class="text-blue-500">Clubs</span>
-                </h3>
-            </a>
+      class="sticky top-0 z-50 px-4 sm:px-8 md:px-8 lg:px-16 py-4 bg-[#111827]/90 backdrop-blur-md border-b border-white/10"
+    >
+      <nav class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+        <a href="index.html" class="flex items-center gap-3 group shrink-0">
+          <div
+            class="w-10 h-10 rounded-full bg-linear-to-br from-[#FFA500] to-indigo-500 p-0.5 transition-transform duration-300 group-hover:scale-105 flex items-center justify-center"
+          >
+            <img
+              class="w-9 h-9 rounded-full object-cover"
+              src="./image/website-logo.jpg"
+              alt="Student Club Logo"
+            />
+          </div>
+          <h3 class="font-bold text-xl sm:text-2xl text-white tracking-wide">
+            Student <span class="text-blue-500">Clubs</span>
+          </h3>
+        </a>
 
-            <input type="checkbox" id="menu-toggle" class="peer hidden">
-            <label for="menu-toggle" class="sm:hidden cursor-pointer text-gray-300 hover:text-white p-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
-            </label>
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+        <label
+          for="menu-toggle"
+          class="md:hidden cursor-pointer text-gray-300 hover:text-white p-2"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </label>
 
-            <!-- Navbar Links -->
-            <ul
-                class="peer-checked:flex hidden flex-col sm:flex sm:flex-row gap-2 sm:gap-6 lg:gap-8 items-center absolute sm:relative top-full left-0 w-full sm:w-auto bg-[#111827] sm:bg-transparent p-6 sm:p-0 border-b border-white/10 sm:border-none shadow-2xl sm:shadow-none transition-all duration-300 z-50">
-                <li class="relative group py-2">
-                    <a href="index.html"
-                        class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300 focus:outline-none focus:text-white">Home</a>
-                    <span
-                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"></span>
-                </li>
+        <!-- Navbar Links -->
+        <ul
+          class="peer-checked:flex hidden flex-col md:flex md:flex-row gap-2 md:gap-6 lg:gap-8 items-center absolute md:relative top-full left-0 w-full md:w-auto bg-[#111827] md:bg-transparent p-6 md:p-0 border-b border-white/10 md:border-none shadow-2xl md:shadow-none transition-all duration-300 z-50"
+        >
+          <li class="relative group py-2">
+            <a
+              href="index.html"
+              class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300 focus:outline-none focus:text-white"
+              >Home</a
+            >
+            <span
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"
+            ></span>
+          </li>
 
-                <!-- Active Page: Clubs -->
-                <li class="relative group py-2">
-                    <a href="clubs.html"
-                        class="text-white font-medium text-[16px] transition-colors duration-300 focus:outline-none">Clubs</a>
-                    <span
-                        class="absolute bottom-0 left-0 w-full h-0.5 bg-[#FFA500] rounded-full shadow-[0_0_8px_#FFA500]"></span>
-                </li>
+          <!-- Active Page: Clubs -->
+          <li class="relative group py-2">
+            <a
+              href="clubs.html"
+              class="text-white font-medium text-[16px] transition-colors duration-300 focus:outline-none"
+              >Clubs</a
+            >
+            <span
+              class="absolute bottom-0 left-0 w-full h-0.5 bg-[#FFA500] rounded-full shadow-[0_0_8px_#FFA500]"
+            ></span>
+          </li>
 
-                <li class="relative group py-2">
-                    <a href="events.html"
-                        class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300 focus:outline-none focus:text-white">Events</a>
-                    <span
-                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"></span>
-                </li>
+          <li class="relative group py-2">
+            <a
+              href="events.html"
+              class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300 focus:outline-none focus:text-white"
+              >Events</a
+            >
+            <span
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"
+            ></span>
+          </li>
 
-                <li class="relative group py-2">
-                    <a href="about.html"
-                        class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300 focus:outline-none focus:text-white">About</a>
-                    <span
-                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"></span>
-                </li>
-            </ul>
+          <li class="relative group py-2">
+            <a
+              href="about.html"
+              class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300 focus:outline-none focus:text-white"
+              >About</a
+            >
+            <span
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"
+            ></span>
+          </li>
+        </ul>
 
-            <!-- Search Input Field -->
-            <div class="hidden lg:block relative w-40 md:w-52 lg:w-64">
+        <!-- Search Input Field -->
+        <div class="hidden lg:block relative w-40 md:w-52 lg:w-64">
+          <form id="searchForm">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search..."
+              autocomplete="off"
+              class="w-full px-4 py-2 pr-10 text-xs sm:text-sm text-gray-200 bg-[#161b22] rounded-full border border-gray-700/60 outline-none transition-all duration-300 placeholder:text-gray-500 focus:border-[#FFA500] focus:ring-1 focus:ring-[#FFA500]/40 focus:shadow-[0_0_12px_rgba(255,165,0,0.3)]"
+            />
 
-                <form id="searchForm">
-
-                    <input type="text" id="searchInput" placeholder="Search..." autocomplete="off"
-                        class="w-full px-4 py-2 pr-10 text-xs sm:text-sm text-gray-200 bg-[#161b22] rounded-full border border-gray-700/60 outline-none transition-all duration-300 placeholder:text-gray-500 focus:border-[#FFA500] focus:ring-1 focus:ring-[#FFA500]/40 focus:shadow-[0_0_12px_rgba(255,165,0,0.3)]">
-
-                    <!-- Search Button -->
-                    <button type="submit" id="searchBtn" aria-label="Search"
-                        class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#FFA500] transition-colors duration-200 cursor-pointer p-1">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                        </svg>
-
-                    </button>
-
-                </form>
-
-            </div>
-            <!-- Primary Call-To-Action -->
-            <a href="clubs.html#contact-form"
-                class="hidden sm:inline-flex items-center gap-2 bg-linear-to-br from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white font-semibold text-[15px] px-5 py-2 rounded-full shadow-[0_0_15px_rgba(255,165,0,0.3)] transition-all duration-300 hover:scale-105 active:scale-95">
-                Join Now &rarr;
-            </a>
-        </nav>
+            <!-- Search Button -->
+            <button
+              type="submit"
+              id="searchBtn"
+              aria-label="Search"
+              class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#FFA500] transition-colors duration-200 cursor-pointer p-1"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <!-- Primary Call-To-Action -->
+        <a
+          href="clubs.html#contact-form"
+          class="hidden md:inline-flex items-center gap-2 bg-linear-to-br from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white font-semibold text-[15px] px-5 py-2 rounded-full shadow-[0_0_15px_rgba(255,165,0,0.3)] transition-all duration-300 hover:scale-105 active:scale-95"
+        >
+          Join Now &rarr;
+        </a>
+      </nav>
     </header>
 
     <!-- Banner Section -->
     <section
-        class="relative w-full min-h-125 sm:h-80 bg-[url('./image/banner-clubs-page.png')] bg-cover bg-center overflow-hidden flex items-center">
-        <div class="absolute inset-0 bg-black/50"></div>
-        <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-16 w-full text-left">
-
-            <h1
-                class="font-['Poppins',sans-serif] text-3xl sm:text-4xl md:text-5xl font-extrabold text-white flex items-center gap-3 leading-tight mt-2">
-                Student <span class="text-[#4C4DFF]">Clubs</span>
-            </h1>
-            <p class="text-base sm:text-lg text-gray-200 mt-3 max-w-2xl leading-relaxed">
-                Explore campus clubs for sports, music, cooking, yoga, and other student activities that match your
-                interests.
-            </p>
-        </div>
+      class="relative w-full min-h-125 sm:h-80 bg-[url('./image/banner-clubs-page.png')] bg-cover bg-center overflow-hidden flex items-center px-4 sm:px-8 md:px-8 lg:px-16"
+    >
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10 max-w-7xl mx-auto w-full text-left">
+        <h1
+          class="font-['Poppins',sans-serif] text-3xl sm:text-4xl md:text-5xl font-extrabold text-white flex items-center gap-3 leading-tight mt-2"
+        >
+          Student <span class="text-[#4C4DFF]">Clubs</span>
+        </h1>
+        <p
+          class="text-base sm:text-lg text-gray-200 mt-3 max-w-2xl leading-relaxed"
+        >
+          Explore campus clubs for sports, music, cooking, yoga, and other
+          student activities that match your interests.
+        </p>
+      </div>
     </section>
 
     <!-- Main Content -->
-    <main class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <main class="w-full px-4 sm:px-8 md:px-8 lg:px-16 py-8">
+      <div class="max-w-7xl mx-auto">
         <div class="mb-6">
-            <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-gray-900">
-                Featured Clubs
-            </h2>
-            <!-- Added "relative" here so the absolute icon stays inside this wrapper -->
-            <div class="relative mt-4 max-w-xs">
-                <select id="clubFilter"
-                    class="w-full p-3 pr-10 text-xs border border-gray-300 text-gray-700 bg-white rounded-sm shadow-sm appearance-none focus:outline-none focus:ring-1 focus:ring-[#4C4DFF]">
-                    <option value="All">All Clubs</option>
-                    <option value="Sports">Sports</option>
-                    <option value="Cook & Desert">Cook & Dessert</option>
-                    <option value="Music">Music</option>
-                    <option value="Yoga">Yoga</option>
-                </select>
-                <!-- Drop down Icon -->
-                <div class="pointer-events-none absolute inset-y-0 right-4 flex items-center text-gray-700">
-                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </div>
+          <h2
+            class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-gray-900"
+          >
+            Featured Clubs
+          </h2>
+          <!-- Added "relative" here so the absolute icon stays inside this wrapper -->
+          <div class="relative mt-4 max-w-xs">
+            <select
+              id="clubFilter"
+              aria-label="Filter clubs by name"
+              class="w-full p-3 pr-10 text-xs border border-gray-300 text-gray-700 bg-white rounded-sm shadow-sm appearance-none focus:outline-none focus:ring-1 focus:ring-[#4C4DFF]"
+            >
+              <option value="All">All Clubs</option>
+              <option value="sport-club">Sports Club</option>
+              <option value="cooking">Cooking</option>
+              <option value="music">Music Club</option>
+              <option value="yoga">Yoga Club</option>
+              <option value="design-club">Design Club</option>
+              <option value="integrity-club">
+                Promoting Integrity &amp; Dignity Club
+              </option>
+              <option value="film-club">Film Club</option>
+              <option value="photography-club">Photography Club</option>
+              <option value="student-association-club">
+                Student Association Club
+              </option>
+              <option value="it-awareness-club">IT Awareness Club</option>
+              <option value="robotics-club">Robotics Club</option>
+              <option value="library-club">Library Club</option>
+              <option value="aerobic-club">Aerobic Club</option>
+              <option value="public-speaking-club">Public Speaking Club</option>
+              <option value="web-club">Web Club</option>
+              <option value="gender-awareness-club">
+                Gender Awareness Club
+              </option>
+            </select>
+            <!-- Drop down Icon -->
+            <div
+              class="pointer-events-none absolute inset-y-0 right-4 flex items-center text-gray-700"
+            >
+              <svg
+                class="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
             </div>
+          </div>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <!-- Club Cards List -->
-            <div class="lg:col-span-2 space-y-8">
-
-                <!-- Sports Club -->
-                <div id="sport-club" data-category="Sports"
-                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
-                    <div class="relative">
-                        <img src="./image/Volleyball.png" alt="Sports Club"
-                            class="w-full h-56 sm:h-64 object-cover rounded-xl">
-                        <div class="absolute -bottom-5 left-5">
-                            <img src="./image/sport-logo.png" alt="Sport Logo"
-                                class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
-                        </div>
-                    </div>
-                    <div class="px-2 sm:px-4 pt-8 pb-3">
-                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]">Sports
-                            Club</h2>
-                        <p class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed">
-                            Join us for weekly games, team sports, and fitness activities to stay active and make
-                            friends.
-                        </p>
-                        <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">Activities</h3>
-                        <div class="space-y-2.5 mb-5">
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Weekly Team Games & Matches</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Fitness & Conditioning Sessions</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Campus Tournaments & Competitions</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Social Meetups & Community Events</p>
-                            </div>
-                        </div>
-
-                    </div>
+          <!-- Club Cards List -->
+          <div class="lg:col-span-2 space-y-8">
+            <!-- Sports Club -->
+            <div
+              id="sport-club"
+              data-category="Sports"
+              class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm"
+            >
+              <div class="relative">
+                <img
+                  src="./image/Volleyball.png"
+                  alt="Sports Club"
+                  class="w-full h-56 sm:h-64 object-cover rounded-xl"
+                />
+                <div class="absolute -bottom-5 left-5">
+                  <img
+                    src="./image/sport-logo.png"
+                    alt="Sport Logo"
+                    class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm"
+                  />
                 </div>
-
-                <!-- Cooking Club -->
-                <div id="cooking" data-category="Cook & Desert"
-                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
-                    <div class="relative">
-                        <img src="./image/cooking-event.jpg" alt="Cooking Club"
-                            class="w-full h-56 sm:h-64 object-cover rounded-xl">
-                        <div class="absolute -bottom-5 left-5">
-                            <img src="./image/cooking-logo.png" alt="Chef Logo"
-                                class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
-                        </div>
-                    </div>
-                    <div class="px-2 sm:px-4 pt-8 pb-3">
-                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]">Cooking
-                        </h2>
-                        <p class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed">
-                            Join us to learn how to cook, try food from different countries, and eat delicious meals
-                            with new friends.
-                        </p>
-                        <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">Activities</h3>
-                        <div class="space-y-2.5 mb-5">
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-xs text-gray-600">Cooking Workshops & Recipe Sharing</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-xs text-gray-600">Catering Greetings for Students, Alumni & Volunteers
-                                </p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-xs text-gray-600">Inventory Management & Stock Checks</p>
-                            </div>
-                        </div>
-
-                    </div>
+              </div>
+              <div class="px-2 sm:px-4 pt-8 pb-3">
+                <h2
+                  class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]"
+                >
+                  Sports Club
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed"
+                >
+                  Join us for weekly games, team sports, and fitness activities
+                  to stay active and make friends.
+                </p>
+                <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">
+                  Activities
+                </h3>
+                <div class="space-y-2.5 mb-5">
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Weekly Team Games & Matches
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Fitness & Conditioning Sessions
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Campus Tournaments & Competitions
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Social Meetups & Community Events
+                    </p>
+                  </div>
                 </div>
-
-                <!-- Music Club -->
-
-                <div id="music" data-category="Music"
-                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
-                    <div class="relative">
-                        <img src="./image/mushow.png" alt="Music Club"
-                            class="w-full h-56 sm:h-64 object-cover rounded-xl">
-                        <div class="absolute -bottom-5 left-5">
-                            <img src="./image/music-logo.png" alt="Music Logo"
-                                class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
-                        </div>
-                    </div>
-                    <div class="px-2 sm:px-4 pt-8 pb-3">
-                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]">Music Club
-                        </h2>
-                        <p class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed">
-                            Join us to play instruments, listen to different genres, and perform live with fellow
-                            student musicians.
-                        </p>
-                        <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">Activities</h3>
-                        <div class="space-y-2.5 mb-5">
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-xs text-gray-600">Weekly Jam Sessions & Open Mic Nights</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-xs text-gray-600">Weekend Evening Band Rehearsals</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-xs text-gray-600">Live Campus Event Performances</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Yoga Club -->
-                <div id="yoga" data-category="Yoga"
-                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
-                    <div class="relative">
-                        <img src="./image/yoga-event.jpg" alt="Yoga Club"
-                            class="w-full h-56 sm:h-64 object-cover rounded-xl">
-                        <div class="absolute -bottom-5 left-5">
-                            <img src="./image/yoga-logo.png" alt="Yoga Logo"
-                                class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
-                        </div>
-                    </div>
-                    <div class="px-2 sm:px-4 pt-8 pb-3">
-                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]">Yoga Club
-                        </h2>
-                        <p class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed">
-                            Join us to stretch your muscles, practice mindfulness, and relax your body and mind.
-                        </p>
-                        <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">Activities</h3>
-                        <div class="space-y-2.5 mb-5">
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-xs text-gray-600">Friday Sunset Yoga Sessions (5:30 PM - 6:00 PM)</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-xs text-gray-600">Guided Meditation & Stress Relief</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-xs text-gray-600">Health Talks & Group Discussions</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- Design Club -->
-                <div id="design-club" data-category="Design"
-                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
-                    <div class="relative">
-                        <img src="./image/Design.png" alt="Design Club"
-                            class="w-full h-56 sm:h-64 object-cover rounded-xl">
-                        <div class="absolute -bottom-5 left-5">
-                            <img src="./image/design-logo.png" alt="Design Logo"
-                                class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
-                        </div>
-                    </div>
-                    <div class="px-2 sm:px-4 pt-8 pb-3">
-                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]">Design
-                            Club</h2>
-                        <p class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed">
-                            Unleash your creativity through UI/UX design, graphic creation, branding, and digital
-                            artwork.
-                        </p>
-                        <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">Activities</h3>
-                        <div class="space-y-2.5 mb-5">
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">UI/UX & Graphics Design Workshops</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Design Challenges & Critique Sessions</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Brand Identity & Poster Projects</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Portfolio Building & Feedback</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Promoting Integrity and Dignity Club -->
-                <div id="integrity-club" data-category="Community"
-                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
-                    <div class="relative">
-                        <img src="./image/Integrity.png" alt="Integrity and Dignity Club"
-                            class="w-full h-56 sm:h-64 object-cover rounded-xl">
-                        <div class="absolute -bottom-5 left-5">
-                            <img src="./image/integrity-logo.png" alt="Integrity Logo"
-                                class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
-                        </div>
-                    </div>
-                    <div class="px-2 sm:px-4 pt-8 pb-3">
-                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]">Promoting
-                            Integrity & Dignity Club</h2>
-                        <p class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed">
-                            Fostering ethical values, human dignity, and strong moral principles within the campus
-                            community.
-                        </p>
-                        <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">Activities</h3>
-                        <div class="space-y-2.5 mb-5">
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Ethics & Values Awareness Workshops</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Community Outreach & Kindness Campaigns</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Dignity & Mutual Respect Seminars</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Peer Support & Mentorship Programs</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Film Club -->
-                <div id="film-club" data-category="Arts"
-                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
-                    <div class="relative">
-                        <img src="./image/Film.png" alt="Film Club" class="w-full h-56 sm:h-64 object-cover rounded-xl">
-                        <div class="absolute -bottom-5 left-5">
-                            <img src="./image/film-logo.png" alt="Film Logo"
-                                class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
-                        </div>
-                    </div>
-                    <div class="px-2 sm:px-4 pt-8 pb-3">
-                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]">Film Club
-                        </h2>
-                        <p class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed">
-                            Explore movie screenings, film analysis, video editing, and hands-on short film production.
-                        </p>
-                        <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">Activities</h3>
-                        <div class="space-y-2.5 mb-5">
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Weekly Movie Screenings & Discussions</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Short Film Production & Shooting</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Video Editing & Scriptwriting Tutorials</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Annual Student Film Showcase</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Photography Club -->
-                <div id="photography-club" data-category="Arts"
-                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
-                    <div class="relative">
-                        <img src="./image/Photography.png" alt="Photography Club"
-                            class="w-full h-56 sm:h-64 object-cover rounded-xl">
-                        <div class="absolute -bottom-5 left-5">
-                            <img src="./image/photo-logo.png" alt="Photography Logo"
-                                class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
-                        </div>
-                    </div>
-                    <div class="px-2 sm:px-4 pt-8 pb-3">
-                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]">
-                            Photography Club</h2>
-                        <p class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed">
-                            Capture stunning moments, learn camera techniques, photo editing, and explore campus
-                            photowalks.
-                        </p>
-                        <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">Activities</h3>
-                        <div class="space-y-2.5 mb-5">
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Campus Photowalks & Outdoor Shoots</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Lightroom & Photo Editing Sessions</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Monthly Photography Competitions</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Event Coverage & Exhibition Gallery</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Student Association Club -->
-                <div id="student-association-club" data-category="Leadership"
-                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
-                    <div class="relative">
-                        <img src="./image/StudentAssociation.png" alt="Student Association Club"
-                            class="w-full h-56 sm:h-64 object-cover rounded-xl">
-                        <div class="absolute -bottom-5 left-5">
-                            <img src="./image/sa-logo.png" alt="Student Association Logo"
-                                class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
-                        </div>
-                    </div>
-                    <div class="px-2 sm:px-4 pt-8 pb-3">
-                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]">Student
-                            Association Club</h2>
-                        <p class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed">
-                            Represent student voices, organize major campus events, and build strong leadership skills.
-                        </p>
-                        <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">Activities</h3>
-                        <div class="space-y-2.5 mb-5">
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Campus Event Planning & Management</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Student Voice Forums & Representation</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Leadership & Teamwork Workshops</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Charity Drives & Campus Initiatives</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- IT Awareness Club -->
-                <div id="it-awareness-club" data-category="Technology"
-                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
-                    <div class="relative">
-                        <img src="./image/ITAwareness.png" alt="IT Awareness Club"
-                            class="w-full h-56 sm:h-64 object-cover rounded-xl">
-                        <div class="absolute -bottom-5 left-5">
-                            <img src="./image/it-logo.png" alt="IT Logo"
-                                class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
-                        </div>
-                    </div>
-                    <div class="px-2 sm:px-4 pt-8 pb-3">
-                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]">IT
-                            Awareness Club</h2>
-                        <p class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed">
-                            Promote digital literacy, cybersecurity awareness, and modern technology trends across
-                            campus.
-                        </p>
-                        <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">Activities</h3>
-                        <div class="space-y-2.5 mb-5">
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Cybersecurity & Online Safety Seminars</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Software & Tools Tech Demos</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Digital Literacy Community Outreach</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Tech News & AI Trend Discussions</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Robotics Club -->
-                <div id="robotics-club" data-category="Technology"
-                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
-                    <div class="relative">
-                        <img src="./image/Robotics.png" alt="Robotics Club"
-                            class="w-full h-56 sm:h-64 object-cover rounded-xl">
-                        <div class="absolute -bottom-5 left-5">
-                            <img src="./image/robotics-logo.png" alt="Robotics Logo"
-                                class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
-                        </div>
-                    </div>
-                    <div class="px-2 sm:px-4 pt-8 pb-3">
-                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]">Robotics
-                            Club</h2>
-                        <p class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed">
-                            Build, program, and innovate with robots, microcontrollers, and automation systems.
-                        </p>
-                        <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">Activities</h3>
-                        <div class="space-y-2.5 mb-5">
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Arduino & Raspberry Pi Building</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Robot Competitions & Battles</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Hardware & Sensor Programming</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Automation & IoT Projects</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Library Club -->
-                <div id="library-club" data-category="Education"
-                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
-                    <div class="relative">
-                        <img src="./image/Library.png" alt="Library Club"
-                            class="w-full h-56 sm:h-64 object-cover rounded-xl">
-                        <div class="absolute -bottom-5 left-5">
-                            <img src="./image/library-logo.png" alt="Library Logo"
-                                class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
-                        </div>
-                    </div>
-                    <div class="px-2 sm:px-4 pt-8 pb-3">
-                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]">Library
-                            Club</h2>
-                        <p class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed">
-                            Encourage reading culture, manage book reviews, organize study circles, and maintain
-                            learning resources.
-                        </p>
-                        <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">Activities</h3>
-                        <div class="space-y-2.5 mb-5">
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Monthly Book Club & Reading Circles</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Library Resource Management & Events</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Author Spotlights & Book Swaps</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Quiet Study & Research Workshops</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Aerobic Club -->
-                <div id="aerobic-club" data-category="Sports"
-                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
-                    <div class="relative">
-                        <img src="./image/Aerobic.png" alt="Aerobic Club"
-                            class="w-full h-56 sm:h-64 object-cover rounded-xl">
-                        <div class="absolute -bottom-5 left-5">
-                            <img src="./image/aerobic-logo.png" alt="Aerobic Logo"
-                                class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
-                        </div>
-                    </div>
-                    <div class="px-2 sm:px-4 pt-8 pb-3">
-                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]">Aerobic
-                            Club</h2>
-                        <p class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed">
-                            Stay fit and energetic through high-energy cardio workouts, music fitness routines, and
-                            group exercise.
-                        </p>
-                        <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">Activities</h3>
-                        <div class="space-y-2.5 mb-5">
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Weekly Group Aerobic Workouts</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Zumba & Dance Fitness Sessions</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Cardio & Physical Endurance Training</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Campus Health & Fitness Rallies</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Public Speaking Club -->
-                <div id="public-speaking-club" data-category="Education"
-                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
-                    <div class="relative">
-                        <img src="./image/PublicSpeaking.png" alt="Public Speaking Club"
-                            class="w-full h-56 sm:h-64 object-cover rounded-xl">
-                        <div class="absolute -bottom-5 left-5">
-                            <img src="./image/speaking-logo.png" alt="Public Speaking Logo"
-                                class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
-                        </div>
-                    </div>
-                    <div class="px-2 sm:px-4 pt-8 pb-3">
-                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]">Public
-                            Speaking Club</h2>
-                        <p class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed">
-                            Build confidence, master communication skills, and practice speech delivery and debate
-                            techniques.
-                        </p>
-                        <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">Activities</h3>
-                        <div class="space-y-2.5 mb-5">
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Impromptu & Prepared Speech Practice</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Debate & Argumentation Sessions</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Stage Confidence & Body Language Coaching</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Campus Speech & Storytelling Contests</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Web Club -->
-                <div id="web-club" data-category="Technology"
-                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
-                    <div class="relative">
-                        <img src="./image/WebClub.png" alt="Web Club"
-                            class="w-full h-56 sm:h-64 object-cover rounded-xl">
-                        <div class="absolute -bottom-5 left-5">
-                            <img src="./image/web-logo.png" alt="Web Club Logo"
-                                class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
-                        </div>
-                    </div>
-                    <div class="px-2 sm:px-4 pt-8 pb-3">
-                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]">Web Club
-                        </h2>
-                        <p class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed">
-                            Learn frontend & backend web development, build real-world web apps, and collaborate on
-                            projects.
-                        </p>
-                        <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">Activities</h3>
-                        <div class="space-y-2.5 mb-5">
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">HTML, CSS, JS & Framework Workshops</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Hackathons & Web Building Sprints</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Website Deployment & Hosting Tutorials</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Open Source Collaboration Projects</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Gender Awareness Club -->
-                <div id="gender-awareness-club" data-category="Community"
-                    class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm">
-                    <div class="relative">
-                        <img src="./image/GenderAwareness.png" alt="Gender Awareness Club"
-                            class="w-full h-56 sm:h-64 object-cover rounded-xl">
-                        <div class="absolute -bottom-5 left-5">
-                            <img src="./image/gender-logo.png" alt="Gender Logo"
-                                class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm">
-                        </div>
-                    </div>
-                    <div class="px-2 sm:px-4 pt-8 pb-3">
-                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]">Gender
-                            Awareness Club</h2>
-                        <p class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed">
-                            Promote gender equality, inclusivity, and respectful dialogue across the university
-                            environment.
-                        </p>
-                        <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">Activities</h3>
-                        <div class="space-y-2.5 mb-5">
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Gender Equality & Inclusivity Forums</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Educational Campaigns & Guest Speakers</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Safe Space Discussions & Movie Nights</p>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <span
-                                    class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0">✓</span>
-                                <p class="text-sm text-gray-600">Community Support & Rights Awareness</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+              </div>
             </div>
 
-            <!-- Join Club Sidebar Form -->
-            <aside class="lg:col-span-1 ">
-                <form id="contact-form" class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm sticky top-24">
-                    <h2 class="text-xl font-bold text-[#1E293B]">Join Club</h2>
-                    <p class="text-xs text-gray-500 mt-1 mb-5">Have a question or want to sign up? Reach out below.</p>
+            <!-- Cooking Club -->
+            <div
+              id="cooking"
+              data-category="Cook & Dessert"
+              class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm"
+            >
+              <div class="relative">
+                <img
+                  src="./image/cooking-event.jpg"
+                  alt="Cooking Club"
+                  class="w-full h-56 sm:h-64 object-cover rounded-xl"
+                />
+                <div class="absolute -bottom-5 left-5">
+                  <img
+                    src="./image/cooking-logo.png"
+                    alt="Chef Logo"
+                    class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm"
+                  />
+                </div>
+              </div>
+              <div class="px-2 sm:px-4 pt-8 pb-3">
+                <h2
+                  class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]"
+                >
+                  Cooking
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed"
+                >
+                  Join us to learn how to cook, try food from different
+                  countries, and eat delicious meals with new friends.
+                </p>
+                <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">
+                  Activities
+                </h3>
+                <div class="space-y-2.5 mb-5">
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-xs text-gray-600">
+                      Cooking Workshops & Recipe Sharing
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-xs text-gray-600">
+                      Catering Greetings for Students, Alumni & Volunteers
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-xs text-gray-600">
+                      Inventory Management & Stock Checks
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                    <div class="mb-4">
-                        <label for="user-name" class="block text-xs font-semibold text-gray-700 mb-1">Your Name*</label>
-                        <input id="user-name" name="name" type="text" placeholder="Enter your full name"
-                            class="w-full h-9 px-3 text-xs border border-gray-300 rounded-md bg-white outline-none transition-all focus:border-[#4C4DFF] focus:ring-2 focus:ring-[#4C4DFF]/20"
-                            required>
-                    </div>
+            <!-- Music Club -->
 
-                    <div class="mb-4">
-                        <label for="user-email" class="block text-xs font-semibold text-gray-700 mb-1">Your
-                            Email*</label>
-                        <input id="user-email" name="email" type="email" placeholder="Enter your email"
-                            class="w-full h-9 px-3 text-xs border border-gray-300 rounded-md bg-white outline-none transition-all focus:border-[#4C4DFF] focus:ring-2 focus:ring-[#4C4DFF]/20"
-                            required>
-                    </div>
+            <div
+              id="music"
+              data-category="Music"
+              class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm"
+            >
+              <div class="relative">
+                <img
+                  src="./image/mushow.png"
+                  alt="Music Club"
+                  class="w-full h-56 sm:h-64 object-cover rounded-xl"
+                />
+                <div class="absolute -bottom-5 left-5">
+                  <img
+                    src="./image/music-logo.png"
+                    alt="Music Logo"
+                    class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm"
+                  />
+                </div>
+              </div>
+              <div class="px-2 sm:px-4 pt-8 pb-3">
+                <h2
+                  class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]"
+                >
+                  Music Club
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed"
+                >
+                  Join us to play instruments, listen to different genres, and
+                  perform live with fellow student musicians.
+                </p>
+                <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">
+                  Activities
+                </h3>
+                <div class="space-y-2.5 mb-5">
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-xs text-gray-600">
+                      Weekly Jam Sessions & Open Mic Nights
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-xs text-gray-600">
+                      Weekend Evening Band Rehearsals
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-xs text-gray-600">
+                      Live Campus Event Performances
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                    <!-- Club Dropdown -->
-                    <div class="mb-4 relative">
-                        <label for="user-club" class="block text-xs font-semibold text-gray-700 mb-1">Club*</label>
-                        <!-- Added appearance-none to hide default browser dropdown arrow and pr-10 for padding -->
-                        <select id="user-club" name="club" required
-                            class="w-full h-9 px-3 pr-10 text-xs border border-gray-300 rounded-md bg-white text-gray-700 outline-none appearance-none transition-all focus:border-[#4C4DFF] focus:ring-2 focus:ring-[#4C4DFF]/20">
-                            <option value="" disabled selected>Select Club</option>
-                            <option value="Music">Music</option>
-                            <option value="Sport">Sport</option>
-                            <option value="Yoga">Yoga</option>
-                            <option value="Cooking">Cooking</option>
-                        </select>
-                        <!-- Added top-5 or top-[22px] to account for the <label> height above the input -->
-                        <div
-                            class="pointer-events-none absolute right-3 top-5.5 bottom-0 flex items-center text-gray-500">
-                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </div>
-                    </div>
+            <!-- Yoga Club -->
+            <div
+              id="yoga"
+              data-category="Yoga"
+              class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm"
+            >
+              <div class="relative">
+                <img
+                  src="./image/yoga-event.jpg"
+                  alt="Yoga Club"
+                  class="w-full h-56 sm:h-64 object-cover rounded-xl"
+                />
+                <div class="absolute -bottom-5 left-5">
+                  <img
+                    src="./image/yoga-logo.png"
+                    alt="Yoga Logo"
+                    class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm"
+                  />
+                </div>
+              </div>
+              <div class="px-2 sm:px-4 pt-8 pb-3">
+                <h2
+                  class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]"
+                >
+                  Yoga Club
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed"
+                >
+                  Join us to stretch your muscles, practice mindfulness, and
+                  relax your body and mind.
+                </p>
+                <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">
+                  Activities
+                </h3>
+                <div class="space-y-2.5 mb-5">
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-xs text-gray-600">
+                      Friday Sunset Yoga Sessions (5:30 PM - 6:00 PM)
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-xs text-gray-600">
+                      Guided Meditation & Stress Relief
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-xs text-gray-600">
+                      Health Talks & Group Discussions
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Design Club -->
+            <div
+              id="design-club"
+              data-category="Design"
+              class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm"
+            >
+              <div class="relative">
+                <img
+                  src="./image/Design.png"
+                  alt="Design Club"
+                  class="w-full h-56 sm:h-64 object-cover rounded-xl"
+                />
+                <div class="absolute -bottom-5 left-5">
+                  <img
+                    src="./image/design-logo.png"
+                    alt="Design Logo"
+                    class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm"
+                  />
+                </div>
+              </div>
+              <div class="px-2 sm:px-4 pt-8 pb-3">
+                <h2
+                  class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]"
+                >
+                  Design Club
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed"
+                >
+                  Unleash your creativity through UI/UX design, graphic
+                  creation, branding, and digital artwork.
+                </p>
+                <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">
+                  Activities
+                </h3>
+                <div class="space-y-2.5 mb-5">
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      UI/UX & Graphics Design Workshops
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Design Challenges & Critique Sessions
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Brand Identity & Poster Projects
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Portfolio Building & Feedback
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                    <!-- Year Dropdown -->
-                    <div class="mb-4 relative">
-                        <label for="user-year" class="block text-xs font-semibold text-gray-700 mb-1">Year*</label>
-                        <select id="user-year" name="year" required
-                            class="w-full h-9 px-3 pr-10 text-xs border border-gray-300 rounded-md bg-white text-gray-700 outline-none appearance-none transition-all focus:border-[#4C4DFF] focus:ring-2 focus:ring-[#4C4DFF]/20">
-                            <option value="" disabled selected>Select your year</option>
-                            <option value="Year 1">Year 1</option>
-                            <option value="Year 2">Year 2</option>
-                            <option value="Year 3">Year 3</option>
-                        </select>
+            <!-- Promoting Integrity and Dignity Club -->
+            <div
+              id="integrity-club"
+              data-category="Community"
+              class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm"
+            >
+              <div class="relative">
+                <img
+                  src="./image/Integrity.png"
+                  alt="Integrity and Dignity Club"
+                  class="w-full h-56 sm:h-64 object-cover rounded-xl"
+                />
+                <div class="absolute -bottom-5 left-5">
+                  <img
+                    src="./image/integrity-logo.png"
+                    alt="Integrity Logo"
+                    class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm"
+                  />
+                </div>
+              </div>
+              <div class="px-2 sm:px-4 pt-8 pb-3">
+                <h2
+                  class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]"
+                >
+                  Promoting Integrity & Dignity Club
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed"
+                >
+                  Fostering ethical values, human dignity, and strong moral
+                  principles within the campus community.
+                </p>
+                <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">
+                  Activities
+                </h3>
+                <div class="space-y-2.5 mb-5">
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Ethics & Values Awareness Workshops
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Community Outreach & Kindness Campaigns
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Dignity & Mutual Respect Seminars
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Peer Support & Mentorship Programs
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                        <div
-                            class="pointer-events-none absolute right-3 top-5.5 bottom-0 flex items-center text-gray-500">
-                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </div>
-                    </div>
+            <!-- Film Club -->
+            <div
+              id="film-club"
+              data-category="Arts"
+              class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm"
+            >
+              <div class="relative">
+                <img
+                  src="./image/Film.png"
+                  alt="Film Club"
+                  class="w-full h-56 sm:h-64 object-cover rounded-xl"
+                />
+                <div class="absolute -bottom-5 left-5">
+                  <img
+                    src="./image/film-logo.png"
+                    alt="Film Logo"
+                    class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm"
+                  />
+                </div>
+              </div>
+              <div class="px-2 sm:px-4 pt-8 pb-3">
+                <h2
+                  class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]"
+                >
+                  Film Club
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed"
+                >
+                  Explore movie screenings, film analysis, video editing, and
+                  hands-on short film production.
+                </p>
+                <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">
+                  Activities
+                </h3>
+                <div class="space-y-2.5 mb-5">
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Weekly Movie Screenings & Discussions
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Short Film Production & Shooting
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Video Editing & Scriptwriting Tutorials
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Annual Student Film Showcase
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                    <div class="mb-5">
-                        <label for="user-message"
-                            class="block text-xs font-semibold text-gray-700 mb-1">Message*</label>
-                        <textarea id="user-message" name="message" rows="4"
-                            placeholder="Tell us why you want to join this club..."
-                            class="w-full px-3 py-2 text-xs border border-gray-300 rounded-md bg-white resize-none outline-none transition-all focus:border-[#4C4DFF] focus:ring-2 focus:ring-[#4C4DFF]/20"
-                            required></textarea>
-                    </div>
+            <!-- Photography Club -->
+            <div
+              id="photography-club"
+              data-category="Arts"
+              class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm"
+            >
+              <div class="relative">
+                <img
+                  src="./image/Photography.png"
+                  alt="Photography Club"
+                  class="w-full h-56 sm:h-64 object-cover rounded-xl"
+                />
+                <div class="absolute -bottom-5 left-5">
+                  <img
+                    src="./image/photo-logo.png"
+                    alt="Photography Logo"
+                    class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm"
+                  />
+                </div>
+              </div>
+              <div class="px-2 sm:px-4 pt-8 pb-3">
+                <h2
+                  class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]"
+                >
+                  Photography Club
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed"
+                >
+                  Capture stunning moments, learn camera techniques, photo
+                  editing, and explore campus photowalks.
+                </p>
+                <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">
+                  Activities
+                </h3>
+                <div class="space-y-2.5 mb-5">
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Campus Photowalks & Outdoor Shoots
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Lightroom & Photo Editing Sessions
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Monthly Photography Competitions
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Event Coverage & Exhibition Gallery
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                    <button type="submit" id="submit-btn"
-                        class="mb-2 w-full h-9 rounded-full bg-[#4C4DFF] text-white text-xs font-semibold hover:bg-[#3B3CCF] transition duration-200 focus:outline-none focus:ring-2 focus:ring-[#4C4DFF]/50">
-                        Submit
-                    </button>
-                </form>
-            </aside>
+            <!-- Student Association Club -->
+            <div
+              id="student-association-club"
+              data-category="Leadership"
+              class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm"
+            >
+              <div class="relative">
+                <img
+                  src="./image/StudentAssociation.png"
+                  alt="Student Association Club"
+                  class="w-full h-56 sm:h-64 object-cover rounded-xl"
+                />
+                <div class="absolute -bottom-5 left-5">
+                  <img
+                    src="./image/sa-logo.png"
+                    alt="Student Association Logo"
+                    class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm"
+                  />
+                </div>
+              </div>
+              <div class="px-2 sm:px-4 pt-8 pb-3">
+                <h2
+                  class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]"
+                >
+                  Student Association Club
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed"
+                >
+                  Represent student voices, organize major campus events, and
+                  build strong leadership skills.
+                </p>
+                <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">
+                  Activities
+                </h3>
+                <div class="space-y-2.5 mb-5">
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Campus Event Planning & Management
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Student Voice Forums & Representation
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Leadership & Teamwork Workshops
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Charity Drives & Campus Initiatives
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- IT Awareness Club -->
+            <div
+              id="it-awareness-club"
+              data-category="Technology"
+              class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm"
+            >
+              <div class="relative">
+                <img
+                  src="./image/ITAwareness.png"
+                  alt="IT Awareness Club"
+                  class="w-full h-56 sm:h-64 object-cover rounded-xl"
+                />
+                <div class="absolute -bottom-5 left-5">
+                  <img
+                    src="./image/it-logo.png"
+                    alt="IT Logo"
+                    class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm"
+                  />
+                </div>
+              </div>
+              <div class="px-2 sm:px-4 pt-8 pb-3">
+                <h2
+                  class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]"
+                >
+                  IT Awareness Club
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed"
+                >
+                  Promote digital literacy, cybersecurity awareness, and modern
+                  technology trends across campus.
+                </p>
+                <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">
+                  Activities
+                </h3>
+                <div class="space-y-2.5 mb-5">
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Cybersecurity & Online Safety Seminars
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Software & Tools Tech Demos
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Digital Literacy Community Outreach
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Tech News & AI Trend Discussions
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Robotics Club -->
+            <div
+              id="robotics-club"
+              data-category="Technology"
+              class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm"
+            >
+              <div class="relative">
+                <img
+                  src="./image/Robotics.png"
+                  alt="Robotics Club"
+                  class="w-full h-56 sm:h-64 object-cover rounded-xl"
+                />
+                <div class="absolute -bottom-5 left-5">
+                  <img
+                    src="./image/robotics-logo.png"
+                    alt="Robotics Logo"
+                    class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm"
+                  />
+                </div>
+              </div>
+              <div class="px-2 sm:px-4 pt-8 pb-3">
+                <h2
+                  class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]"
+                >
+                  Robotics Club
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed"
+                >
+                  Build, program, and innovate with robots, microcontrollers,
+                  and automation systems.
+                </p>
+                <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">
+                  Activities
+                </h3>
+                <div class="space-y-2.5 mb-5">
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Arduino & Raspberry Pi Building
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Robot Competitions & Battles
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Hardware & Sensor Programming
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Automation & IoT Projects
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Library Club -->
+            <div
+              id="library-club"
+              data-category="Education"
+              class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm"
+            >
+              <div class="relative">
+                <img
+                  src="./image/Library.png"
+                  alt="Library Club"
+                  class="w-full h-56 sm:h-64 object-cover rounded-xl"
+                />
+                <div class="absolute -bottom-5 left-5">
+                  <img
+                    src="./image/library-logo.png"
+                    alt="Library Logo"
+                    class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm"
+                  />
+                </div>
+              </div>
+              <div class="px-2 sm:px-4 pt-8 pb-3">
+                <h2
+                  class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]"
+                >
+                  Library Club
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed"
+                >
+                  Encourage reading culture, manage book reviews, organize study
+                  circles, and maintain learning resources.
+                </p>
+                <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">
+                  Activities
+                </h3>
+                <div class="space-y-2.5 mb-5">
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Monthly Book Club & Reading Circles
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Library Resource Management & Events
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Author Spotlights & Book Swaps
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Quiet Study & Research Workshops
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Aerobic Club -->
+            <div
+              id="aerobic-club"
+              data-category="Sports"
+              class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm"
+            >
+              <div class="relative">
+                <img
+                  src="./image/Aerobic.png"
+                  alt="Aerobic Club"
+                  class="w-full h-56 sm:h-64 object-cover rounded-xl"
+                />
+                <div class="absolute -bottom-5 left-5">
+                  <img
+                    src="./image/aerobic-logo.png"
+                    alt="Aerobic Logo"
+                    class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm"
+                  />
+                </div>
+              </div>
+              <div class="px-2 sm:px-4 pt-8 pb-3">
+                <h2
+                  class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]"
+                >
+                  Aerobic Club
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed"
+                >
+                  Stay fit and energetic through high-energy cardio workouts,
+                  music fitness routines, and group exercise.
+                </p>
+                <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">
+                  Activities
+                </h3>
+                <div class="space-y-2.5 mb-5">
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Weekly Group Aerobic Workouts
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Zumba & Dance Fitness Sessions
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Cardio & Physical Endurance Training
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Campus Health & Fitness Rallies
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Public Speaking Club -->
+            <div
+              id="public-speaking-club"
+              data-category="Education"
+              class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm"
+            >
+              <div class="relative">
+                <img
+                  src="./image/PublicSpeaking.png"
+                  alt="Public Speaking Club"
+                  class="w-full h-56 sm:h-64 object-cover rounded-xl"
+                />
+                <div class="absolute -bottom-5 left-5">
+                  <img
+                    src="./image/speaking-logo.png"
+                    alt="Public Speaking Logo"
+                    class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm"
+                  />
+                </div>
+              </div>
+              <div class="px-2 sm:px-4 pt-8 pb-3">
+                <h2
+                  class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]"
+                >
+                  Public Speaking Club
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed"
+                >
+                  Build confidence, master communication skills, and practice
+                  speech delivery and debate techniques.
+                </p>
+                <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">
+                  Activities
+                </h3>
+                <div class="space-y-2.5 mb-5">
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Impromptu & Prepared Speech Practice
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Debate & Argumentation Sessions
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Stage Confidence & Body Language Coaching
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Campus Speech & Storytelling Contests
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Web Club -->
+            <div
+              id="web-club"
+              data-category="Technology"
+              class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm"
+            >
+              <div class="relative">
+                <img
+                  src="./image/WebClub.png"
+                  alt="Web Club"
+                  class="w-full h-56 sm:h-64 object-cover rounded-xl"
+                />
+                <div class="absolute -bottom-5 left-5">
+                  <img
+                    src="./image/web-logo.png"
+                    alt="Web Club Logo"
+                    class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm"
+                  />
+                </div>
+              </div>
+              <div class="px-2 sm:px-4 pt-8 pb-3">
+                <h2
+                  class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]"
+                >
+                  Web Club
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed"
+                >
+                  Learn frontend & backend web development, build real-world web
+                  apps, and collaborate on projects.
+                </p>
+                <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">
+                  Activities
+                </h3>
+                <div class="space-y-2.5 mb-5">
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      HTML, CSS, JS & Framework Workshops
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Hackathons & Web Building Sprints
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Website Deployment & Hosting Tutorials
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Open Source Collaboration Projects
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gender Awareness Club -->
+            <div
+              id="gender-awareness-club"
+              data-category="Community"
+              class="club-card bg-white rounded-xl border border-gray-200 p-3 sm:p-4 shadow-sm"
+            >
+              <div class="relative">
+                <img
+                  src="./image/GenderAwareness.png"
+                  alt="Gender Awareness Club"
+                  class="w-full h-56 sm:h-64 object-cover rounded-xl"
+                />
+                <div class="absolute -bottom-5 left-5">
+                  <img
+                    src="./image/gender-logo.png"
+                    alt="Gender Logo"
+                    class="w-14 h-14 rounded-full border-2 border-white bg-white object-cover shadow-sm"
+                  />
+                </div>
+              </div>
+              <div class="px-2 sm:px-4 pt-8 pb-3">
+                <h2
+                  class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-[#1E293B]"
+                >
+                  Gender Awareness Club
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-gray-500 mt-2 leading-relaxed"
+                >
+                  Promote gender equality, inclusivity, and respectful dialogue
+                  across the university environment.
+                </p>
+                <h3 class="text-sm font-bold text-[#1E293B] mt-5 mb-3">
+                  Activities
+                </h3>
+                <div class="space-y-2.5 mb-5">
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Gender Equality & Inclusivity Forums
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Educational Campaigns & Guest Speakers
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Safe Space Discussions & Movie Nights
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="flex items-center justify-center w-4 h-4 rounded-full border-2 border-[#4C4DFF] text-[#4C4DFF] text-[9px] font-bold shrink-0"
+                      >✓</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Community Support & Rights Awareness
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Join Club Sidebar Form -->
+          <aside class="lg:col-span-1">
+            <form
+              id="contact-form"
+              class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm sticky top-24"
+            >
+              <h2 class="text-xl font-bold text-[#1E293B]">Join Club</h2>
+              <p class="text-xs text-gray-500 mt-1 mb-5">
+                Have a question or want to sign up? Reach out below.
+              </p>
+
+              <div class="mb-4">
+                <label
+                  for="user-name"
+                  class="block text-xs font-semibold text-gray-700 mb-1"
+                  >Your Name*</label
+                >
+                <input
+                  id="user-name"
+                  name="name"
+                  type="text"
+                  placeholder="Enter your full name"
+                  class="w-full h-9 px-3 text-xs border border-gray-300 rounded-md bg-white outline-none transition-all focus:border-[#4C4DFF] focus:ring-2 focus:ring-[#4C4DFF]/20"
+                  required
+                />
+              </div>
+
+              <div class="mb-4">
+                <label
+                  for="user-email"
+                  class="block text-xs font-semibold text-gray-700 mb-1"
+                  >Your Email*</label
+                >
+                <input
+                  id="user-email"
+                  name="email"
+                  type="email"
+                  placeholder="Enter your email"
+                  class="w-full h-9 px-3 text-xs border border-gray-300 rounded-md bg-white outline-none transition-all focus:border-[#4C4DFF] focus:ring-2 focus:ring-[#4C4DFF]/20"
+                  required
+                />
+              </div>
+
+              <!-- Club Dropdown -->
+              <div class="mb-4 relative">
+                <label
+                  for="user-club"
+                  class="block text-xs font-semibold text-gray-700 mb-1"
+                  >Club*</label
+                >
+                <!-- Added appearance-none to hide default browser dropdown arrow and pr-10 for padding -->
+                <select
+                  id="user-club"
+                  name="club"
+                  required
+                  class="w-full h-9 px-3 pr-10 text-xs border border-gray-300 rounded-md bg-white text-gray-700 outline-none appearance-none transition-all focus:border-[#4C4DFF] focus:ring-2 focus:ring-[#4C4DFF]/20"
+                >
+                  <option value="" disabled selected>Select Club</option>
+                  <option value="Sports Club">Sports Club</option>
+                  <option value="Cooking">Cooking</option>
+                  <option value="Music Club">Music Club</option>
+                  <option value="Yoga Club">Yoga Club</option>
+                  <option value="Design Club">Design Club</option>
+                  <option value="Promoting Integrity &amp; Dignity Club">
+                    Promoting Integrity &amp; Dignity Club
+                  </option>
+                  <option value="Film Club">Film Club</option>
+                  <option value="Photography Club">Photography Club</option>
+                  <option value="Student Association Club">
+                    Student Association Club
+                  </option>
+                  <option value="IT Awareness Club">IT Awareness Club</option>
+                  <option value="Robotics Club">Robotics Club</option>
+                  <option value="Library Club">Library Club</option>
+                  <option value="Aerobic Club">Aerobic Club</option>
+                  <option value="Public Speaking Club">
+                    Public Speaking Club
+                  </option>
+                  <option value="Web Club">Web Club</option>
+                  <option value="Gender Awareness Club">
+                    Gender Awareness Club
+                  </option>
+                </select>
+                <!-- Added top-5 or top-[22px] to account for the <label> height above the input -->
+                <div
+                  class="pointer-events-none absolute right-3 top-5.5 bottom-0 flex items-center text-gray-500"
+                >
+                  <svg
+                    class="h-4 w-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Year Dropdown -->
+              <div class="mb-4 relative">
+                <label
+                  for="user-year"
+                  class="block text-xs font-semibold text-gray-700 mb-1"
+                  >Year*</label
+                >
+                <select
+                  id="user-year"
+                  name="year"
+                  required
+                  class="w-full h-9 px-3 pr-10 text-xs border border-gray-300 rounded-md bg-white text-gray-700 outline-none appearance-none transition-all focus:border-[#4C4DFF] focus:ring-2 focus:ring-[#4C4DFF]/20"
+                >
+                  <option value="" disabled selected>Select your year</option>
+                  <option value="Year 1">Year 1</option>
+                  <option value="Year 2">Year 2</option>
+                </select>
+
+                <div
+                  class="pointer-events-none absolute right-3 top-5.5 bottom-0 flex items-center text-gray-500"
+                >
+                  <svg
+                    class="h-4 w-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="mb-5">
+                <label
+                  for="user-message"
+                  class="block text-xs font-semibold text-gray-700 mb-1"
+                  >Message*</label
+                >
+                <textarea
+                  id="user-message"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell us why you want to join this club..."
+                  class="w-full px-3 py-2 text-xs border border-gray-300 rounded-md bg-white resize-none outline-none transition-all focus:border-[#4C4DFF] focus:ring-2 focus:ring-[#4C4DFF]/20"
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                id="submit-btn"
+                class="mb-2 w-full h-9 rounded-full bg-[#4C4DFF] text-white text-xs font-semibold hover:bg-[#3B3CCF] transition duration-200 focus:outline-none focus:ring-2 focus:ring-[#4C4DFF]/50"
+              >
+                Submit
+              </button>
+            </form>
+          </aside>
         </div>
+      </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#111827] text-white py-12 px-6 md:px-16 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-            <div class="flex items-center gap-3">
-                <div
-                    class="w-11 h-11 rounded-full bg-linear-to-br from-[#FFA500] to-indigo-500 p-0.5 flex items-center justify-center">
-                    <img class="w-10 h-10 rounded-full object-cover" src="./image/website-logo.jpg"
-                        alt="Student Club Logo">
-                </div>
-                <h3 class="font-bold text-xl sm:text-2xl text-white">
-                    Student <span class="text-[#4C4DFF]">Clubs</span>
-                </h3>
-            </div>
-
-            <ul class="flex flex-wrap justify-center items-center gap-6 text-sm text-gray-300">
-                <li><a href="index.html" class="hover:text-[#FFA500] transition">Home</a></li>
-                <li><a href="clubs.html" class="text-white hover:text-[#FFA500] transition">Clubs</a></li>
-                <li><a href="events.html" class="hover:text-[#FFA500] transition">Events</a></li>
-                <li><a href="about.html" class="hover:text-[#FFA500] transition">About</a></li>
-            </ul>
-
-            <div class="flex items-center gap-4 text-gray-400">
-                <a href="#" class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full" aria-label="Facebook">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
-                    </svg>
-                </a>
-                <a href="#" class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full" aria-label="Instagram">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                    </svg>
-                </a>
-                <a href="#" class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full" aria-label="Telegram">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.195 1.006.128.832.941z" />
-                    </svg>
-                </a>
-            </div>
+    <footer
+      class="bg-[#111827] text-white py-12 px-4 sm:px-8 md:px-8 lg:px-16 border-t border-gray-800"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8"
+      >
+        <div class="flex items-center gap-3">
+          <div
+            class="w-11 h-11 rounded-full bg-linear-to-br from-[#FFA500] to-indigo-500 p-0.5 flex items-center justify-center"
+          >
+            <img
+              class="w-10 h-10 rounded-full object-cover"
+              src="./image/website-logo.jpg"
+              alt="Student Club Logo"
+            />
+          </div>
+          <h3 class="font-bold text-xl sm:text-2xl text-white">
+            Student <span class="text-[#4C4DFF]">Clubs</span>
+          </h3>
         </div>
 
-        <div
-            class="flex flex-col sm:flex-row mt-8 pt-6 border-t border-gray-800 text-xs text-gray-500 justify-between items-center gap-2">
-            <p>&copy; 2026 Student Club Website. All rights reserved.</p>
-            <p>Privacy Policy | Terms of Service</p>
+        <ul
+          class="flex flex-wrap justify-center items-center gap-6 text-sm text-gray-300"
+        >
+          <li>
+            <a href="index.html" class="hover:text-[#FFA500] transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="clubs.html"
+              class="text-white hover:text-[#FFA500] transition"
+              >Clubs</a
+            >
+          </li>
+          <li>
+            <a href="events.html" class="hover:text-[#FFA500] transition"
+              >Events</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="hover:text-[#FFA500] transition"
+              >About</a
+            >
+          </li>
+        </ul>
+
+        <div class="flex items-center gap-4 text-gray-400">
+          <a
+            href="#"
+            class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full"
+            aria-label="Facebook"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full"
+            aria-label="Instagram"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full"
+            aria-label="Telegram"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.195 1.006.128.832.941z"
+              />
+            </svg>
+          </a>
         </div>
+      </div>
+
+      <div
+        class="flex flex-col sm:flex-row mt-8 pt-6 border-t border-gray-800 text-xs text-gray-500 justify-between items-center gap-2"
+      >
+        <p>&copy; 2026 Student Club Website. All rights reserved.</p>
+        <p>Privacy Policy | Terms of Service</p>
+      </div>
     </footer>
-    <script src="./js/main.js">
-
-    </script>
-</body>
-
+    <script src="./js/main.js"></script>
+  </body>
 </html>

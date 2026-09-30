@@ -1,814 +1,1379 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Student Clubs">
-    <meta name="theme-color" content="#111827">
-    <meta name="description" content="Discover upcoming university events, campus activities, sports showcases, club performances, and student experiences at Student Clubs.">
-    <meta name="keywords" content="student events, campus events, university events, club events, sports event, music night, yoga event, campus activities">
-    <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Student Clubs | Campus Events & Student Activities">
-    <meta property="og:description" content="See what is happening on campus and join the latest student events, club activities, and campus experiences.">
-    <meta property="og:image" content="https://student-clubs-silk.vercel.app/image/website-logo.jpg">
-    <meta property="og:url" content="https://student-clubs-silk.vercel.app/events.html">
-    <meta property="og:site_name" content="Student Clubs">
-    <meta property="og:locale" content="en_US">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Student Clubs | Campus Events & Student Activities">
-    <meta name="twitter:description" content="Explore campus events and university activities designed for student connection and fun.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Student Clubs" />
+    <meta name="theme-color" content="#111827" />
+    <meta
+      name="description"
+      content="Discover upcoming university events, campus activities, sports showcases, club performances, and student experiences at Student Clubs."
+    />
+    <meta
+      name="keywords"
+      content="student events, campus events, university events, club events, sports event, music night, yoga event, campus activities"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Student Clubs | Campus Events & Student Activities"
+    />
+    <meta
+      property="og:description"
+      content="See what is happening on campus and join the latest student events, club activities, and campus experiences."
+    />
+    <meta
+      property="og:image"
+      content="https://student-clubs-silk.vercel.app/image/website-logo.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://student-clubs-silk.vercel.app/events.html"
+    />
+    <meta property="og:site_name" content="Student Clubs" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Student Clubs | Campus Events & Student Activities"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore campus events and university activities designed for student connection and fun."
+    />
     <title>Student Clubs | Campus Events & Student Activities</title>
-    <link rel="canonical" href="https://student-clubs-silk.vercel.app/events.html">
+    <link
+      rel="canonical"
+      href="https://student-clubs-silk.vercel.app/events.html"
+    />
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Event",
-          "name": "Student Clubs Campus Events",
-          "url": "https://student-clubs-silk.vercel.app/events.html",
-          "description": "A collection of university events, club showcases, and campus activities organized for students.",
-          "organizer": {
-            "@type": "Organization",
-            "name": "Student Clubs"
-          },
-          "eventStatus": "https://schema.org/EventScheduled",
-          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
-        }
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Student Clubs Campus Events",
+        "url": "https://student-clubs-silk.vercel.app/events.html",
+        "description": "A collection of university events, club showcases, and campus activities organized for students.",
+        "organizer": {
+          "@type": "Organization",
+          "name": "Student Clubs"
+        },
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
+      }
     </script>
 
     <!-- Tailwind CSS Output -->
-    <link href="./output.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet" />
 
     <!-- Google Typography Fonts (Inter & Poppins) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-         <!-- Icon -->
-<link rel="icon" type="image/jpeg" href="./image/website-logo-icon.png">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon -->
+    <link rel="icon" type="image/jpeg" href="./image/website-logo-icon.png" />
+  </head>
 
-<body class="font-['Inter',sans-serif] bg-gray-50 text-gray-900 min-h-screen flex flex-col">
-
+  <body
+    class="font-['Inter',sans-serif] bg-gray-50 text-gray-900 min-h-screen flex flex-col"
+  >
     <!-- NAVIGATION HEADER                          -->
     <header
-        class="sticky top-0 z-50 px-4 sm:px-8 md:px-16 py-4 bg-[#111827]/90 backdrop-blur-md border-b border-white/10">
-        <nav class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      class="sticky top-0 z-50 px-4 sm:px-8 md:px-8 lg:px-16 py-4 bg-[#111827]/90 backdrop-blur-md border-b border-white/10"
+    >
+      <nav class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+        <!-- Brand Logo & Title -->
+        <a href="index.html" class="flex items-center gap-3 group shrink-0">
+          <div
+            class="w-10 h-10 rounded-full bg-linear-to-br from-[#FFA500] to-indigo-500 p-0.5 transition-transform duration-300 group-hover:scale-105 flex items-center justify-center"
+          >
+            <img
+              class="w-9 h-9 rounded-full object-cover"
+              src="./image/website-logo.jpg"
+              alt="Student Club Logo"
+            />
+          </div>
+          <h3 class="font-bold text-xl sm:text-2xl text-white tracking-wide">
+            Student <span class="text-blue-500">Clubs</span>
+          </h3>
+        </a>
 
-            <!-- Brand Logo & Title -->
-            <a href="index.html" class="flex items-center gap-3 group shrink-0">
-                <div
-                    class="w-10 h-10 rounded-full bg-linear-to-br from-[#FFA500] to-indigo-500 p-0.5 transition-transform duration-300 group-hover:scale-105 flex items-center justify-center">
-                    <img class="w-9 h-9 rounded-full object-cover" src="./image/website-logo.jpg"
-                        alt="Student Club Logo">
-                </div>
-                <h3 class="font-bold text-xl sm:text-2xl text-white tracking-wide">
-                    Student <span class="text-blue-500">Clubs</span>
-                </h3>
-            </a>
+        <!-- Mobile Navigation Toggle -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+        <label
+          for="menu-toggle"
+          class="md:hidden cursor-pointer text-gray-300 hover:text-white p-2"
+          aria-label="Toggle Navigation Menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </label>
 
-            <!-- Mobile Navigation Toggle -->
-            <input type="checkbox" id="menu-toggle" class="peer hidden">
-            <label for="menu-toggle" class="sm:hidden cursor-pointer text-gray-300 hover:text-white p-2"
-                aria-label="Toggle Navigation Menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
-            </label>
+        <!-- Navigation Links -->
+        <ul
+          class="peer-checked:flex hidden flex-col md:flex md:flex-row gap-2 md:gap-6 lg:gap-8 items-center absolute md:relative top-full left-0 w-full md:w-auto bg-[#111827] md:bg-transparent p-6 md:p-0 border-b border-white/10 md:border-none shadow-2xl md:shadow-none transition-all duration-300 z-50"
+        >
+          <li class="relative group py-2">
+            <a
+              href="index.html"
+              class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300"
+              >Home</a
+            >
+            <span
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"
+            ></span>
+          </li>
 
-            <!-- Navigation Links -->
-            <ul
-                class="peer-checked:flex hidden flex-col sm:flex sm:flex-row gap-2 sm:gap-6 lg:gap-8 items-center absolute sm:relative top-full left-0 w-full sm:w-auto bg-[#111827] sm:bg-transparent p-6 sm:p-0 border-b border-white/10 sm:border-none shadow-2xl sm:shadow-none transition-all duration-300 z-50">
-                <li class="relative group py-2">
-                    <a href="index.html"
-                        class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300">Home</a>
-                    <span
-                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"></span>
-                </li>
+          <li class="relative group py-2">
+            <a
+              href="clubs.html"
+              class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300"
+              >Clubs</a
+            >
+            <span
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"
+            ></span>
+          </li>
 
-                <li class="relative group py-2">
-                    <a href="clubs.html"
-                        class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300">Clubs</a>
-                    <span
-                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"></span>
-                </li>
+          <li class="relative group py-2">
+            <a
+              href="events.html"
+              class="text-white font-medium text-[16px] transition-colors duration-300"
+              >Events</a
+            >
+            <span
+              class="absolute bottom-0 left-0 w-full h-0.5 bg-[#FFA500] rounded-full shadow-[0_0_8px_#FFA500]"
+            ></span>
+          </li>
 
-                <li class="relative group py-2">
-                    <a href="events.html"
-                        class="text-white font-medium text-[16px] transition-colors duration-300">Events</a>
-                    <span
-                        class="absolute bottom-0 left-0 w-full h-0.5 bg-[#FFA500] rounded-full shadow-[0_0_8px_#FFA500]"></span>
-                </li>
+          <li class="relative group py-2">
+            <a
+              href="about.html"
+              class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300"
+              >About</a
+            >
+            <span
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"
+            ></span>
+          </li>
+        </ul>
 
-                <li class="relative group py-2">
-                    <a href="about.html"
-                        class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300">About</a>
-                    <span
-                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"></span>
-                </li>
-            </ul>
+        <!-- Search Input Field -->
+        <div class="hidden lg:block relative w-40 md:w-52 lg:w-64">
+          <form id="searchForm">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search..."
+              autocomplete="off"
+              class="w-full px-4 py-2 pr-10 text-xs sm:text-sm text-gray-200 bg-[#161b22] rounded-full border border-gray-700/60 outline-none transition-all duration-300 placeholder:text-gray-500 focus:border-[#FFA500] focus:ring-1 focus:ring-[#FFA500]/40 focus:shadow-[0_0_12px_rgba(255,165,0,0.3)]"
+            />
 
-           
-                <!-- Search Input Field -->
-                <div class="hidden lg:block relative w-40 md:w-52 lg:w-64">
+            <!-- Search Button -->
+            <button
+              type="submit"
+              id="searchBtn"
+              aria-label="Search"
+              class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#FFA500] transition-colors duration-200 cursor-pointer p-1"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </form>
+        </div>
 
-                    <form id="searchForm">
-
-                        <input type="text" id="searchInput" placeholder="Search..." autocomplete="off"
-                            class="w-full px-4 py-2 pr-10 text-xs sm:text-sm text-gray-200 bg-[#161b22] rounded-full border border-gray-700/60 outline-none transition-all duration-300 placeholder:text-gray-500 focus:border-[#FFA500] focus:ring-1 focus:ring-[#FFA500]/40 focus:shadow-[0_0_12px_rgba(255,165,0,0.3)]">
-
-                        <!-- Search Button -->
-                        <button type="submit" id="searchBtn" aria-label="Search"
-                            class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#FFA500] transition-colors duration-200 cursor-pointer p-1">
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <circle cx="11" cy="11" r="8"></circle>
-                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                            </svg>
-
-                        </button>
-
-                    </form>
-
-                </div>
-
-                <a href="clubs.html#contact-form"
-                    class="hidden sm:inline-flex items-center gap-2 bg-linear-to-br from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white font-semibold text-[15px] px-5 py-2 rounded-full shadow-md transition-all duration-300 hover:scale-105 active:scale-95">
-                    Join Now &rarr;
-                </a>
-          
-        </nav>
+        <a
+          href="clubs.html#contact-form"
+          class="hidden md:inline-flex items-center gap-2 bg-linear-to-br from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white font-semibold text-[15px] px-5 py-2 rounded-full shadow-md transition-all duration-300 hover:scale-105 active:scale-95"
+        >
+          Join Now &rarr;
+        </a>
+      </nav>
     </header>
 
     <!-- MAIN CONTENT AREA                          -->
     <main class="grow">
+      <!-- EVENTS HERO BANNER SECTION -->
+      <section
+        class="relative min-h-125 bg-[url('./image/banner-events-page.jpg')] bg-cover bg-center px-4 sm:px-8 md:px-8 lg:px-16 py-16 flex flex-col justify-center overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 bg-linear-to-r from-black/80 via-black/60 to-black/40 z-0"
+        ></div>
 
-        <!-- EVENTS HERO BANNER SECTION -->
-        <section
-            class="relative min-h-125 bg-[url('./image/banner-events-page.jpg')] bg-cover bg-center px-6 sm:px-12 md:px-16 py-16 flex flex-col justify-center overflow-hidden">
-            <div class="absolute inset-0 bg-linear-to-r from-black/80 via-black/60 to-black/40 z-0"></div>
+        <div class="relative z-10 w-full max-w-7xl mx-auto">
+          <div class="max-w-2xl space-y-3">
+            <h1
+              class="font-['Poppins',sans-serif] font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-wide drop-shadow-md leading-tight"
+            >
+              Campus <span class="text-[#4C4DFF]">Events</span>
+            </h1>
 
-            <div class="relative z-10 max-w-2xl space-y-3">
-                
-                <h1
-                    class="font-['Poppins',sans-serif] font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-wide drop-shadow-md leading-tight">
-                    Campus <span class="text-[#4C4DFF]">Events</span>
-                </h1>
+            <p
+              class="text-gray-100 text-base sm:text-lg max-w-xl leading-relaxed drop-shadow-sm"
+            >
+              Discover upcoming student events, club showcases, sports
+              activities, and campus experiences designed to bring students
+              together.
+            </p>
+          </div>
+        </div>
+      </section>
 
-                <p class="text-gray-100 text-base sm:text-lg max-w-xl leading-relaxed drop-shadow-sm">
-                    Discover upcoming student events, club showcases, sports activities, and campus experiences designed to bring students together.
-                </p>
-            </div>
-        </section>
+      <!-- FILTER & EVENTS LISTING SECTION -->
+      <section class="px-4 sm:px-8 md:px-8 lg:px-16 py-12">
+        <div class="max-w-7xl mx-auto space-y-8">
+          <!-- Category Filter Tabs -->
+          <div
+            class="flex items-center gap-3 overflow-x-auto pb-2 border-b border-gray-200"
+          >
+            <button
+              data-category="All"
+              class="filter-btn px-6 py-2 text-xs sm:text-sm font-semibold text-white bg-[#4C4DFF] rounded-full shadow-md shrink-0"
+            >
+              All
+            </button>
+            <button
+              data-category="Sports"
+              class="filter-btn px-6 py-2 text-xs sm:text-sm font-semibold text-gray-700 hover:text-[#4C4DFF] hover:bg-indigo-50 border border-gray-300 rounded-full transition shrink-0 bg-white"
+            >
+              Sports
+            </button>
+            <button
+              data-category="Cooking"
+              class="filter-btn px-6 py-2 text-xs sm:text-sm font-semibold text-gray-700 hover:text-[#4C4DFF] hover:bg-indigo-50 border border-gray-300 rounded-full transition shrink-0 bg-white"
+            >
+              Cooking
+            </button>
+            <button
+              data-category="Music"
+              class="filter-btn px-6 py-2 text-xs sm:text-sm font-semibold text-gray-700 hover:text-[#4C4DFF] hover:bg-indigo-50 border border-gray-300 rounded-full transition shrink-0 bg-white"
+            >
+              Music
+            </button>
+            <button
+              data-category="Yoga"
+              class="filter-btn px-6 py-2 text-xs sm:text-sm font-semibold text-gray-700 hover:text-[#4C4DFF] hover:bg-indigo-50 border border-gray-300 rounded-full transition shrink-0 bg-white"
+            >
+              Yoga
+            </button>
+          </div>
 
-        <!-- FILTER & EVENTS LISTING SECTION -->
-        <section class="max-w-7xl mx-auto py-12 px-4 sm:px-8 md:px-16 space-y-8">
+          <!-- Events Cards Grid -->
+          <div class="grid grid-cols-1 gap-8">
+            <!-- Event Card 1: Sport Club Showcase -->
+            <article
+              id="sport"
+              data-category="Sports"
+              class="event-card bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300"
+            >
+              <div>
+                <img
+                  class="w-full h-80 sm:h-96 object-cover rounded-xl mb-6"
+                  src="./image/volleyball.jpg"
+                  alt="Campus Sports & Fitness Showcase"
+                />
 
-            <!-- Category Filter Tabs -->
-            <div class="flex items-center gap-3 overflow-x-auto pb-2 border-b border-gray-200">
-                <button data-category="All"
-                    class="filter-btn px-6 py-2 text-xs sm:text-sm font-semibold text-white bg-[#4C4DFF] rounded-full shadow-md shrink-0">
-                    All
-                </button>
-                <button data-category="Sports"
-                    class=" filter-btn px-6 py-2 text-xs sm:text-sm font-semibold text-gray-700 hover:text-[#4C4DFF] hover:bg-indigo-50 border border-gray-300 rounded-full transition shrink-0 bg-white">
-                    Sports
-                </button>
-                <button data-category="Cooking"
-                    class=" filter-btn px-6 py-2 text-xs sm:text-sm font-semibold text-gray-700 hover:text-[#4C4DFF] hover:bg-indigo-50 border border-gray-300 rounded-full transition shrink-0 bg-white">
-                    Cooking
-                </button>
-                <button data-category="Music"
-                    class=" filter-btn px-6 py-2 text-xs sm:text-sm font-semibold text-gray-700 hover:text-[#4C4DFF] hover:bg-indigo-50 border border-gray-300 rounded-full transition shrink-0 bg-white">
-                    Music
-                </button>
-                <button data-category="Yoga"
-                    class="filter-btn px-6 py-2 text-xs sm:text-sm font-semibold text-gray-700 hover:text-[#4C4DFF] hover:bg-indigo-50 border border-gray-300 rounded-full transition shrink-0 bg-white">
-                    Yoga
-                </button>
-            </div>
+                <div class="space-y-4">
+                  <div>
+                    <span
+                      class="text-xs font-bold uppercase tracking-wider text-orange-500 bg-orange-50 px-2.5 py-1 rounded-md border border-orange-200"
+                      >Host: Student Sport Club</span
+                    >
+                    <h3 class="text-2xl font-bold text-[#4C4DFF] mt-2">
+                      Campus Sports & Fitness Showcase
+                    </h3>
+                    <p class="text-sm text-gray-600 mt-1">
+                      Target Audience: All university students, faculty, and
+                      sports enthusiasts
+                      <span class="text-gray-400"
+                        >(Open to all skill levels)</span
+                      >
+                    </p>
+                  </div>
 
-            <!-- Events Cards Grid -->
-            <div class="grid grid-cols-1 gap-8">
+                  <!-- Event Metadata -->
+                  <div
+                    class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 border-y border-gray-100 py-3 text-xs text-gray-600"
+                  >
+                    <p class="flex items-center gap-2">
+                      <svg
+                        class="w-4 h-4 text-blue-500 shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <rect
+                          x="3"
+                          y="4"
+                          width="18"
+                          height="18"
+                          rx="2"
+                          ry="2"
+                        />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                      </svg>
+                      <span class="font-medium text-gray-800"
+                        >Thursday, October 15, 2026</span
+                      >
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <svg
+                        class="w-4 h-4 text-blue-500 shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                      </svg>
+                      <span class="font-medium text-gray-800"
+                        >4:00 PM – 6:00 PM</span
+                      >
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <svg
+                        class="w-4 h-4 text-blue-500 shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                        />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                      </svg>
+                      <span class="font-medium text-gray-800"
+                        >Main Gymnasium & Outdoor Turf Field</span
+                      >
+                    </p>
+                  </div>
 
-                <!-- Event Card 1: Sport Club Showcase -->
-                <article id="sport"
-                 data-category="Sports"
-                    class="event-card bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300">
-                    <div>
-                        <img class="w-full h-80 sm:h-96 object-cover rounded-xl mb-6" src="./image/volleyball.jpg"
-                            alt="Campus Sports & Fitness Showcase">
-
-                        <div class="space-y-4">
-                            <div>
-                                <span
-                                    class="text-xs font-bold uppercase tracking-wider text-orange-500 bg-orange-50 px-2.5 py-1 rounded-md border border-orange-200">Host:
-                                    Student Sport Club</span>
-                                <h3 class="text-2xl font-bold text-[#4C4DFF] mt-2">Campus Sports & Fitness Showcase</h3>
-                                <p class="text-sm text-gray-600 mt-1">
-                                    Target Audience: All university students, faculty, and sports enthusiasts <span
-                                        class="text-gray-400">(Open to all skill levels)</span>
-                                </p>
-                            </div>
-
-                            <!-- Event Metadata -->
-                            <div
-                                class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 border-y border-gray-100 py-3 text-xs text-gray-600">
-                                <p class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                                        <line x1="16" y1="2" x2="16" y2="6" />
-                                        <line x1="8" y1="2" x2="8" y2="6" />
-                                        <line x1="3" y1="10" x2="21" y2="10" />
-                                    </svg>
-                                    <span class="font-medium text-gray-800">Thursday, October 15, 2026</span>
-                                </p>
-                                <p class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10" />
-                                        <polyline points="12 6 12 12 16 14" />
-                                    </svg>
-                                    <span class="font-medium text-gray-800">4:00 PM – 6:00 PM</span>
-                                </p>
-                                <p class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    </svg>
-                                    <span class="font-medium text-gray-800">Main Gymnasium & Outdoor Turf Field</span>
-                                </p>
-                            </div>
-
-                            <!-- Event Schedule -->
-                            <div class="space-y-2 pt-2">
-                                <h4 class="text-sm font-bold text-gray-800 uppercase tracking-wide">Event Schedule &
-                                    Activities</h4>
-                                <div class="overflow-x-auto rounded-lg border border-gray-200">
-                                    <table class="w-full text-left text-xs border-collapse">
-                                        <thead>
-                                            <tr
-                                                class="bg-gray-100 text-gray-700 font-semibold border-b border-gray-200">
-                                                <th class="py-2.5 px-3 w-1/4">Time Slot</th>
-                                                <th class="py-2.5 px-3 w-1/3">Activity</th>
-                                                <th class="py-2.5 px-3">Details</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="divide-y divide-gray-100 text-gray-600">
-                                            <tr>
-                                                <td class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap">4:00
-                                                    PM – 4:15 PM</td>
-                                                <td class="py-2 px-3 font-semibold text-[#4C4DFF]">Check-in & Welcome
-                                                </td>
-                                                <td class="py-2 px-3">Welcome remarks, distribution of wristbands, event
-                                                    maps, and free water bottles.</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap">4:15
-                                                    PM – 4:30 PM</td>
-                                                <td class="py-2 px-3 font-semibold text-[#4C4DFF]">Group Warm-up Session
-                                                </td>
-                                                <td class="py-2 px-3">Dynamic stretching and light cardio led by student
-                                                    fitness trainers.</td>
-                                            </tr>
-                                            <tr>
-                                                <td
-                                                    class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap align-top">
-                                                    4:30 PM – 5:30 PM</td>
-                                                <td class="py-2 px-3 font-semibold text-[#4C4DFF] align-top">
-                                                    Mini-Tournaments & Stations</td>
-                                                <td class="py-2 px-3 space-y-1">
-                                                    <p>Rotating activities across different areas of the gym and field:
-                                                    </p>
-                                                    <ul class="list-disc list-inside space-y-0.5 text-gray-500 pl-1">
-                                                        <li><strong class="text-gray-700">Station 1: Volleyball 3v3
-                                                                Blitz</strong> – Fast-paced 10-minute mini matches
-                                                            (Court 1)</li>
-                                                        <li><strong class="text-gray-700">Station 2: Basketball 3-Point
-                                                                Contest</strong> – Timed shooting challenge with prizes
-                                                            (Court 2)</li>
-                                                        <li><strong class="text-gray-700">Station 3: Outdoor Turf
-                                                                Drills</strong> – Agility ladder, relay races, and
-                                                            casual soccer skills</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap">5:30
-                                                    PM – 5:50 PM</td>
-                                                <td class="py-2 px-3 font-semibold text-[#4C4DFF]">Exhibition Match</td>
-                                                <td class="py-2 px-3">Feature match between the Sport Club leadership
-                                                    team and varsity athletes.</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap">5:50
-                                                    PM – 6:00 PM</td>
-                                                <td class="py-2 px-3 font-semibold text-[#4C4DFF]">Raffle & Closing
-                                                    Remarks</td>
-                                                <td class="py-2 px-3">Awarding gift cards, club merchandise, and
-                                                    sign-ups for semester leagues.</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <!-- Key Highlights & Features -->
-                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 space-y-2">
-                                <h4 class="text-xs font-bold text-gray-800 uppercase tracking-wide">Key Highlights &
-                                    Features</h4>
-                                <ul class="text-xs text-gray-600 space-y-1.5 list-disc list-inside">
-                                    <li><strong class="text-gray-800">Equipment Provided:</strong> All balls, nets, and
-                                        training equipment will be supplied. Participants just need standard athletic
-                                        wear and indoor court shoes.</li>
-                                    <li><strong class="text-gray-800">Refreshments:</strong> Hydration stations with
-                                        water and electrolyte drinks, plus light healthy snacks (granola bars and fresh
-                                        fruit).</li>
-                                    <li><strong class="text-gray-800">Club Recruitment:</strong> Opportunity to register
-                                        for upcoming intramural sports leagues (Volleyball, Basketball, Soccer, and
-                                        Badminton).</li>
-                                </ul>
-                            </div>
-                        </div>
+                  <!-- Event Schedule -->
+                  <div class="space-y-2 pt-2">
+                    <h4
+                      class="text-sm font-bold text-gray-800 uppercase tracking-wide"
+                    >
+                      Event Schedule & Activities
+                    </h4>
+                    <div
+                      class="overflow-x-auto rounded-lg border border-gray-200"
+                    >
+                      <table class="w-full text-left text-xs border-collapse">
+                        <thead>
+                          <tr
+                            class="bg-gray-100 text-gray-700 font-semibold border-b border-gray-200"
+                          >
+                            <th class="py-2.5 px-3 w-1/4">Time Slot</th>
+                            <th class="py-2.5 px-3 w-1/3">Activity</th>
+                            <th class="py-2.5 px-3">Details</th>
+                          </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 text-gray-600">
+                          <tr>
+                            <td
+                              class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap"
+                            >
+                              4:00 PM – 4:15 PM
+                            </td>
+                            <td class="py-2 px-3 font-semibold text-[#4C4DFF]">
+                              Check-in & Welcome
+                            </td>
+                            <td class="py-2 px-3">
+                              Welcome remarks, distribution of wristbands, event
+                              maps, and free water bottles.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap"
+                            >
+                              4:15 PM – 4:30 PM
+                            </td>
+                            <td class="py-2 px-3 font-semibold text-[#4C4DFF]">
+                              Group Warm-up Session
+                            </td>
+                            <td class="py-2 px-3">
+                              Dynamic stretching and light cardio led by student
+                              fitness trainers.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap align-top"
+                            >
+                              4:30 PM – 5:30 PM
+                            </td>
+                            <td
+                              class="py-2 px-3 font-semibold text-[#4C4DFF] align-top"
+                            >
+                              Mini-Tournaments & Stations
+                            </td>
+                            <td class="py-2 px-3 space-y-1">
+                              <p>
+                                Rotating activities across different areas of
+                                the gym and field:
+                              </p>
+                              <ul
+                                class="list-disc list-inside space-y-0.5 text-gray-500 pl-1"
+                              >
+                                <li>
+                                  <strong class="text-gray-700"
+                                    >Station 1: Volleyball 3v3 Blitz</strong
+                                  >
+                                  – Fast-paced 10-minute mini matches (Court 1)
+                                </li>
+                                <li>
+                                  <strong class="text-gray-700"
+                                    >Station 2: Basketball 3-Point
+                                    Contest</strong
+                                  >
+                                  – Timed shooting challenge with prizes (Court
+                                  2)
+                                </li>
+                                <li>
+                                  <strong class="text-gray-700"
+                                    >Station 3: Outdoor Turf Drills</strong
+                                  >
+                                  – Agility ladder, relay races, and casual
+                                  soccer skills
+                                </li>
+                              </ul>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap"
+                            >
+                              5:30 PM – 5:50 PM
+                            </td>
+                            <td class="py-2 px-3 font-semibold text-[#4C4DFF]">
+                              Exhibition Match
+                            </td>
+                            <td class="py-2 px-3">
+                              Feature match between the Sport Club leadership
+                              team and varsity athletes.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap"
+                            >
+                              5:50 PM – 6:00 PM
+                            </td>
+                            <td class="py-2 px-3 font-semibold text-[#4C4DFF]">
+                              Raffle & Closing Remarks
+                            </td>
+                            <td class="py-2 px-3">
+                              Awarding gift cards, club merchandise, and
+                              sign-ups for semester leagues.
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
+                  </div>
 
-                    <div class="mt-6 pt-4 border-t border-gray-100 flex justify-end">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnQnwDNC709Zb5oVY1warxUjF8MmLBOkePFFqlpwKl-pOSYA/viewform?usp=header"
-                            class="inline-flex items-center justify-center gap-2 py-2.5 px-6 text-white font-semibold text-xs bg-[#4C4DFF] hover:bg-indigo-700 rounded-full transition-all duration-300 shadow-md">
-                            Register & Join Event &rarr;
-                        </a>
+                  <!-- Key Highlights & Features -->
+                  <div
+                    class="bg-gray-50 p-4 rounded-xl border border-gray-100 space-y-2"
+                  >
+                    <h4
+                      class="text-xs font-bold text-gray-800 uppercase tracking-wide"
+                    >
+                      Key Highlights & Features
+                    </h4>
+                    <ul
+                      class="text-xs text-gray-600 space-y-1.5 list-disc list-inside"
+                    >
+                      <li>
+                        <strong class="text-gray-800"
+                          >Equipment Provided:</strong
+                        >
+                        All balls, nets, and training equipment will be
+                        supplied. Participants just need standard athletic wear
+                        and indoor court shoes.
+                      </li>
+                      <li>
+                        <strong class="text-gray-800">Refreshments:</strong>
+                        Hydration stations with water and electrolyte drinks,
+                        plus light healthy snacks (granola bars and fresh
+                        fruit).
+                      </li>
+                      <li>
+                        <strong class="text-gray-800">Club Recruitment:</strong>
+                        Opportunity to register for upcoming intramural sports
+                        leagues (Volleyball, Basketball, Soccer, and Badminton).
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-6 pt-4 border-t border-gray-100 flex justify-end">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfnQnwDNC709Zb5oVY1warxUjF8MmLBOkePFFqlpwKl-pOSYA/viewform?usp=header"
+                  class="inline-flex items-center justify-center gap-2 py-2.5 px-6 text-white font-semibold text-xs bg-[#4C4DFF] hover:bg-indigo-700 rounded-full transition-all duration-300 shadow-md"
+                >
+                  Register & Join Event &rarr;
+                </a>
+              </div>
+            </article>
+
+            <!-- Event Card 2: Cooking Club Showcase -->
+            <article
+              id="cooking"
+              data-category="Cooking"
+              class="event-card bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300"
+            >
+              <div>
+                <img
+                  class="w-full h-80 sm:h-96 object-cover rounded-xl mb-6"
+                  src="./image/cooking-event.jpg"
+                  alt="Cooking Club Showcase"
+                />
+
+                <div class="space-y-4">
+                  <div>
+                    <span
+                      class="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200"
+                      >Host: Culinary & Culinary Arts Club</span
+                    >
+                    <h3 class="text-2xl font-bold text-[#4C4DFF] mt-2">
+                      Culinary Masterclass & Taste Workshop
+                    </h3>
+                    <p class="text-sm text-gray-600 mt-1">
+                      Target Audience: Food lovers, home cooks, and students
+                      wanting to learn essential kitchen skills
+                      <span class="text-gray-400">(Beginner friendly)</span>
+                    </p>
+                  </div>
+
+                  <!-- Event Metadata -->
+                  <div
+                    class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 border-y border-gray-100 py-3 text-xs text-gray-600"
+                  >
+                    <p class="flex items-center gap-2">
+                      <svg
+                        class="w-4 h-4 text-blue-500 shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <rect
+                          x="3"
+                          y="4"
+                          width="18"
+                          height="18"
+                          rx="2"
+                          ry="2"
+                        />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                      </svg>
+                      <span class="font-medium text-gray-800"
+                        >Sunday, October 18, 2026</span
+                      >
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <svg
+                        class="w-4 h-4 text-blue-500 shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                      </svg>
+                      <span class="font-medium text-gray-800"
+                        >2:00 PM – 5:00 PM</span
+                      >
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <svg
+                        class="w-4 h-4 text-blue-500 shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                        />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                      </svg>
+                      <span class="font-medium text-gray-800"
+                        >Culinary Lab 201 (Student Union)</span
+                      >
+                    </p>
+                  </div>
+
+                  <!-- Event Schedule -->
+                  <div class="space-y-2 pt-2">
+                    <h4
+                      class="text-sm font-bold text-gray-800 uppercase tracking-wide"
+                    >
+                      Event Schedule & Activities
+                    </h4>
+                    <div
+                      class="overflow-x-auto rounded-lg border border-gray-200"
+                    >
+                      <table class="w-full text-left text-xs border-collapse">
+                        <thead>
+                          <tr
+                            class="bg-gray-100 text-gray-700 font-semibold border-b border-gray-200"
+                          >
+                            <th class="py-2.5 px-3 w-1/4">Time Slot</th>
+                            <th class="py-2.5 px-3 w-1/3">Activity</th>
+                            <th class="py-2.5 px-3">Details</th>
+                          </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 text-gray-600">
+                          <tr>
+                            <td
+                              class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap"
+                            >
+                              2:00 PM – 2:20 PM
+                            </td>
+                            <td class="py-2 px-3 font-semibold text-[#4C4DFF]">
+                              Registration & Safety Briefing
+                            </td>
+                            <td class="py-2 px-3">
+                              Apron assignment, kitchen station walkthrough, and
+                              safety guidelines.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap"
+                            >
+                              2:20 PM – 3:15 PM
+                            </td>
+                            <td class="py-2 px-3 font-semibold text-[#4C4DFF]">
+                              Chef's Knife Skills Demo
+                            </td>
+                            <td class="py-2 px-3">
+                              Live demonstration on proper chopping, slicing,
+                              and preparing fresh ingredients.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap align-top"
+                            >
+                              3:15 PM – 4:30 PM
+                            </td>
+                            <td
+                              class="py-2 px-3 font-semibold text-[#4C4DFF] align-top"
+                            >
+                              Hands-on Cooking Workshop
+                            </td>
+                            <td class="py-2 px-3 space-y-1">
+                              <p>
+                                Prepare 3 quick, budget-friendly gourmet dishes
+                                in small groups:
+                              </p>
+                              <ul
+                                class="list-disc list-inside space-y-0.5 text-gray-500 pl-1"
+                              >
+                                <li>
+                                  <strong class="text-gray-700">Dish 1:</strong>
+                                  Fresh Handmade Pasta with Basil Pesto
+                                </li>
+                                <li>
+                                  <strong class="text-gray-700">Dish 2:</strong>
+                                  Pan-Seared Seasoned Vegetables
+                                </li>
+                                <li>
+                                  <strong class="text-gray-700">Dish 3:</strong>
+                                  Mini Fruit Parfait Par excellence
+                                </li>
+                              </ul>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap"
+                            >
+                              4:30 PM – 5:00 PM
+                            </td>
+                            <td class="py-2 px-3 font-semibold text-[#4C4DFF]">
+                              Plating, Tasting & Social
+                            </td>
+                            <td class="py-2 px-3">
+                              Enjoy your creations together, exchange recipe
+                              cards, and vote for best presentation.
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                </article>
+                  </div>
 
-                <!-- Event Card 2: Cooking Club Showcase -->
-                <article id="cooking" data-category="Cooking"
-                    class="event-card bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300">
-                    <div>
-                        <img class="w-full h-80 sm:h-96 object-cover rounded-xl mb-6" src="./image/cooking-event.jpg"
-                            alt="Cooking Club Showcase">
+                  <!-- Key Highlights & Features -->
+                  <div
+                    class="bg-gray-50 p-4 rounded-xl border border-gray-100 space-y-2"
+                  >
+                    <h4
+                      class="text-xs font-bold text-gray-800 uppercase tracking-wide"
+                    >
+                      Key Highlights & Features
+                    </h4>
+                    <ul
+                      class="text-xs text-gray-600 space-y-1.5 list-disc list-inside"
+                    >
+                      <li>
+                        <strong class="text-gray-800"
+                          >Ingredients Provided:</strong
+                        >
+                        All ingredients, aprons, cookware, and cutting boards
+                        will be provided.
+                      </li>
+                      <li>
+                        <strong class="text-gray-800"
+                          >Dietary Accommodations:</strong
+                        >
+                        Vegetarian, vegan, and gluten-free options available at
+                        all stations.
+                      </li>
+                      <li>
+                        <strong class="text-gray-800"
+                          >Take-Home Recipe Pack:</strong
+                        >
+                        Print recipe booklet with budget-friendly meal prep tips
+                        for students.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-                        <div class="space-y-4">
-                            <div>
-                                <span
-                                    class="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200">Host:
-                                    Culinary & Culinary Arts Club</span>
-                                <h3 class="text-2xl font-bold text-[#4C4DFF] mt-2">Culinary Masterclass & Taste Workshop
-                                </h3>
-                                <p class="text-sm text-gray-600 mt-1">
-                                    Target Audience: Food lovers, home cooks, and students wanting to learn essential
-                                    kitchen skills <span class="text-gray-400">(Beginner friendly)</span>
-                                </p>
-                            </div>
+              <div class="mt-6 pt-4 border-t border-gray-100 flex justify-end">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfAHWqlK-hywflscaG9aiCoY-1klnF4fQZxBXVif59SJgFBhw/viewform?usp=header"
+                  class="inline-flex items-center justify-center gap-2 py-2.5 px-6 text-white font-semibold text-xs bg-[#4C4DFF] hover:bg-indigo-700 rounded-full transition-all duration-300 shadow-md"
+                >
+                  Register & Join Event &rarr;
+                </a>
+              </div>
+            </article>
 
-                            <!-- Event Metadata -->
-                            <div
-                                class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 border-y border-gray-100 py-3 text-xs text-gray-600">
-                                <p class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                                        <line x1="16" y1="2" x2="16" y2="6" />
-                                        <line x1="8" y1="2" x2="8" y2="6" />
-                                        <line x1="3" y1="10" x2="21" y2="10" />
-                                    </svg>
-                                    <span class="font-medium text-gray-800">Sunday, October 18, 2026</span>
-                                </p>
-                                <p class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10" />
-                                        <polyline points="12 6 12 12 16 14" />
-                                    </svg>
-                                    <span class="font-medium text-gray-800">2:00 PM – 5:00 PM</span>
-                                </p>
-                                <p class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    </svg>
-                                    <span class="font-medium text-gray-800">Culinary Lab 201 (Student Union)</span>
-                                </p>
-                            </div>
+            <!-- Event Card 3: Music Club Showcase -->
+            <article
+              id="music"
+              data-category="Music"
+              class="event-card bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300"
+            >
+              <div>
+                <img
+                  class="w-full h-80 sm:h-96 object-cover rounded-xl mb-6"
+                  src="./image/music-banner.jpg"
+                  alt="Music Jam Night"
+                />
 
-                            <!-- Event Schedule -->
-                            <div class="space-y-2 pt-2">
-                                <h4 class="text-sm font-bold text-gray-800 uppercase tracking-wide">Event Schedule &
-                                    Activities</h4>
-                                <div class="overflow-x-auto rounded-lg border border-gray-200">
-                                    <table class="w-full text-left text-xs border-collapse">
-                                        <thead>
-                                            <tr
-                                                class="bg-gray-100 text-gray-700 font-semibold border-b border-gray-200">
-                                                <th class="py-2.5 px-3 w-1/4">Time Slot</th>
-                                                <th class="py-2.5 px-3 w-1/3">Activity</th>
-                                                <th class="py-2.5 px-3">Details</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="divide-y divide-gray-100 text-gray-600">
-                                            <tr>
-                                                <td class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap">2:00
-                                                    PM – 2:20 PM</td>
-                                                <td class="py-2 px-3 font-semibold text-[#4C4DFF]">Registration & Safety
-                                                    Briefing</td>
-                                                <td class="py-2 px-3">Apron assignment, kitchen station walkthrough, and
-                                                    safety guidelines.</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap">2:20
-                                                    PM – 3:15 PM</td>
-                                                <td class="py-2 px-3 font-semibold text-[#4C4DFF]">Chef's Knife Skills
-                                                    Demo</td>
-                                                <td class="py-2 px-3">Live demonstration on proper chopping, slicing,
-                                                    and preparing fresh ingredients.</td>
-                                            </tr>
-                                            <tr>
-                                                <td
-                                                    class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap align-top">
-                                                    3:15 PM – 4:30 PM</td>
-                                                <td class="py-2 px-3 font-semibold text-[#4C4DFF] align-top">Hands-on
-                                                    Cooking Workshop</td>
-                                                <td class="py-2 px-3 space-y-1">
-                                                    <p>Prepare 3 quick, budget-friendly gourmet dishes in small groups:
-                                                    </p>
-                                                    <ul class="list-disc list-inside space-y-0.5 text-gray-500 pl-1">
-                                                        <li><strong class="text-gray-700">Dish 1:</strong> Fresh
-                                                            Handmade Pasta with Basil Pesto</li>
-                                                        <li><strong class="text-gray-700">Dish 2:</strong> Pan-Seared
-                                                            Seasoned Vegetables</li>
-                                                        <li><strong class="text-gray-700">Dish 3:</strong> Mini Fruit
-                                                            Parfait Par excellence</li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap">4:30
-                                                    PM – 5:00 PM</td>
-                                                <td class="py-2 px-3 font-semibold text-[#4C4DFF]">Plating, Tasting &
-                                                    Social</td>
-                                                <td class="py-2 px-3">Enjoy your creations together, exchange recipe
-                                                    cards, and vote for best presentation.</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                <div class="space-y-4">
+                  <div>
+                    <span
+                      class="text-xs font-bold uppercase tracking-wider text-purple-600 bg-purple-50 px-2.5 py-1 rounded-md border border-purple-200"
+                      >Host: Campus Music & Jam Society</span
+                    >
+                    <h3 class="text-2xl font-bold text-[#4C4DFF] mt-2">
+                      Acoustic Jam Night & Open Mic
+                    </h3>
+                    <p class="text-sm text-gray-600 mt-1">
+                      Target Audience: Vocalists, instrumentalists, songwriters,
+                      and live music lovers
+                      <span class="text-gray-400"
+                        >(Performers & audience welcome)</span
+                      >
+                    </p>
+                  </div>
 
-                            <!-- Key Highlights & Features -->
-                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 space-y-2">
-                                <h4 class="text-xs font-bold text-gray-800 uppercase tracking-wide">Key Highlights &
-                                    Features</h4>
-                                <ul class="text-xs text-gray-600 space-y-1.5 list-disc list-inside">
-                                    <li><strong class="text-gray-800">Ingredients Provided:</strong> All ingredients,
-                                        aprons, cookware, and cutting boards will be provided.</li>
-                                    <li><strong class="text-gray-800">Dietary Accommodations:</strong> Vegetarian,
-                                        vegan, and gluten-free options available at all stations.</li>
-                                    <li><strong class="text-gray-800">Take-Home Recipe Pack:</strong> Print recipe
-                                        booklet with budget-friendly meal prep tips for students.</li>
-                                </ul>
-                            </div>
-                        </div>
+                  <!-- Event Metadata -->
+                  <div
+                    class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 border-y border-gray-100 py-3 text-xs text-gray-600"
+                  >
+                    <p class="flex items-center gap-2">
+                      <svg
+                        class="w-4 h-4 text-blue-500 shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <rect
+                          x="3"
+                          y="4"
+                          width="18"
+                          height="18"
+                          rx="2"
+                          ry="2"
+                        />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                      </svg>
+                      <span class="font-medium text-gray-800"
+                        >Thursday, October 22, 2026</span
+                      >
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <svg
+                        class="w-4 h-4 text-blue-500 shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                      </svg>
+                      <span class="font-medium text-gray-800"
+                        >5:30 PM – 8:00 PM</span
+                      >
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <svg
+                        class="w-4 h-4 text-blue-500 shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                        />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                      </svg>
+                      <span class="font-medium text-gray-800"
+                        >Main Campus Auditorium Hall</span
+                      >
+                    </p>
+                  </div>
+
+                  <!-- Event Schedule -->
+                  <div class="space-y-2 pt-2">
+                    <h4
+                      class="text-sm font-bold text-gray-800 uppercase tracking-wide"
+                    >
+                      Event Schedule & Activities
+                    </h4>
+                    <div
+                      class="overflow-x-auto rounded-lg border border-gray-200"
+                    >
+                      <table class="w-full text-left text-xs border-collapse">
+                        <thead>
+                          <tr
+                            class="bg-gray-100 text-gray-700 font-semibold border-b border-gray-200"
+                          >
+                            <th class="py-2.5 px-3 w-1/4">Time Slot</th>
+                            <th class="py-2.5 px-3 w-1/3">Activity</th>
+                            <th class="py-2.5 px-3">Details</th>
+                          </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 text-gray-600">
+                          <tr>
+                            <td
+                              class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap"
+                            >
+                              5:30 PM – 5:45 PM
+                            </td>
+                            <td class="py-2 px-3 font-semibold text-[#4C4DFF]">
+                              Soundcheck & Performer Check-in
+                            </td>
+                            <td class="py-2 px-3">
+                              Stage prep, mic check, and instrument tuning for
+                              open mic participants.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap"
+                            >
+                              5:45 PM – 6:30 PM
+                            </td>
+                            <td class="py-2 px-3 font-semibold text-[#4C4DFF]">
+                              Student Band Showcase
+                            </td>
+                            <td class="py-2 px-3">
+                              Opening sets by featured campus bands playing pop,
+                              rock, indie, and jazz covers.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap"
+                            >
+                              6:30 PM – 7:30 PM
+                            </td>
+                            <td class="py-2 px-3 font-semibold text-[#4C4DFF]">
+                              Open Mic Sessions
+                            </td>
+                            <td class="py-2 px-3">
+                              5-minute performance slots for solo vocalists,
+                              acoustic duos, and poets.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap"
+                            >
+                              7:30 PM – 8:00 PM
+                            </td>
+                            <td class="py-2 px-3 font-semibold text-[#4C4DFF]">
+                              Impromptu Group Jam & Social
+                            </td>
+                            <td class="py-2 px-3">
+                              Collaborative freestyle session where musicians
+                              can play together onstage.
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
+                  </div>
 
-                    <div class="mt-6 pt-4 border-t border-gray-100 flex justify-end">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAHWqlK-hywflscaG9aiCoY-1klnF4fQZxBXVif59SJgFBhw/viewform?usp=header"
-                            class="inline-flex items-center justify-center gap-2 py-2.5 px-6 text-white font-semibold text-xs bg-[#4C4DFF] hover:bg-indigo-700 rounded-full transition-all duration-300 shadow-md">
-                            Register & Join Event &rarr;
-                        </a>
+                  <!-- Key Highlights & Features -->
+                  <div
+                    class="bg-gray-50 p-4 rounded-xl border border-gray-100 space-y-2"
+                  >
+                    <h4
+                      class="text-xs font-bold text-gray-800 uppercase tracking-wide"
+                    >
+                      Key Highlights & Features
+                    </h4>
+                    <ul
+                      class="text-xs text-gray-600 space-y-1.5 list-disc list-inside"
+                    >
+                      <li>
+                        <strong class="text-gray-800"
+                          >Instruments Onsite:</strong
+                        >
+                        Guitars, electronic drum kit, keyboards, and microphones
+                        available for open mic performers.
+                      </li>
+                      <li>
+                        <strong class="text-gray-800"
+                          >Snacks & Beverages:</strong
+                        >
+                        Free warm tea, coffee, and bakery goods provided for all
+                        attendees.
+                      </li>
+                      <li>
+                        <strong class="text-gray-800"
+                          >Band Recruitment Board:</strong
+                        >
+                        Connect with fellow student musicians looking to start
+                        bands or collaborate on projects.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-6 pt-4 border-t border-gray-100 flex justify-end">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeMfN6UuU1rd_i2JeeI5mJHBcjvxTz9iCKc0u6w_sE7Al7C6w/viewform?usp=header"
+                  class="inline-flex items-center justify-center gap-2 py-2.5 px-6 text-white font-semibold text-xs bg-[#4C4DFF] hover:bg-indigo-700 rounded-full transition-all duration-300 shadow-md"
+                >
+                  Register & Join Event &rarr;
+                </a>
+              </div>
+            </article>
+
+            <!-- Event Card 4: Yoga Club Showcase -->
+            <article
+              id="yoga"
+              data-category="Yoga"
+              class="event-card bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300"
+            >
+              <div>
+                <img
+                  class="w-full h-80 sm:h-96 object-cover rounded-xl mb-6"
+                  src="./image/yoga-event.jpg"
+                  alt="Morning Yoga & Mindfulness"
+                />
+
+                <div class="space-y-4">
+                  <div>
+                    <span
+                      class="text-xs font-bold uppercase tracking-wider text-sky-600 bg-sky-50 px-2.5 py-1 rounded-md border border-sky-200"
+                      >Host: Mind & Wellness Yoga Club</span
+                    >
+                    <h3 class="text-2xl font-bold text-[#4C4DFF] mt-2">
+                      Morning Sunrise Yoga & Mindfulness Flow
+                    </h3>
+                    <p class="text-sm text-gray-600 mt-1">
+                      Target Audience: Students and staff seeking stress relief,
+                      flexibility, and mental wellness
+                      <span class="text-gray-400">(All fitness levels)</span>
+                    </p>
+                  </div>
+
+                  <!-- Event Metadata -->
+                  <div
+                    class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 border-y border-gray-100 py-3 text-xs text-gray-600"
+                  >
+                    <p class="flex items-center gap-2">
+                      <svg
+                        class="w-4 h-4 text-blue-500 shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <rect
+                          x="3"
+                          y="4"
+                          width="18"
+                          height="18"
+                          rx="2"
+                          ry="2"
+                        />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                      </svg>
+                      <span class="font-medium text-gray-800"
+                        >Sunday, October 25, 2026</span
+                      >
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <svg
+                        class="w-4 h-4 text-blue-500 shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                      </svg>
+                      <span class="font-medium text-gray-800"
+                        >7:00 AM – 8:30 AM</span
+                      >
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <svg
+                        class="w-4 h-4 text-blue-500 shrink-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                        />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                      </svg>
+                      <span class="font-medium text-gray-800"
+                        >East Campus Lawn (Outdoor Park)</span
+                      >
+                    </p>
+                  </div>
+
+                  <!-- Event Schedule -->
+                  <div class="space-y-2 pt-2">
+                    <h4
+                      class="text-sm font-bold text-gray-800 uppercase tracking-wide"
+                    >
+                      Event Schedule & Activities
+                    </h4>
+                    <div
+                      class="overflow-x-auto rounded-lg border border-gray-200"
+                    >
+                      <table class="w-full text-left text-xs border-collapse">
+                        <thead>
+                          <tr
+                            class="bg-gray-100 text-gray-700 font-semibold border-b border-gray-200"
+                          >
+                            <th class="py-2.5 px-3 w-1/4">Time Slot</th>
+                            <th class="py-2.5 px-3 w-1/3">Activity</th>
+                            <th class="py-2.5 px-3">Details</th>
+                          </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 text-gray-600">
+                          <tr>
+                            <td
+                              class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap"
+                            >
+                              7:00 AM – 7:15 AM
+                            </td>
+                            <td class="py-2 px-3 font-semibold text-[#4C4DFF]">
+                              Arrival & Mat Setup
+                            </td>
+                            <td class="py-2 px-3">
+                              Check-in, mat distribution, herbal tea station,
+                              and grounding preparation.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap"
+                            >
+                              7:15 AM – 8:00 AM
+                            </td>
+                            <td class="py-2 px-3 font-semibold text-[#4C4DFF]">
+                              Gentle Vinyasa Yoga Flow
+                            </td>
+                            <td class="py-2 px-3">
+                              Guided flow session emphasizing breath control,
+                              core alignment, and full-body stretches.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap"
+                            >
+                              8:00 AM – 8:20 AM
+                            </td>
+                            <td class="py-2 px-3 font-semibold text-[#4C4DFF]">
+                              Sound Bath & Meditation
+                            </td>
+                            <td class="py-2 px-3">
+                              Deep relaxation sound meditation led by certified
+                              wellness instructors.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap"
+                            >
+                              8:20 AM – 8:30 AM
+                            </td>
+                            <td class="py-2 px-3 font-semibold text-[#4C4DFF]">
+                              Closing Circle & Fresh Juice Bar
+                            </td>
+                            <td class="py-2 px-3">
+                              Reflection, group Q&A on campus stress management,
+                              and complimentary fresh detox juices.
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                </article>
+                  </div>
 
-                <!-- Event Card 3: Music Club Showcase -->
-                <article id="music" data-category="Music"
-                    class="event-card bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300">
-                    <div>
-                        <img class="w-full h-80 sm:h-96 object-cover rounded-xl mb-6" src="./image/music-banner.jpg"
-                            alt="Music Jam Night">
+                  <!-- Key Highlights & Features -->
+                  <div
+                    class="bg-gray-50 p-4 rounded-xl border border-gray-100 space-y-2"
+                  >
+                    <h4
+                      class="text-xs font-bold text-gray-800 uppercase tracking-wide"
+                    >
+                      Key Highlights & Features
+                    </h4>
+                    <ul
+                      class="text-xs text-gray-600 space-y-1.5 list-disc list-inside"
+                    >
+                      <li>
+                        <strong class="text-gray-800"
+                          >Free Mats Available:</strong
+                        >
+                        50 yoga mats reserved for first-come, first-served
+                        participants (feel free to bring your own).
+                      </li>
+                      <li>
+                        <strong class="text-gray-800"
+                          >Complimentary Wellness Drinks:</strong
+                        >
+                        Cold-pressed juices, matcha tea, and fresh fruit
+                        platters provided.
+                      </li>
+                      <li>
+                        <strong class="text-gray-800"
+                          >Wellness Gift Packs:</strong
+                        >
+                        Free aromatherapy samples and weekly yoga session passes
+                        for all attendees.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-                        <div class="space-y-4">
-                            <div>
-                                <span
-                                    class="text-xs font-bold uppercase tracking-wider text-purple-600 bg-purple-50 px-2.5 py-1 rounded-md border border-purple-200">Host:
-                                    Campus Music & Jam Society</span>
-                                <h3 class="text-2xl font-bold text-[#4C4DFF] mt-2">Acoustic Jam Night & Open Mic</h3>
-                                <p class="text-sm text-gray-600 mt-1">
-                                    Target Audience: Vocalists, instrumentalists, songwriters, and live music lovers
-                                    <span class="text-gray-400">(Performers & audience welcome)</span>
-                                </p>
-                            </div>
-
-                            <!-- Event Metadata -->
-                            <div
-                                class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 border-y border-gray-100 py-3 text-xs text-gray-600">
-                                <p class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                                        <line x1="16" y1="2" x2="16" y2="6" />
-                                        <line x1="8" y1="2" x2="8" y2="6" />
-                                        <line x1="3" y1="10" x2="21" y2="10" />
-                                    </svg>
-                                    <span class="font-medium text-gray-800">Thursday, October 22, 2026</span>
-                                </p>
-                                <p class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10" />
-                                        <polyline points="12 6 12 12 16 14" />
-                                    </svg>
-                                    <span class="font-medium text-gray-800">5:30 PM – 8:00 PM</span>
-                                </p>
-                                <p class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    </svg>
-                                    <span class="font-medium text-gray-800">Main Campus Auditorium Hall</span>
-                                </p>
-                            </div>
-
-                            <!-- Event Schedule -->
-                            <div class="space-y-2 pt-2">
-                                <h4 class="text-sm font-bold text-gray-800 uppercase tracking-wide">Event Schedule &
-                                    Activities</h4>
-                                <div class="overflow-x-auto rounded-lg border border-gray-200">
-                                    <table class="w-full text-left text-xs border-collapse">
-                                        <thead>
-                                            <tr
-                                                class="bg-gray-100 text-gray-700 font-semibold border-b border-gray-200">
-                                                <th class="py-2.5 px-3 w-1/4">Time Slot</th>
-                                                <th class="py-2.5 px-3 w-1/3">Activity</th>
-                                                <th class="py-2.5 px-3">Details</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="divide-y divide-gray-100 text-gray-600">
-                                            <tr>
-                                                <td class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap">5:30
-                                                    PM – 5:45 PM</td>
-                                                <td class="py-2 px-3 font-semibold text-[#4C4DFF]">Soundcheck &
-                                                    Performer Check-in</td>
-                                                <td class="py-2 px-3">Stage prep, mic check, and instrument tuning for
-                                                    open mic participants.</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap">5:45
-                                                    PM – 6:30 PM</td>
-                                                <td class="py-2 px-3 font-semibold text-[#4C4DFF]">Student Band Showcase
-                                                </td>
-                                                <td class="py-2 px-3">Opening sets by featured campus bands playing pop,
-                                                    rock, indie, and jazz covers.</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap">6:30
-                                                    PM – 7:30 PM</td>
-                                                <td class="py-2 px-3 font-semibold text-[#4C4DFF]">Open Mic Sessions
-                                                </td>
-                                                <td class="py-2 px-3">5-minute performance slots for solo vocalists,
-                                                    acoustic duos, and poets.</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap">7:30
-                                                    PM – 8:00 PM</td>
-                                                <td class="py-2 px-3 font-semibold text-[#4C4DFF]">Impromptu Group Jam &
-                                                    Social</td>
-                                                <td class="py-2 px-3">Collaborative freestyle session where musicians
-                                                    can play together onstage.</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <!-- Key Highlights & Features -->
-                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 space-y-2">
-                                <h4 class="text-xs font-bold text-gray-800 uppercase tracking-wide">Key Highlights &
-                                    Features</h4>
-                                <ul class="text-xs text-gray-600 space-y-1.5 list-disc list-inside">
-                                    <li><strong class="text-gray-800">Instruments Onsite:</strong> Guitars, electronic
-                                        drum kit, keyboards, and microphones available for open mic performers.</li>
-                                    <li><strong class="text-gray-800">Snacks & Beverages:</strong> Free warm tea,
-                                        coffee, and bakery goods provided for all attendees.</li>
-                                    <li><strong class="text-gray-800">Band Recruitment Board:</strong> Connect with
-                                        fellow student musicians looking to start bands or collaborate on projects.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-6 pt-4 border-t border-gray-100 flex justify-end">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMfN6UuU1rd_i2JeeI5mJHBcjvxTz9iCKc0u6w_sE7Al7C6w/viewform?usp=header"
-                            class="inline-flex items-center justify-center gap-2 py-2.5 px-6 text-white font-semibold text-xs bg-[#4C4DFF] hover:bg-indigo-700 rounded-full transition-all duration-300 shadow-md">
-                            Register & Join Event &rarr;
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Event Card 4: Yoga Club Showcase -->
-                <article id="yoga" data-category="Yoga"
-                    class="event-card bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-lg transition-all duration-300">
-                    <div>
-                        <img class="w-full h-80 sm:h-96 object-cover rounded-xl mb-6" src="./image/yoga-event.jpg"
-                            alt="Morning Yoga & Mindfulness">
-
-                        <div class="space-y-4">
-                            <div>
-                                <span
-                                    class="text-xs font-bold uppercase tracking-wider text-sky-600 bg-sky-50 px-2.5 py-1 rounded-md border border-sky-200">Host:
-                                    Mind & Wellness Yoga Club</span>
-                                <h3 class="text-2xl font-bold text-[#4C4DFF] mt-2">Morning Sunrise Yoga & Mindfulness
-                                    Flow</h3>
-                                <p class="text-sm text-gray-600 mt-1">
-                                    Target Audience: Students and staff seeking stress relief, flexibility, and mental
-                                    wellness <span class="text-gray-400">(All fitness levels)</span>
-                                </p>
-                            </div>
-
-                            <!-- Event Metadata -->
-                            <div
-                                class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 border-y border-gray-100 py-3 text-xs text-gray-600">
-                                <p class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                                        <line x1="16" y1="2" x2="16" y2="6" />
-                                        <line x1="8" y1="2" x2="8" y2="6" />
-                                        <line x1="3" y1="10" x2="21" y2="10" />
-                                    </svg>
-                                    <span class="font-medium text-gray-800">Sunday, October 25, 2026</span>
-                                </p>
-                                <p class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10" />
-                                        <polyline points="12 6 12 12 16 14" />
-                                    </svg>
-                                    <span class="font-medium text-gray-800">7:00 AM – 8:30 AM</span>
-                                </p>
-                                <p class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    </svg>
-                                    <span class="font-medium text-gray-800">East Campus Lawn (Outdoor Park)</span>
-                                </p>
-                            </div>
-
-                            <!-- Event Schedule -->
-                            <div class="space-y-2 pt-2">
-                                <h4 class="text-sm font-bold text-gray-800 uppercase tracking-wide">Event Schedule &
-                                    Activities</h4>
-                                <div class="overflow-x-auto rounded-lg border border-gray-200">
-                                    <table class="w-full text-left text-xs border-collapse">
-                                        <thead>
-                                            <tr
-                                                class="bg-gray-100 text-gray-700 font-semibold border-b border-gray-200">
-                                                <th class="py-2.5 px-3 w-1/4">Time Slot</th>
-                                                <th class="py-2.5 px-3 w-1/3">Activity</th>
-                                                <th class="py-2.5 px-3">Details</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="divide-y divide-gray-100 text-gray-600">
-                                            <tr>
-                                                <td class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap">7:00
-                                                    AM – 7:15 AM</td>
-                                                <td class="py-2 px-3 font-semibold text-[#4C4DFF]">Arrival & Mat Setup
-                                                </td>
-                                                <td class="py-2 px-3">Check-in, mat distribution, herbal tea station,
-                                                    and grounding preparation.</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap">7:15
-                                                    AM – 8:00 AM</td>
-                                                <td class="py-2 px-3 font-semibold text-[#4C4DFF]">Gentle Vinyasa Yoga
-                                                    Flow</td>
-                                                <td class="py-2 px-3">Guided flow session emphasizing breath control,
-                                                    core alignment, and full-body stretches.</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap">8:00
-                                                    AM – 8:20 AM</td>
-                                                <td class="py-2 px-3 font-semibold text-[#4C4DFF]">Sound Bath &
-                                                    Meditation</td>
-                                                <td class="py-2 px-3">Deep relaxation sound meditation led by certified
-                                                    wellness instructors.</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-2 px-3 font-medium text-gray-800 whitespace-nowrap">8:20
-                                                    AM – 8:30 AM</td>
-                                                <td class="py-2 px-3 font-semibold text-[#4C4DFF]">Closing Circle &
-                                                    Fresh Juice Bar</td>
-                                                <td class="py-2 px-3">Reflection, group Q&A on campus stress management,
-                                                    and complimentary fresh detox juices.</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <!-- Key Highlights & Features -->
-                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 space-y-2">
-                                <h4 class="text-xs font-bold text-gray-800 uppercase tracking-wide">Key Highlights &
-                                    Features</h4>
-                                <ul class="text-xs text-gray-600 space-y-1.5 list-disc list-inside">
-                                    <li><strong class="text-gray-800">Free Mats Available:</strong> 50 yoga mats
-                                        reserved for first-come, first-served participants (feel free to bring your
-                                        own).</li>
-                                    <li><strong class="text-gray-800">Complimentary Wellness Drinks:</strong>
-                                        Cold-pressed juices, matcha tea, and fresh fruit platters provided.</li>
-                                    <li><strong class="text-gray-800">Wellness Gift Packs:</strong> Free aromatherapy
-                                        samples and weekly yoga session passes for all attendees.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-6 pt-4 border-t border-gray-100 flex justify-end">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScgR9jzWDTMcJk8ECwoBjwAv3-7IenQRQ2wuTBCFtBMy4x4pQ/viewform?usp=header"
-                            class="inline-flex items-center justify-center gap-2 py-2.5 px-6 text-white font-semibold text-xs bg-[#4C4DFF] hover:bg-indigo-700 rounded-full transition-all duration-300 shadow-md">
-                            Register & Join Event &rarr;
-                        </a>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-
+              <div class="mt-6 pt-4 border-t border-gray-100 flex justify-end">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScgR9jzWDTMcJk8ECwoBjwAv3-7IenQRQ2wuTBCFtBMy4x4pQ/viewform?usp=header"
+                  class="inline-flex items-center justify-center gap-2 py-2.5 px-6 text-white font-semibold text-xs bg-[#4C4DFF] hover:bg-indigo-700 rounded-full transition-all duration-300 shadow-md"
+                >
+                  Register & Join Event &rarr;
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER                                     -->
-    <footer class="bg-[#111827] text-white py-12 px-6 md:px-16 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto flex flex-row items-center justify-between gap-8">
-
-            <div class="flex items-center gap-3">
-                <div
-                    class="w-11 h-11 rounded-full bg-linear-to-br from-[#FFA500] to-indigo-500 p-0.5 flex items-center justify-center">
-                    <img class="w-10 h-10 rounded-full object-cover" src="./image/website-logo.jpg"
-                        alt="Student Club Logo">
-                </div>
-                <h3 class="font-bold text-xl sm:text-2xl text-white">
-                    Student <span class="text-[#4C4DFF]">Clubs</span>
-                </h3>
-            </div>
-
-            <ul class="hidden sm:flex flex-wrap justify-center items-center gap-4 text-sm text-gray-300">
-                <li><a href="index.html" class="hover:text-[#FFA500] transition">Home</a></li>
-                <li><a href="clubs.html" class="hover:text-[#FFA500] transition">Clubs</a></li>
-                <li><a href="events.html" class="hover:text-[#FFA500] transition">Events</a></li>
-                <li><a href="about.html" class="hover:text-[#FFA500] transition">About</a></li>
-            </ul>
-
-            <div class="flex items-center gap-4 text-gray-400">
-                <a href="#" class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full" aria-label="Facebook">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
-                    </svg>
-                </a>
-                <a href="#" class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full" aria-label="Instagram">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                    </svg>
-                </a>
-                <a href="#" class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full" aria-label="Telegram">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.195 1.006.128.832.941z" />
-                    </svg>
-                </a>
-            </div>
+    <footer
+      class="bg-[#111827] text-white py-12 px-4 sm:px-8 md:px-8 lg:px-16 border-t border-gray-800"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8"
+      >
+        <div class="flex items-center gap-3">
+          <div
+            class="w-11 h-11 rounded-full bg-linear-to-br from-[#FFA500] to-indigo-500 p-0.5 flex items-center justify-center"
+          >
+            <img
+              class="w-10 h-10 rounded-full object-cover"
+              src="./image/website-logo.jpg"
+              alt="Student Club Logo"
+            />
+          </div>
+          <h3 class="font-bold text-xl sm:text-2xl text-white">
+            Student <span class="text-[#4C4DFF]">Clubs</span>
+          </h3>
         </div>
 
-        <div class="flex mt-8 pt-6 border-t border-gray-800 text-xs text-gray-500">
-            <p class="flex-1">&copy; 2026 Student Club Website. All rights reserved.</p>
-            <p class="flex-1 text-end">
-                <a href="#" class="hover:underline">Privacy Policy</a> | <a href="#" class="hover:underline">Terms of
-                    Service</a>
-            </p>
+        <ul
+          class="flex flex-wrap justify-center items-center gap-6 text-sm text-gray-300"
+        >
+          <li>
+            <a href="index.html" class="hover:text-[#FFA500] transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="clubs.html" class="hover:text-[#FFA500] transition"
+              >Clubs</a
+            >
+          </li>
+          <li>
+            <a
+              href="events.html"
+              class="text-white hover:text-[#FFA500] transition"
+              >Events</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="hover:text-[#FFA500] transition"
+              >About</a
+            >
+          </li>
+        </ul>
+
+        <div class="flex items-center gap-4 text-gray-400">
+          <a
+            href="#"
+            class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full"
+            aria-label="Facebook"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full"
+            aria-label="Instagram"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full"
+            aria-label="Telegram"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.195 1.006.128.832.941z"
+              />
+            </svg>
+          </a>
         </div>
+      </div>
+
+      <div
+        class="flex flex-col sm:flex-row mt-8 pt-6 border-t border-gray-800 text-xs text-gray-500 justify-between items-center gap-2"
+      >
+        <p>&copy; 2026 Student Club Website. All rights reserved.</p>
+        <p>
+          <a href="#" class="hover:underline">Privacy Policy</a> |
+          <a href="#" class="hover:underline">Terms of Service</a>
+        </p>
+      </div>
     </footer>
-<script src="./js/main.js">
-
-</script>
-</body>
-
+    <script src="./js/main.js"></script>
+  </body>
 </html>
